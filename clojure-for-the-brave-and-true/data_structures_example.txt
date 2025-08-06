@@ -1,0 +1,171 @@
+;; Forms
+
+(+ 1 2 3)
+=> 6
+(str "It was the panda " "in the library " "with a dust buster")
+=> "It was the panda in the library with a dust buster"
+
+;; If
+
+(if true
+  "By Zeus's hammer!"
+  "By Aquaman's trident!")
+=> "By Zeus's hammer!"
+(if false
+  "By Zeus's hammer!"
+  "By Aquaman's trident!")
+=> "By Aquaman's trident!"
+(if false
+  "By Odin's Elbow!")
+=> nil
+
+;; Do
+
+(if true
+  (do (println "Success!")
+      "By Zeus's hammer!")
+  (do (println "Failure!")
+      "By Aquaman's trident!"))
+Success!
+=> "By Zeus's hammer!"
+
+;;/When
+
+(when true
+  (println "Success!")
+  "abra cadabra")
+Success!
+=> "abra cadabra"
+
+;; nil, true, false, Truthiness, Equality, and Boolean Expressions
+
+(nil? 1)
+=> false
+(nil? nil)
+=> true
+(if "bears eat beets"
+  "bears beets Battlestar Galactica")
+=> "bears beets Battlestar Galactica"
+(if nil
+  "This won't be the result because nil is falsey"
+  "nil is falsey")
+=> "nil is falsey"
+(= 1 1)
+=> true
+(= nil nil)
+=> true
+(= 1 2)
+=> false
+(or false nil :large_I_mean_venti :why_cant_I_just_say_large)
+=> :large_I_mean_venti
+(or (= 0 1) (= "yes" "no"))
+=> false
+
+;; Naming Values with def
+
+(def failed-protagonist-names
+  ["Larry Potter" "Doreen the Explorer" "The Incredible Bulk"])
+failed-protagonist-names
+=> #'user/failed-protagonist-names
+=> ["Larry Potter" "Doreen the Explorer" "The Incredible Bulk"]
+(defn error-message
+  [severity]
+  (str "OH GOD! IT'S A DISASTER! WE'RE "
+       (if (= severity :mild)
+         "MILDLY INCONVENIENCED!"
+         "DOOOOOOOMED!")))
+(error-message :mild)
+=> #'user/error-message
+=> "OH GOD! IT'S A DISASTER! WE'RE MILDLY INCONVENIENCED!"
+(defn error-message
+  [severity]
+  (str "OH GOD! IT'S A DISASTER! WE'RE "
+       (if (= severity :mild)
+         "MILDLY INCONVENIENCED!"
+         "DOOOOOOOMED!")))
+(error-message :not_mild)
+=> #'user/error-message
+=> "OH GOD! IT'S A DISASTER! WE'RE DOOOOOOOMED!"
+
+;; Strings
+
+(def name "Chewbacca")
+(str "\"Uggllglglglglglglglll\" - " name)
+WARNING: name already refers to: #'clojure.core/name in namespace: user, being replaced by: #'user/name
+=> #'user/name
+=> "\"Uggllglglglglglglglll\" - Chewbacca"
+
+;; Maps
+
+(hash-map :a 1 :b 2)
+=> {:b 2, :a 1}
+(get {:a 0 :b 1} :b)
+=> 1
+(get {:a 0 :b {:c "ho hum"}} :b)
+=> {:c "ho hum"}
+(get {:a 0 :b 1} :c)
+=> nil
+(get {:a 0 :b 1} :c "unicorns?")
+=> "unicorns?"
+(get-in {:a 0 :b {:c "ho hum"}} [:b :c])
+=> "ho hum"
+({:name "The Human Coffeepot"} :name)
+=> "The Human Coffeepot"
+
+;; Keywords
+
+(:a {:a 1 :b 2 :c 3})
+=> 1
+(get {:a 1 :b 2 :c 3} :a)
+=> 1
+(:d {:a 1 :b 2 :c 3} "No gnome knows homes like Noah knows")
+=> "No gnome knows homes like Noah knows"
+
+;;Vectors
+
+(get [3 2 1] 0)
+=> 3
+(get ["a" {:name "Pugsley Winterbottom"} "c"] 1)
+=> {:name "Pugsley Winterbottom"}
+(vector "creepy" "full" "moon")
+=> ["creepy" "full" "moon"]
+(conj [1 2 3] 4)
+=> [1 2 3 4]
+
+;; Lists
+
+'(1 2 3 4)
+=> (1 2 3 4)
+(nth '(:a :b :c) 0)
+=> :a
+(nth '(:a :b :c) 2)
+=> :c
+(list 1 "two" {3 4})
+=> (1 "two" {3 4})
+(conj '(1 2 3) 4)
+=> (4 1 2 3)
+
+;; Sets
+
+(hash-set 1 1 2 2)
+=> #{1 2}
+#{"kurt vonnegut" 20 :icicle}
+=> #{20 :icicle "kurt vonnegut"}
+(conj #{:a :b} :b)
+=> #{:b :a}
+(set [3 3 3 4 4])
+=> #{4 3}
+(contains? #{:a :b} :a)
+=> true
+(contains? #{:a :b} 3)
+=> false
+(contains? #{nil} nil)
+=> true
+(:a #{:a :b})
+=> :a
+(get #{:a :b} :a)
+=> :a
+(get #{:a nil} nil)
+=> nil
+(get #{:a :b} "kurt vonnegut")
+=> nil
