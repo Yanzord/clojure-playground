@@ -46,3 +46,264 @@ clj꞉functional-programming.aula3꞉> 
   (+ x y))
 18
 clj꞉functional-programming.aula3꞉> 
+; Evaluating file: aula4.clj
+#'functional-programming.aula4/precos
+clj꞉functional-programming.aula4꞉> 
+precos
+[30 700 1000]
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 701 1000]
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; (30 630N 900N)
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+; vetor [30 700 1000]
+; filter (700 1000)
+; map apos o filter (630N 900N)
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+; vetor [30 700 1000]
+; filter (700 1000)
+; map apos o filter (630N 900N)
+; 1730
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+; vetor [30 700 1000]
+; filter (700 1000)
+; map apos o filter (630N 900N)
+; 1730
+; somando 30 e 700
+; somando 730 e 1000
+; 1730
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+; vetor [30 700 1000]
+; filter (700 1000)
+; map apos o filter (630N 900N)
+; 1730
+; somando 30 e 700
+; somando 730 e 1000
+; 1730
+; somando 0 e 1
+; somando 1 e 2
+; somando 3 e 3
+; somando 6 e 4
+; somando 10 e 5
+; somando 15 e 6
+; somando 21 e 7
+; somando 28 e 8
+; somando 36 e 9
+; 45
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+; vetor [30 700 1000]
+; filter (700 1000)
+; map apos o filter (630N 900N)
+; 1730
+; somando 0 e 30
+; somando 30 e 700
+; somando 730 e 1000
+; 1730
+; somando 0 e 0
+; somando 0 e 1
+; somando 1 e 2
+; somando 3 e 3
+; somando 6 e 4
+; somando 10 e 5
+; somando 15 e 6
+; somando 21 e 7
+; somando 28 e 8
+; somando 36 e 9
+; 45
+; somando 0 e 15
+; 15
+nil
+clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula4.clj
+; 30
+; 1000
+; Valor padrao nil nil
+; Valor padrao 0 0
+; [30 700 1000 5]
+; [31 700 1000]
+; [30 699 1000]
+; estou somando um em  30
+; [31 700 1000]
+; map (30 630N 900N)
+; (0 1 2 3 4 5 6 7 8 9)
+; (0 2 4 6 8)
+; vetor [30 700 1000]
+; filter (700 1000)
+; map apos o filter (630N 900N)
+; 1730
+; somando 0 e 30
+; somando 30 e 700
+; somando 730 e 1000
+; 1730
+; somando 0 e 0
+; somando 0 e 1
+; somando 1 e 2
+; somando 3 e 3
+; somando 6 e 4
+; somando 10 e 5
+; somando 15 e 6
+; somando 21 e 7
+; somando 28 e 8
+; somando 36 e 9
+; 45
+; somando 0 e 15
+; 15
+; 0
+nil
+clj꞉functional-programming.aula4꞉> 
