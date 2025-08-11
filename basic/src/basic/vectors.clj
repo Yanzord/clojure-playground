@@ -28,7 +28,7 @@
 
 (defn filter-even-numbers
   [numbers]
-  (filter #(= (mod % 2) 0) numbers))
+  (filter even? numbers))
 
 (defn multiply-numbers-by-two
   [numbers]
