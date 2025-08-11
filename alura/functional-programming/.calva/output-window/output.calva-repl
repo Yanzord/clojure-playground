@@ -307,3 +307,205 @@ clj꞉functional-programming.aula4꞉> 
 ; 0
 nil
 clj꞉functional-programming.aula4꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+; {:camiseta 5}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+; {:camiseta 5}
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+; {:camiseta 5}
+; 
+; 
+; 
+; 
+; 
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+; {:camiseta 5}
+; 
+; 
+; 
+; 
+; 
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}}
+#'functional-programming.aula5/pedido
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+; {:camiseta 5}
+; 
+; 
+; 
+; 
+; 
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}}
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}, :chaveiro {:quantidade 1, :preco 10}}
+nil
+clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula5.clj
+; {Mochila 10, Camiseta 5}
+; Temos 2 elementos
+; Chaves sao: (Mochila Camiseta)
+; Valores sao: (10 5)
+; {:mochila 10, :camiseta 5, :cadeira 3}
+; {:mochila 10, :camiseta 5}
+; {:mochila 1, :camiseta 5}
+; {:mochila 11, :camiseta 5}
+; tirando um de 10
+; {:mochila 9, :camiseta 5}
+; {:mochila 7, :camiseta 5}
+; {:camiseta 5}
+; 
+; 
+; 
+; 
+; 
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}}
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}, :chaveiro {:quantidade 1, :preco 10}}
+; {:quantidade 2, :preco 80}
+; nil
+; {}
+; {:quantidade 2, :preco 80}
+; nil
+; {}
+; 2
+; {:mochila {:quantidade 3, :preco 80}, :camiseta {:quantidade 3, :preco 40}, :chaveiro {:quantidade 1, :preco 10}}
+; {:mochila {:quantidade 2, :preco 80}, :camiseta {:quantidade 3, :preco 40}, :chaveiro {:quantidade 1, :preco 10}}
+; 2
+; 2
+nil
+clj꞉functional-programming.aula5꞉> 
