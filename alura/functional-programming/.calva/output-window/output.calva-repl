@@ -1,0 +1,48 @@
+clj꞉functional-programming.core꞉> 
+; Jack-in done.
+clj꞉functional-programming.core꞉> 
+; Evaluating file: aula3.clj
+; #function[functional-programming.aula3/deve-aplicar-desconto?] 1000
+; #function[functional-programming.aula3/deve-aplicar-desconto?] 100
+nil
+clj꞉functional-programming.aula3꞉> 
+; Evaluating file: aula3.clj
+; true
+; false
+nil
+clj꞉functional-programming.aula3꞉> 
+; Evaluating file: aula3.clj
+; 900N
+; 100
+nil
+clj꞉functional-programming.aula3꞉> 
+; Evaluating file: aula3.clj
+; 900N
+; 100
+nil
+clj꞉functional-programming.aula3꞉> 
+; Evaluating file: aula3.clj
+; 900N
+; 100
+; 900N
+; 100
+nil
+clj꞉functional-programming.aula3꞉> 
+; Evaluating file: aula3.clj
+; 900N
+; 100
+; 900N
+; 100
+; 900N
+; 100
+nil
+clj꞉functional-programming.aula3꞉> 
+(let [x 5
+
+      y (+ x 3)
+
+      x (+ y 2)]
+
+  (+ x y))
+18
+clj꞉functional-programming.aula3꞉> 
