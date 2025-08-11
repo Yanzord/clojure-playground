@@ -22,9 +22,9 @@
 
 (defn add-value-to-specific-index
   [received-vector index value]
-  (let [part1 (subvec received-vector 0 index)
-        part2 (subvec received-vector index)]
-    (vec (concat part1 [value] part2))))
+  (vec (concat (take index received-vector) 
+               [value] 
+               (drop index received-vector))))
 
 (defn filter-even-numbers
   [numbers]

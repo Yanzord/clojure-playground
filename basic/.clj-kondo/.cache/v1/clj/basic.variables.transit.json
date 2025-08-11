@@ -1,0 +1,1 @@
+["^ ","~$get-double",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[2]],"~:name","^0","~:ns","~$basic.variables","~:top-ns","^7","~:arities",["^ ","~i2",["^ ","~:ret","~:string","~:arglist-str","[number name]"]],"~:type","~:fn"],"~:filename","/Users/yan.pereira/github/yan/clojure-playground/basic/src/basic/variables.clj"]
