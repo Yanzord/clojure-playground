@@ -509,3 +509,261 @@ clj꞉functional-programming.aula5꞉> 
 ; 2
 nil
 clj꞉functional-programming.aula5꞉> 
+; Evaluating file: aula6.clj
+; 
+; ; clj  functional-programming.aula6 
+; Syntax error compiling at (src/functional_programming/aula6.clj:11:10).
+; Unable to resolve symbol: pedido in this context
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor [:mochila {:quantidade 2, :preco 80}]
+; valor [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; 15 15)
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+nil
+clj꞉functional-programming.aula6꞉> 
+(println (total-do-pedido pedido))
+; Syntax error compiling at (.calva/output-window/output.calva-repl:570:10).
+; Unable to resolve symbol: total-do-pedido in this context
+clj꞉functional-programming.aula6꞉> 
+; TypeError: Cannot read properties of undefined (reading 'label')
+; Aborting connect.
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:mochila {:quantidade 2, :preco 80}] [:camiseta {:quantidade 3, :preco 40}] [:chaveiro {:quantidade 1}])
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ({:quantidade 1})
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:chaveiro {:quantidade 1}])
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; #function[clojure.core/filter/fn--5958]
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; true
+; false
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; true
+; false
+; true
+; true
+; false
+nil
+clj꞉functional-programming.aula6꞉> 
+; Evaluating file: aula6.clj
+; (valor clojure.lang.MapEntry [:mochila {:quantidade 2, :preco 80}]
+; valor clojure.lang.MapEntry [:camiseta {:quantidade 3, :preco 40}]
+; 15 15)
+; (:mochila <e> {:quantidade 2, :preco 80}
+; :camiseta <e> {:quantidade 3, :preco 40}
+; {:quantidade 2, :preco 80} {:quantidade 3, :preco 40})
+; (160 120)
+; 280
+; 280
+; 280
+; 280
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; ([:chaveiro {:quantidade 1}])
+; true
+; false
+; true
+; true
+; false
+; 7
+nil
+clj꞉functional-programming.aula6꞉> 
