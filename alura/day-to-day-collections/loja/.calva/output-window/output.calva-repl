@@ -569,3 +569,207 @@ clj꞉loja.aula3꞉> 
 ; ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
 nil
 clj꞉loja.aula3꞉> 
+; Evaluating file: aula4.clj
+; [{:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 1, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 10, :itens {:mochila {:id :mochila, :quantidade 20, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 20, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 10, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}}]
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; [{:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 1, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 10, :itens {:mochila {:id :mochila, :quantidade 20, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 20, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 10, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}}]
+; 
+; Syntax error compiling at (src/loja/aula4.clj:7:14).
+; No such var: l.logic/resumo-por-usuario
+; Evaluation of file aula4.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉loja.aula4꞉> 
+; Evaluating file: logic.clj
+#'loja.logic/resumo-por-usuario
+clj꞉loja.logic꞉> 
+; Evaluating file: aula4.clj
+; [{:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 1, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 10, :itens {:mochila {:id :mochila, :quantidade 20, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 20, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 10, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}}]
+; ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordem ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 1, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 15, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 10, :itens {:mochila {:id :mochila, :quantidade 20, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 3, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}} {:usuario 20, :itens {:mochila {:id :mochila, :quantidade 2, :preco-unitario 80}, :camiseta {:id :camiseta, :quantidade 10, :preco-unitario 40}, :tenis {:id :tenis, :quantidade 1}}})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Primeiro {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; Segundo {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; Resto ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Total 4
+; Class clojure.lang.PersistentList
+; nth 1 {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; get 1 nil
+; take 2 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Primeiro {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; Segundo {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; Resto ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Total 4
+; Class clojure.lang.PersistentList
+; nth 1 {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; get 1 nil
+; take ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Top-2 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Primeiro {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; Segundo {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; Resto ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Total 4
+; Class clojure.lang.PersistentList
+; nth 1 {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; get 1 nil
+; take ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Top-2 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+ {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+ {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Primeiro {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; Segundo {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; Resto ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Total 4
+; Class clojure.lang.PersistentList
+; nth 1 {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; get 1 nil
+; take ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Top-2 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+ {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+ {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Primeiro {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; Segundo {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; Resto ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Total 4
+; Class clojure.lang.PersistentList
+; nth 1 {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; get 1 nil
+; take ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Top-2 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Maior que 500 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+nil
+clj꞉loja.aula4꞉> 
+; Evaluating file: aula4.clj
+; Resumo ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; Ordenado ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720})
+; Ordenado ao contrario ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Ordenado por id ({:usuario-id 1, :total-de-pedidos 1, :preco-total 280} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; 2
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Primeiro {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; Segundo {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; Resto ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Total 4
+; Class clojure.lang.PersistentList
+; nth 1 {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; get 1 nil
+; take ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; Resumo ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560} {:usuario-id 1, :total-de-pedidos 1, :preco-total 280})
+; Top-2 ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840})
+; > 500 filter ({:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; > 500 filter empty not => true
+; > 500 some => true
+nil
+clj꞉loja.aula4꞉> 
