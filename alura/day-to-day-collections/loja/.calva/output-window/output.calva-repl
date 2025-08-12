@@ -1,0 +1,268 @@
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/day-to-day-collections/loja; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:58636 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at loja.core/eval9005 (REPL:11).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉loja.core꞉> 
+; Jack-in done.
+clj꞉loja.core꞉> 
+; Evaluating file: aula2.clj
+; Evaluating file: aula2.clj
+(println 1)
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/day-to-day-collections/loja; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:58719 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at loja.core/eval9005 (REPL:31).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉loja.core꞉> 
+; Jack-in done.
+clj꞉loja.core꞉> 
+(println 1)
+
+(println "Ola")
+
+; Evaluating file: aula2.clj
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/day-to-day-collections/loja; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:58852 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉loja.core꞉> 
+; Jack-in done.
+clj꞉loja.core꞉> 
+(println "ola mundo")
+
+
+
+
+
+
+
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 5
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 
+; Execution error (ClassCastException) at loja.aula2/conta (aula2.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+; p1 1
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+; p1 1
+; p2 1 2
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+; p1 1
+; p2 1 2
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+nil
+clj꞉loja.aula2꞉> 
+; Evaluating file: aula2.clj
+; nil
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6
+; 0 []
+; 1
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+; p1 1
+; p2 1 2
+; 0 [daniela guilherme carlos paulo lucia ana]
+; 1 (guilherme carlos paulo lucia ana)
+; 2 (carlos paulo lucia ana)
+; 3 (paulo lucia ana)
+; 4 (lucia ana)
+; 5 (ana)
+; 6 ()
+; 6
+; 0 []
+; 0
+; 6
+; 0
+nil
+clj꞉loja.aula2꞉> 
