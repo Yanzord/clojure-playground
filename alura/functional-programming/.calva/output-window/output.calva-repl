@@ -767,3 +767,4 @@ clj꞉functional-programming.aula6꞉> 
 ; 7
 nil
 clj꞉functional-programming.aula6꞉> 
+(System/exit 0)
