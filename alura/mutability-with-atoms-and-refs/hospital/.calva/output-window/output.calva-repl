@@ -163,3 +163,164 @@ clj꞉hospital.aula3꞉> 
 ;    :laboratorio1 <-()-<,
 ;    :laboratorio2 <-()-<,
 ;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserirapos inserir 333 apos inserir111 
+; 222
+; 
+; apos inserirapos inserir 444
+;  555
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@7e83566: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@3d6945a6: 
+;   {:espera <-()-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@528ed2ba: 
+;   {:espera <-()-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserirapos inserir 222 111apos inserir
+;  
+; apos inserir apos inserir 444
+; 555
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@54339bbd: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserir apos inserir apos inserir 222
+; 111apos inserir 444
+; 333
+; apos inserir 
+; 555
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@7ed41d10: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserir 222apos inserir
+; apos inserirapos inserir  111333
+;  444
+; apos inserir 
+; 555
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@74347d93: 
+;   {:espera <-("222" "111" "444" "333" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserirapos inserir  222333
+; 
+; apos inserir 111
+; apos inserir 555
+; apos inserir 444
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@78d4fdb3: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserirapos inserir  333111
+; 
+; apos inserir 222
+; apos inserir apos inserir555
+;  444
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@67d1a8de: 
+;   {:espera <-("333" "111" "222" "555" "444")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserirapos inserir  111333
+; 
+; apos inserir 222
+; apos inserirapos inserir 444
+;  555
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@171fc930: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; 0
+nil
+clj꞉hospital.aula4꞉> 
+; 4
+; 2
+; 3
+; 1
+; #<Atom@3ee37edd: 
+;   {:espera <-(0 1 3 2 4)-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserir apos inserir 1apos inserir apos inserir
+;  3
+; clojure.lang.ExceptionInfo: Fila ja esta cheia {:tentando-adicionar 5}
+; 	at hospital.logic$chega_em.invokeStatic(logic.clj:12)
+; 	at hospital.logic$chega_em.invoke(logic.clj:9)
+; 	at clojure.lang.Atom.swap(Atom.java:65)
+; 	at clojure.core$swap_BANG_.invokeStatic(core.clj:2371)
+; 	at clojure.core$swap_BANG_.invoke(core.clj:2362)
+; 	at hospital.aula4$chega_sem_malvado_BANG_.invokeStatic(aula4.clj:8)
+; 	at hospital.aula4$chega_sem_malvado_BANG_.invoke(aula4.clj:7)
+; 	at hospital.aula4$starta_thread_de_chegada$fn__10925.invoke(aula4.clj:91)
+; 	at clojure.lang.AFn.run(AFn.java:22)
+; 	at java.base/java.lang.Thread.run(Thread.java:1447)
+; Exception in thread "Thread-126" clojure.lang.ExceptionInfo: Fila ja esta cheia {:tentando-adicionar 5}
+; 	at hospital.logic$chega_em.invokeStatic(logic.clj:12)
+; 	at hospital.logic$chega_em.invoke(logic.clj:9)
+; 	at clojure.lang.Atom.swap(Atom.java:65)
+; 	at clojure.core$swap_BANG_.invokeStatic(core.clj:2371)
+; 	at clojure.core$swap_BANG_.invoke(core.clj:2362)
+; 	at hospital.aula4$chega_sem_malvado_BANG_.invokeStapos inserir 02
+; 
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@48db8cac: 
+;   {:espera <-(0 1 3 2 4)-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula4.clj
+; apos inserir 0apos inserir 2apos inserir 1apos inserir 3
+; 
+; 
+; 
+; apos inserir 5
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@1ed1994c: 
+;   {:espera <-(0 1 2 3 5)-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>

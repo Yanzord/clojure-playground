@@ -53,8 +53,6 @@
 ; (testa-atomao)
 
 
-
-
 (defn chega-em-malvado! [hospital pessoa]
   (swap! hospital h.logic/chega-em-pausado-logando :espera pessoa)
   (println "apos inserir" pessoa))0
