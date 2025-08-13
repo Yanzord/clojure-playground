@@ -37,11 +37,11 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:49881 ...
+; Using host:port 127.0.0.1:49524 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-; Execution error (FileNotFoundException) at hospital.core/eval9005 (REPL:42).
+; Execution error (FileNotFoundException) at hospital.core/eval9018 (REPL:42).
 ; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
 clj꞉hospital.core꞉> 
 "Please see https://calva.io/output/#about-stdout-in-the-repl-window
@@ -49,583 +49,117 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉hospital.core꞉> 
 ; Jack-in done.
 clj꞉hospital.core꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-; (111 222)
-; (333 111 222)
-; (222)
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-; (111 222)
-; (333 111 222)
-; (222)
-; conjunto
-; #{222 111}
-; #{222 111 333}
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-; (111 222)
-; (333 111 222)
-; (222)
-; conjunto
-; #{222 111}
-; #{222 111 333}
-; fila
-; nil
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-; (111 222)
-; (333 111 222)
-; (222)
-; conjunto
-; #{222 111}
-; #{222 111 333}
-; fila
-; (111 222)
-; (111 222 333)
-; (222)
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-; (111 222)
-; (333 111 222)
-; (222)
-; conjunto
-; #{222 111}
-; #{222 111 333}
-; fila
-; (111 222)
-; (111 222 333)
-; (222)
-; (1 1 1)
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; [111 222]
-; [111 222 333]
-; [111]
-; (111 222)
-; (333 111 222)
-; (222)
-; conjunto
-; #{222 111}
-; #{222 111 333}
-; fila
-; (111 222)
-; (111 222 333)
-; (222)
-; 111
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: colecoes.clj
-; vetor
-; [111 222]
-; [111 222 333]
-; [111]
-; lista
-; (111 222)
-; (333 111 222)
-; (222)
-; conjunto
-; #{222 111}
-; #{222 111 333}
-; fila
-; (111 222)
-; (111 222 333)
-; (222)
-; 111
-; <-("111" "222")-<
-nil
-clj꞉hospital.colecoes꞉> 
-; Evaluating file: core.clj
-; 
-; ; clj  hospital.core 
-; Syntax error (ClassNotFoundException) compiling at (src/hospital/core.clj:4:3).
-; hospital.model
-; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.core꞉> 
-; Evaluating file: core.clj
-; 
-; Syntax error compiling at (src/hospital/core.clj:13:23).
-; No such var: h.model/novo-hospital
-; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.core꞉> 
-; Evaluating file: model.clj
-#'hospital.model/novo-hospital
-clj꞉hospital.model꞉> 
-; Evaluating file: core.clj
-; {:espera #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1], :laboratorio1 #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1], :laboratorio2 #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1], :laboratorio3 #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1]}
-nil
-clj꞉hospital.core꞉> 
-; Evaluating file: core.clj
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-nil
-clj꞉hospital.core꞉> 
-; Evaluating file: model.clj
-#'hospital.model/novo-hospital
-clj꞉hospital.model꞉> 
-; Evaluating file: core.clj
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-nil
-clj꞉hospital.core꞉> 
-; Evaluating file: logic.clj
-#'hospital.logic/chega-em
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: logic.clj
-#'hospital.logic/chega-em
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-nil
-clj꞉hospital.aula1꞉> 
 ; Evaluating file: logic.clj
 #'hospital.logic/atende
 clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-()-<,
-;  :laboratorio1 <-("444" "555")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-()-<,
-;  :laboratorio1 <-("555")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
+; Evaluating file: aula3.clj
+; yan
+; brenda
+; yan
 nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444" "555")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-("555")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888" "999")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: logic.clj
-#'hospital.logic/atende
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Connecting ...
-; Reading port file: file:///Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital/.nrepl-port ...
-; Using host:port localhost:49881 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-; Execution error (FileNotFoundException) at hospital.core/eval10768 (REPL:331).
-; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
-clj꞉hospital.core꞉> 
-; Evaluating file: logic.clj
-#'hospital.logic/atende
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; 
-; ; clj  hospital.aula1 
-; Execution error (ExceptionInfo) at hospital.logic/chega-em (logic.clj:9).
-; Fila ja esta cheia
-; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula1꞉> 
-; Evaluating file: logic.clj
-#'hospital.logic/atende
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888" "999")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888" "999")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: logic.clj
-#'hospital.logic/atende
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333")-<,
-;  :laboratorio1 <-("444")-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; {:espera <-("222" "333" "666" "777" "888")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-("555")-<}
-; 
-; ; clj  hospital.aula1 
-; Execution error (ExceptionInfo) at hospital.logic/chega-em (logic.clj:12).
-; Fila ja esta cheia
-; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula5.clj
-; 
-; ; clj  loja.aula5 
-; Execution error (FileNotFoundException) at loja.aula5/eval10913$loading (aula5.clj:1).
-; Could not locate loja/db__init.class, loja/db.clj or loja/db.cljc on classpath.
-; Evaluation of file aula5.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉loja.aula5꞉> 
-; Evaluating file: aula5.clj
-; 
-; Execution error (FileNotFoundException) at loja.aula5/eval10922$loading (aula5.clj:1).
-; Could not locate loja/db__init.class, loja/db.clj or loja/db.cljc on classpath.
-; Evaluation of file aula5.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉loja.aula5꞉> 
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:55603 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-; Execution error (FileNotFoundException) at hospital.core/eval9018 (REPL:460).
-; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
-clj꞉hospital.core꞉> 
-; Jack-in done.
-clj꞉hospital.core꞉> 
-; Evaluating file: aula1.clj
-#'hospital.aula1/simula-um-dia-em-paralelo
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; oi1
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; oi1
-; oi2
-; oi3
-; oi5
-; oi4
-nil
-clj꞉hospital.aula1꞉> 
-; oi6
-; Evaluating file: aula1.clj
-; oi1oi2
-; 
-; oi3
-; oi5
-; oi4
-; oi6
-nil
-clj꞉hospital.aula1꞉> 
-; TypeError: Cannot read properties of undefined (reading 'label')
-; Aborting connect.
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:55792 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-; Execution error (FileNotFoundException) at hospital.core/eval9018 (REPL:507).
-; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
-clj꞉hospital.core꞉> 
-; Jack-in done.
-clj꞉hospital.core꞉> 
-; Evaluating file: aula1.clj
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-nil
-clj꞉hospital.aula1꞉> 
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-()-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; Evaluating file: aula1.clj
-; apos inserir 111
-; apos inserirapos inserir 222 333
-; 
-; apos inserir 444
-; apos inserir 555
-nil
-clj꞉hospital.aula1꞉> 
-; {:espera <-("111" "222" "333" "444" "555")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; Evaluating file: aula1.clj
-; apos inserir apos inserir 111
-; 222
-; apos inserir apos inserir 555
-; 333
-; clojure.lang.ExceptionInfo: Fila ja esta cheia {:tentando-adicionar "666"}
-; 	at hospital.logic$chega_em.invokeStatic(logic.clj:12)
-; 	at hospital.logic$chega_em.invoke(logic.clj:9)
-; 	at hospital.aula1$chega_em_malvado.invokeStatic(aula1.clj:36)
-; 	at hospital.aula1$chega_em_malvado.invoke(aula1.clj:35)
-; 	at hospital.aula1$simula_um_dia_em_paralelo$fn__10362.invoke(aula1.clj:47)
-; 	at clojure.lang.AFn.run(AFn.java:22)
-; 	at java.base/java.lang.Thread.run(Thread.java:1447)
-; Exception in thread "Thread-30" java.lang.NullPointerException: Cannot invoke "clojure.lang.IFn.invoke(Object)" because "null" is null
-; 	at hospital.aula1$simula_um_dia_em_paralelo$fn__10364.invoke(aula1.clj:48)
-; 	at clojure.lang.AFn.run(AFn.java:22)
-; 	at java.base/java.lang.Thread.run(Thread.java:1447)
-; Exception in thread "Thread-37" clojure.lang.ExceptionInfo: Fila ja esta cheia {:tentando-adicionar "666"}
-; 	at hospital.logic$chega_em.invokeStatic(logic.clj:12)
-; 	at hospital.logic$chega_em.invoke(logic.clj:9)
-; 	at hospital.aula1$chega_em_malvado.invokeStatiapos inserir 444
-nil
-clj꞉hospital.aula1꞉> 
-; {:espera <-("111" "222" "333" "444" "555")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; Evaluating file: aula1.clj
-; apos inserir 111
-; apos inserirapos inserir  333444
-; 
-; apos inserir apos inserir 555
-; 222
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; apos inserir 111
-; apos inserirapos inserir 444apos inserir 222
-; 
-;  333
-; apos inserir 555
-nil
-clj꞉hospital.aula1꞉> 
-; {:espera <-("111" "222" "333" "444" "555")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; {:espera <-("111" "222" "333" "444" "555")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; Evaluating file: aula1.clj
-; apos inserir 111
-; apos inserir 444
-; apos inserir 333
-; apos inserir apos inserir 555
-; 222
-nil
-clj꞉hospital.aula1꞉> 
-; {:espera <-("111" "222" "333" "444" "555")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; Evaluating file: logic.clj
-#'hospital.logic/atende
-clj꞉hospital.logic꞉> 
-; Evaluating file: aula1.clj
-nil
-clj꞉hospital.aula1꞉> 
+clj꞉hospital.aula3꞉> 
+; tentando adicionar 666
+; Dando o update 666
 ; apos inserir 666
-; apos inserir 444
+; tentando adicionar 222
+; Dando o update 222
+; tentando adicionar 555
+; Dando o update 555
+; tentando adicionar 111
+; Dando o update 111
+; tentando adicionar 555
+; Dando o update 555
+; apos inserir 555
+; tentando adicionar 111
+; Dando o update 111
+; tentando adicionar 222
+; Dando o update 222
+; tentando adicionar 111
+; Dando o update 111
+; apos inserir 111
+; tentando adicionar 444
+; Dando o update 444
+; tentando adicionar 333
+; Dando o update 333
+; tentando adicionar 333
+; Dando o update 333
+; apos inserir 333
+; tentando adicionar 222
+; Dando o update 222
+; tentando adicionar 444
+; Dando o update 444
+; tentando adicionar 222
+; Dando o update 222
+; apos inserir 222
+; tentando adicionar 444
+; Dando o update 444
+; tentando adicionar 444
+; #<Atom@214e7267: 
+;   {:espera <-("666" "555" "111" "333" "222")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula3.clj
+; yan
+; brenda
+; yan
+; apos inserirapos inserir  222111
+; 
+; apos inserir apos inserir 444apos inserir 333
+; 555
+; Exception in thread "Thread-16" clojure.lang.ExceptionInfo: Fila ja esta cheia {:tentando-adicionar "444"}
+; 	at hospital.logic$chega_em_pausado_logando.invokeStatic(logic.clj:30)
+; 	at hospital.logic$chega_em_pausado_logando.invoke(logic.clj:22)
+; 	at clojure.lang.Atom.swap(Atom.java:65)
+; 	at clojure.core$swap_BANG_.invokeStatic(core.clj:2371)
+; 	at clojure.core$swap_BANG_.invoke(core.clj:2362)
+; 	at hospital.aula3$chega_em_malvado_BANG_.invokeStatic(aula3.clj:59)
+; 	at hospital.aula3$chega_em_malvado_BANG_.invoke(aula3.clj:58)
+; 	at hospital.aula3$simula_um_dia_em_paralelo$fn__9635.invoke(aula3.clj:90)
+; 	at clojure.lang.AFn.run(AFn.java:22)
+; 	at java.base/java.lang.Thread.run(Thread.java:1447)
+; Exception in thread "Thread-25" clojure.lang.ExceptionInfo: Fila ja esta cheia {:tentando-adicionar "666"}
+; 	at hospital.logic$chega_em.invokeStatic(logic.clj:12)
+; 	at hospital.logic$chega_em.invoke(logic.clj:9)
+; 	at clojure.lang.Atom.swap(Atom.java:65)
+; 	at clojure.core$swap_BANG_.invokeStatic(core.clj:2371)
+; 	at clojure.core$swap_BANG_.i
+nil
+clj꞉hospital.aula3꞉> 
+; #<Atom@55258b3f: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula3.clj
+; yan
+; brenda
+; yan
+; apos inserirapos inserir  111222
+; 
+; apos inserirapos inserir  444555
+; 
+; apos inserir 333
+nil
+clj꞉hospital.aula3꞉> 
+; #<Atom@3c258cef: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+; Evaluating file: aula3.clj
+; yan
+; brenda
+; yan
 ; apos inserir apos inserir 222
 ; apos inserir 555
-; apos inserir 111333
+; apos inserir 444apos inserir 333111
 ; 
-; {:espera <-("222")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
-; Evaluating file: aula1.clj
+; 
 nil
-clj꞉hospital.aula1꞉> 
-; apos inserir 222
-; apos inserir apos inserir 111apos inserir 
-; 333
-; 444
-; apos inserir 555apos inserir 666
-; 
-; {:espera <-("666")-<,
-;  :laboratorio1 <-()-<,
-;  :laboratorio2 <-()-<,
-;  :laboratorio3 <-()-<}
+clj꞉hospital.aula3꞉> 
+; #<Atom@1e016ba7: 
+;   {:espera <-("111" "222" "333" "444" "555")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
