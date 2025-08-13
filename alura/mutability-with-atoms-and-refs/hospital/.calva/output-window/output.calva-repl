@@ -324,3 +324,107 @@ clj꞉hospital.aula4꞉> 
 ;    :laboratorio1 <-()-<,
 ;    :laboratorio2 <-()-<,
 ;    :laboratorio3 <-()-<}>
+; Evaluating file: aula5.clj
+; 
+; ; clj  hospital.aula5 
+; Syntax error compiling at (src/hospital/aula5.clj:12:3).
+; No such var: h.logic/transfere
+; Evaluation of file aula5.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; 
+; Syntax error compiling at (src/hospital/aula5.clj:12:3).
+; No such var: h.logic/transfere
+; Evaluation of file aula5.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula5꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula5.clj
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@62e77106: 
+;   {:espera <-("joao")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@329db3e4: 
+;   {:espera <-("joao" "maria" "daniela" "guilherme")-<,
+;    :laboratorio1 <-()-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@70910b69: 
+;   {:espera <-("joao" "maria" "daniela" "guilherme")-<,
+;    :laboratorio1 <-(nil)-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@659687b2: 
+;   {:espera <-("joao" "maria" "daniela" "guilherme")-<,
+;    :laboratorio1 <-("joao")-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@251894fe: 
+;   {:espera <-("maria" "daniela" "guilherme")-<,
+;    :laboratorio1 <-("joao")-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@29762023: 
+;   {:espera <-("maria" "daniela" "guilherme")-<,
+;    :laboratorio1 <-("joao")-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/atende-completo-que-chama-ambos
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@1cd2fbbc: 
+;   {:espera <-("guilherme")-<,
+;    :laboratorio1 <-("joao")-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-("daniela" "maria")-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@38a56b29: 
+;   {:espera <-("guilherme")-<,
+;    :laboratorio1 <-("joao")-<,
+;    :laboratorio2 <-()-<,
+;    :laboratorio3 <-("daniela" "maria")-<}>
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; #<Atom@31fb7c76: 
+;   {:espera <-("guilherme")-<,
+;    :laboratorio1 <-("joao")-<,
+;    :laboratorio2 <-("daniela")-<,
+;    :laboratorio3 <-("maria")-<}>
+nil
+clj꞉hospital.aula5꞉> 
