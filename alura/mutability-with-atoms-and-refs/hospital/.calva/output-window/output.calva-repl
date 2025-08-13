@@ -1,0 +1,272 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:49881 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9005 (REPL:42).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+; (111 222)
+; (333 111 222)
+; (222)
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+; (111 222)
+; (333 111 222)
+; (222)
+; conjunto
+; #{222 111}
+; #{222 111 333}
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+; (111 222)
+; (333 111 222)
+; (222)
+; conjunto
+; #{222 111}
+; #{222 111 333}
+; fila
+; nil
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+; (111 222)
+; (333 111 222)
+; (222)
+; conjunto
+; #{222 111}
+; #{222 111 333}
+; fila
+; (111 222)
+; (111 222 333)
+; (222)
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+; (111 222)
+; (333 111 222)
+; (222)
+; conjunto
+; #{222 111}
+; #{222 111 333}
+; fila
+; (111 222)
+; (111 222 333)
+; (222)
+; (1 1 1)
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; [111 222]
+; [111 222 333]
+; [111]
+; (111 222)
+; (333 111 222)
+; (222)
+; conjunto
+; #{222 111}
+; #{222 111 333}
+; fila
+; (111 222)
+; (111 222 333)
+; (222)
+; 111
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: colecoes.clj
+; vetor
+; [111 222]
+; [111 222 333]
+; [111]
+; lista
+; (111 222)
+; (333 111 222)
+; (222)
+; conjunto
+; #{222 111}
+; #{222 111 333}
+; fila
+; (111 222)
+; (111 222 333)
+; (222)
+; 111
+; <-("111" "222")-<
+nil
+clj꞉hospital.colecoes꞉> 
+; Evaluating file: core.clj
+; 
+; ; clj  hospital.core 
+; Syntax error (ClassNotFoundException) compiling at (src/hospital/core.clj:4:3).
+; hospital.model
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.core꞉> 
+; Evaluating file: core.clj
+; 
+; Syntax error compiling at (src/hospital/core.clj:13:23).
+; No such var: h.model/novo-hospital
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.core꞉> 
+; Evaluating file: model.clj
+#'hospital.model/novo-hospital
+clj꞉hospital.model꞉> 
+; Evaluating file: core.clj
+; {:espera #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1], :laboratorio1 #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1], :laboratorio2 #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1], :laboratorio3 #object[clojure.lang.PersistentQueue 0x733e6990 clojure.lang.PersistentQueue@1]}
+nil
+clj꞉hospital.core꞉> 
+; Evaluating file: core.clj
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.core꞉> 
+; Evaluating file: model.clj
+#'hospital.model/novo-hospital
+clj꞉hospital.model꞉> 
+; Evaluating file: core.clj
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.core꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula1.clj
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula1.clj
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/atende
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula1.clj
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; {:espera <-()-<,
+;  :laboratorio1 <-("444" "555")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; {:espera <-()-<,
+;  :laboratorio1 <-("555")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {:espera <-("111" "222" "333")-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; {:espera <-("111" "222" "333")-<,
+;  :laboratorio1 <-("444" "555")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; {:espera <-("222" "333")-<,
+;  :laboratorio1 <-("555")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {:espera <-("111" "222" "333")-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; {:espera <-("111" "222" "333")-<,
+;  :laboratorio1 <-("444")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-("555")-<}
+; {:espera <-("222" "333")-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-("555")-<}
+nil
+clj꞉hospital.aula1꞉> 
