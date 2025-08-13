@@ -773,3 +773,708 @@ clj꞉loja.aula4꞉> 
 ; > 500 some => true
 nil
 clj꞉loja.aula4꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; filter (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; {:usuario-id 15, :total-de-pedidos 3, :preco-total 840} gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro1 10
+; filtro1 11
+; filtro1 12
+; filtro1 13
+; filtro1 14
+; filtro1 15
+; filtro1 16
+; filtro1 17
+; filtro1 18
+; filtro1 19
+; filtro1 20
+; filtro1 21
+; filtro1 22
+; filtro1 23
+; filtro1 24
+; filtro1 25
+; filtro1 26
+; filtro1 27
+; filtro1 28
+; filtro1 29
+; filtro1 30
+; filtro1 31
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; filtro2 10
+; filtro2 11
+; filtro2 12
+; filtro2 13
+; filtro2 14
+; filtro2 15
+; filtro2 16
+; filtro2 17
+; filtro2 18
+; filtro2 19
+; filtro2 20
+; filtro2 21
+; filtro2 22
+; filtro2 23
+; filtro2 24
+; filtro2 25
+; filtro2 26
+; filtro2 27
+; filtro2 28
+; filtro2 29
+; filtro2 30
+; filtro2 31
+; 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 filtro1 32
+; filtro1 33
+; filtro1 34
+; filtro1 35
+; filtro1 36
+; filtro1 37
+; filtro1 38
+; filtro1 39
+; filtro1 40
+; filtro1 41
+; filtro1 42
+; filtro1 43
+; filtro1 44
+; filtro1 45
+; filtro1 46
+; filtro1 47
+; filtro1 48
+; filtro1 49
+; filtro2 32
+; filtro2 33
+; filtro2 34
+; filtro2 35
+; filtro2 36
+; filtro2 37
+; filtro2 38
+; filtro2 39
+; filtro2 40
+; filtro2 41
+; filtro2 42
+; filtro2 43
+; filtro2 44
+; filtro2 45
+; filtro2 46
+; filtro2 47
+; filtro2 48
+; filtro2 49
+; 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49)
+nil
+clj꞉loja.aula5꞉> 
+; Evaluating file: aula5.clj
+; keep (true false true true)
+; filter ({:usuario-id 15, :total-de-pedidos 3, :preco-total 840} {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720} {:usuario-id 20, :total-de-pedidos 1, :preco-total 560})
+; tentando entender o keep
+; keep (gostou-bastante? {:usuario-id 15, :total-de-pedidos 3, :preco-total 840}
+; gostou-bastante? {:usuario-id 1, :total-de-pedidos 1, :preco-total 280}
+; true gostou-bastante? {:usuario-id 10, :total-de-pedidos 1, :preco-total 1720}
+; false gostou-bastante? {:usuario-id 20, :total-de-pedidos 1, :preco-total 560}
+; true true)
+; vamos isolar...
+; (0 1)
+; (0 1)
+; (0 1)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; 0 1 2 3 4 5 6 7 8 9)
+; (filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro1 10
+; filtro1 11
+; filtro1 12
+; filtro1 13
+; filtro1 14
+; filtro1 15
+; filtro1 16
+; filtro1 17
+; filtro1 18
+; filtro1 19
+; filtro1 20
+; filtro1 21
+; filtro1 22
+; filtro1 23
+; filtro1 24
+; filtro1 25
+; filtro1 26
+; filtro1 27
+; filtro1 28
+; filtro1 29
+; filtro1 30
+; filtro1 31
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; filtro2 10
+; filtro2 11
+; filtro2 12
+; filtro2 13
+; filtro2 14
+; filtro2 15
+; filtro2 16
+; filtro2 17
+; filtro2 18
+; filtro2 19
+; filtro2 20
+; filtro2 21
+; filtro2 22
+; filtro2 23
+; filtro2 24
+; filtro2 25
+; filtro2 26
+; filtro2 27
+; filtro2 28
+; filtro2 29
+; filtro2 30
+; filtro2 31
+; 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 filtro1 32
+; filtro1 33
+; filtro1 34
+; filtro1 35
+; filtro1 36
+; filtro1 37
+; filtro1 38
+; filtro1 39
+; filtro1 40
+; filtro1 41
+; filtro1 42
+; filtro1 43
+; filtro1 44
+; filtro1 45
+; filtro1 46
+; filtro1 47
+; filtro1 48
+; filtro1 49
+; filtro2 32
+; filtro2 33
+; filtro2 34
+; filtro2 35
+; filtro2 36
+; filtro2 37
+; filtro2 38
+; filtro2 39
+; filtro2 40
+; filtro2 41
+; filtro2 42
+; filtro2 43
+; filtro2 44
+; filtro2 45
+; filtro2 46
+; filtro2 47
+; filtro2 48
+; filtro2 49
+; 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49)
+; filtro1 0
+; filtro1 1
+; filtro1 2
+; filtro1 3
+; filtro1 4
+; filtro1 5
+; filtro1 6
+; filtro1 7
+; filtro1 8
+; filtro1 9
+; filtro1 10
+; filtro1 11
+; filtro1 12
+; filtro1 13
+; filtro1 14
+; filtro1 15
+; filtro1 16
+; filtro1 17
+; filtro1 18
+; filtro1 19
+; filtro1 20
+; filtro1 21
+; filtro1 22
+; filtro1 23
+; filtro1 24
+; filtro1 25
+; filtro1 26
+; filtro1 27
+; filtro1 28
+; filtro1 29
+; filtro1 30
+; filtro1 31
+; filtro1 32
+; filtro1 33
+; filtro1 34
+; filtro1 35
+; filtro1 36
+; filtro1 37
+; filtro1 38
+; filtro1 39
+; filtro1 40
+; filtro1 41
+; filtro1 42
+; filtro1 43
+; filtro1 44
+; filtro1 45
+; filtro1 46
+; filtro1 47
+; filtro1 48
+; filtro1 49
+; filtro2 0
+; filtro2 1
+; filtro2 2
+; filtro2 3
+; filtro2 4
+; filtro2 5
+; filtro2 6
+; filtro2 7
+; filtro2 8
+; filtro2 9
+; filtro2 10
+; filtro2 11
+; filtro2 12
+; filtro2 13
+; filtro2 14
+; filtro2 15
+; filtro2 16
+; filtro2 17
+; filtro2 18
+; filtro2 19
+; filtro2 20
+; filtro2 21
+; filtro2 22
+; filtro2 23
+; filtro2 24
+; filtro2 25
+; filtro2 26
+; filtro2 27
+; filtro2 28
+; filtro2 29
+; filtro2 30
+; filtro2 31
+; filtro2 32
+; filtro2 33
+; filtro2 34
+; filtro2 35
+; filtro2 36
+; filtro2 37
+; filtro2 38
+; filtro2 39
+; filtro2 40
+; filtro2 41
+; filtro2 42
+; filtro2 43
+; filtro2 44
+; filtro2 45
+; filtro2 46
+; filtro2 47
+; filtro2 48
+; filtro2 49
+; [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49]
+nil
+clj꞉loja.aula5꞉> 
