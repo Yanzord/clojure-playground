@@ -448,3 +448,15 @@ clj꞉hospital.aula4꞉> 
 ; true
 nil
 clj꞉hospital.aula4꞉> 
+; Evaluating file: aula5.clj
+; false
+; false
+nil
+clj꞉hospital.aula5꞉> 
+; Evaluating file: aula5.clj
+; false
+; false
+; true
+; true
+nil
+clj꞉hospital.aula5꞉> 
