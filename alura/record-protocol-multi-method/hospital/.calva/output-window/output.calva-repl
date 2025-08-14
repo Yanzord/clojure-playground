@@ -217,3 +217,62 @@ clj꞉hospital.aula2꞉> 
 ; 1755192160385
 nil
 clj꞉hospital.aula2꞉> 
+; Evaluating file: model.clj
+nil
+clj꞉hospital.model꞉> 
+; Evaluating file: logic.clj
+; 
+; ; clj  hospital.logic 
+; Syntax error (ClassNotFoundException) compiling at (src/hospital/logic.clj:5:3).
+; h.model
+; Evaluation of file logic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/agora
+clj꞉hospital.logic꞉> 
+; Evaluating file: aula3.clj
+#'hospital.aula3/carrega-paciente
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; Carregando 15
+; {:id 15, :carregado-em 1755192731751}
+; Carregando 30
+; {:id 30, :carregado-em 1755192732758}
+nil
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; Carregando 15
+{15 {:id 15, :carregado-em 1755192867445}}
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; Carregando 15
+{15 {:id 15}}
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; Carregando 15
+{15 {:id 15}}
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; Carregando 15
+hospital.aula3.Cache
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; {:cache #<Atom@29f0556: {}>,
+;  :carregadora #function[hospital.aula3/carrega-paciente]}
+; Carregando 15
+; {:cache #<Atom@29f0556: {15 {:id 15, :carregado-em 1755193327301}}>,
+;  :carregadora #function[hospital.aula3/carrega-paciente]}
+nil
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; {:cache #<Atom@54beddf6: {}>,
+;  :carregadora #function[hospital.aula3/carrega-paciente]}
+; Carregando 15
+; Carregando 30
+; {:cache
+;  #<Atom@54beddf6: 
+;    {15 {:id 15, :carregado-em 1755193354221},
+;     30 {:id 30, :carregado-em 1755193355229}}>,
+;  :carregadora #function[hospital.aula3/carrega-paciente]}
+nil
+clj꞉hospital.aula3꞉> 
