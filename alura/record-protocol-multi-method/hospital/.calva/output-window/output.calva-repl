@@ -276,3 +276,175 @@ clj꞉hospital.aula3꞉> 
 ;  :carregadora #function[hospital.aula3/carrega-paciente]}
 nil
 clj꞉hospital.aula3꞉> 
+; Evaluating file: aula4.clj
+; false
+; false
+; true
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; false
+; false
+; false
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+; 
+; Syntax error compiling at (src/hospital/aula4.clj:62:1).
+; Unable to resolve symbol: multi-teste in this context
+; Evaluation of file aula4.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+; guilherme
+; 
+; Execution error (IllegalArgumentException) at hospital.aula4/eval13251 (aula4.clj:62).
+; No method in multimethod 'multi-teste' for dispatch value: class java.lang.String
+; Evaluation of file aula4.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+; guilherme
+; 
+; Execution error (IllegalArgumentException) at hospital.aula4/eval13396 (aula4.clj:62).
+; No method in multimethod 'multi-teste' for dispatch value: class java.lang.String
+; Evaluation of file aula4.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+#'hospital.aula4/deve-assinar-pre-autorizacao-do-pedido?
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+#multifn[deve-assinar-pre-autorizacao-do-pedido? 0xeb17803]
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+; sempre autorizado
+; false
+; sempre autorizado
+; false
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+; sempre autorizado
+; false
+; sempre autorizado
+; false
+; true
+; true
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; true
+; false
+; false
+; true
+; false
+; false
+; false
+; false
+; invocando paciente particular
+; true
+; invocando paciente plano de saude
+; false
+; false
+; false
+; true
+; true
+nil
+clj꞉hospital.aula4꞉> 
