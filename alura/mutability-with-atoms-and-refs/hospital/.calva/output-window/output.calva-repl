@@ -428,3 +428,390 @@ clj꞉hospital.aula5꞉> 
 ;    :laboratorio3 <-("maria")-<}>
 nil
 clj꞉hospital.aula5꞉> 
+; Evaluating file: model.clj
+#'hospital.model/novo-hospital
+clj꞉hospital.model꞉> 
+; Evaluating file: aula6.clj
+#'hospital.aula6/simula-um-dia
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: model.clj
+#'hospital.model/novo-hospital
+clj꞉hospital.model꞉> 
+; Evaluating file: aula6.clj
+; 
+; ; clj  hospital.aula6 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:54461 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9018 (REPL:475).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: model.clj
+#'hospital.model/novo-hospital
+clj꞉hospital.model꞉> 
+; Evaluating file: aula6.clj
+; 
+; ; clj  hospital.aula6 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:13).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:21).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:21).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ClassCastException) at hospital.aula6/simula-um-dia (aula6.clj:21).
+; class clojure.lang.PersistentQueue cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentQueue and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; {:espera #<Ref@2697ccee: <-("yan")-<>,
+;  :laboratorio1 #<Ref@71c3b26c: <-()-<>,
+;  :laboratorio2 #<Ref@6e8cefe: <-()-<>,
+;  :laboratorio3 #<Ref@6ca66aa6: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/mutability-with-atoms-and-refs/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:54788 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9018 (REPL:539).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: aula6.clj
+; {:espera #<Ref@7de5d75d: <-("yan")-<>,
+;  :laboratorio1 #<Ref@102acf92: <-()-<>,
+;  :laboratorio2 #<Ref@341d05ab: <-()-<>,
+;  :laboratorio3 #<Ref@6ac0703d: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+#'hospital.aula6/simula-um-dia
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ExceptionInfo) at hospital.aula6/chega-em (aula6.clj:14).
+; Fila ja esta cheia
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Execution error (ExceptionInfo) at hospital.aula6/chega-em (aula6.clj:14).
+; Fila ja esta cheia
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; 
+; Syntax error reading source at (src/hospital/aula6.clj:46:1).
+; EOF while reading, starting at line 28
+; Evaluation of file aula6.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; {:espera
+;  #<Ref@32c5883e: <-("yan" "maria" "joao" "daniela" "brenda")-<>,
+;  :laboratorio1 #<Ref@2f2ad2e5: <-()-<>,
+;  :laboratorio2 #<Ref@4714d4be: <-()-<>,
+;  :laboratorio3 #<Ref@2e37e0e8: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; {:esperatentando o codigo sincronizado 15
+;  #<Ref@736707a6: <-()-<>,
+;  :laboratorio1 #<Ref@afa7e4a: <-()-<>,
+;  :laboratorio2 #<Ref@3e222847: <-()-<>,
+;  :laboratorio3 #<Ref@319ef5f2: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizado 15
+#<Future@4c407c4f: <-(15)-<>
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizado tentando o codigo sincronizado 21
+; 
+; tentando o codigo sincronizado 6
+; tentando o codigo sincronizadotentando o codigo sincronizado  tentando o codigo sincronizado07 
+; 
+; tentando o codigo sincronizado 9tentando o codigo sincronizado
+;  tentando o codigo sincronizado 4
+; tentando o codigo sincronizado 1
+; tentando o codigo sincronizado 03
+; tentando o codigo sincronizadotentando o codigo sincronizado  3
+; 85
+; tentando o codigo sincronizado 5
+; tentando o codigo sincronizado 7
+; 
+; tentando o codigo sincronizado 8
+; tentando o codigo sincronizado 4
+; 
+; tentando o codigo sincronizadotentando o codigo sincronizado 6
+; tentando o codigo sincronizado 0
+nil
+clj꞉hospital.aula6꞉> 
+;  7
+; 
+; tentando o codigo sincronizado 4
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizado tentando o codigo sincronizado 21tentando o codigo sincronizado
+; 
+; tentando o codigo sincronizado 5
+; tentando o codigo sincronizadotentando o codigo sincronizado  5
+; tentando o codigo sincronizado tentando o codigo sincronizado8tentando o codigo sincronizado
+;   0
+; tentando o codigo sincronizado 8
+; tentando o codigo sincronizado 3
+;  tentando o codigo sincronizado 73
+; 
+; tentando o codigo sincronizado 4
+; 6tentando o codigo sincronizado9
+; tentando o codigo sincronizadotentando o codigo sincronizado tentando o codigo sincronizado9
+;   2tentando o codigo sincronizado 7
+#<Future@553a48c1: :pending>
+clj꞉hospital.aula6꞉> 
+;  4
+; tentando o codigo sincronizado
+;  tentando o codigo sincronizado 6
+; 
+; 7
+; 0
+; tentando o codigo sincronizado 0
+; tentando o codigo sincronizado 4tentando o codigo sincronizado
+;  2
+; {:espera #<Ref@6cb7d09d: <-(1 5 8 3 9)-<>,
+;  :laboratorio1 #<Ref@47d3554e: <-()-<>,
+;  :laboratorio2 #<Ref@18f10f67: <-()-<>,
+;  :laboratorio3 #<Ref@398da09e: <-()-<>}
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizado 3
+; tentando o codigo sincronizadotentando o codigo sincronizado  5
+; tentando o codigo sincronizado tentando o codigo sincronizado 1tentando o codigo sincronizado
+; 5tentando o codigo sincronizado 7
+; tentando o codigo sincronizado tentando o codigo sincronizado9 
+; tentando o codigo sincronizado 0
+; tentando o codigo sincronizadotentando o codigo sincronizado 0 
+; 2
+; tentando o codigo sincronizado tentando o codigo sincronizado1 
+; 
+;  tentando o codigo sincronizado6 1
+; 
+; 4tentando o codigo sincronizado 
+; 6
+; tentando o codigo sincronizado 4
+; 2tentando o codigo sincronizado 
+; 8tentando o codigo sincronizado 2
+; tentando o codigo sincronizado 
+; 9
+#<Future@2b439b7f: :pending>
+clj꞉hospital.aula6꞉> 
+; tentando o codigo sincronizado tentando o codigo sincronizado 59
+; 
+; tentando o codigo sincronizado1 5
+; 
+; tentando o codigo sincronizado 6tentando o codigo sincronizado 1tentando o codigo sincronizado
+; 
+;  8
+; {:espera #<Ref@6b447e5: <-(3 7 0 4 2)-<>,
+;  :laboratorio1 #<Ref@3e87c5c4: <-()-<>,
+;  :laboratorio2 #<Ref@9bfe382: <-()-<>,
+;  :laboratorio3 #<Ref@6578815: <-()-<>}
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizadotentando o codigo sincronizado  10
+; 
+; tentando o codigo sincronizado 5
+; tentando o codigo sincronizado tentando o codigo sincronizado7
+; tentando o codigo sincronizado tentando o codigo sincronizado4 
+; tentando o codigo sincronizadotentando o codigo sincronizado 4
+;  2
+; 7tentando o codigo sincronizado 
+; 2tentando o codigo sincronizado 9
+; tentando o codigo sincronizado 8
+; tentando o codigo sincronizado tentando o codigo sincronizado 5
+; 8 tentando o codigo sincronizado 35
+; 
+; tentando o codigo sincronizadotentando o codigo sincronizado  3
+; 
+; tentando o codigo sincronizado 8
+; tentando o codigo sincronizado 
+; tentando o codigo sincronizadotentando o codigo sincronizado  02
+; 
+; 7tentando o codigo sincronizado 0
+; tentando o codigo sincronizado tentando o codigo sincronizado9
+; tentando o codigo sincronizado 9
+; 6
+#<Future@661c64f9: :pending>
+clj꞉hospital.aula6꞉> 
+; tentando o codigo sincronizado  5
+; 
+; tentando o codigo sincronizado 7
+; tentando o codigo sincronizado 5
+; 6tentando o codigo sincronizado 2
+; 
+; {:espera #<Ref@405ee891: <-(1 4 3 8 0)-<>,
+;  :laboratorio1 #<Ref@4e0fb832: <-()-<>,
+;  :laboratorio2 #<Ref@789a0f36: <-()-<>,
+;  :laboratorio3 #<Ref@7e944d96: <-()-<>}
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizado 9
+; tentando o codigo sincronizado tentando o codigo sincronizado0tentando o codigo sincronizado
+;   tentando o codigo sincronizado 3
+; tentando o codigo sincronizadotentando o codigo sincronizado tentando o codigo sincronizado tentando o codigo sincronizado3
+; tentando o codigo sincronizado  48
+; 
+; 7
+; tentando o codigo sincronizadotentando o codigo sincronizado  0 
+; 5
+; tentando o codigo sincronizadotentando o codigo sincronizado 5
+; 1
+;  tentando o codigo sincronizado 1
+; tentando o codigo sincronizado 06
+; 7
+; tentando o codigo sincronizadotentando o codigo sincronizado 8
+; tentando o codigo sincronizado 8
+; tentando o codigo sincronizado  7
+#<Future@2c845e25: :pending>
+clj꞉hospital.aula6꞉> 
+; 
+; tentando o codigo sincronizado2
+; tentando o codigo sincronizado  7
+; 0tentando o codigo sincronizado 4
+; 
+; 6
+; tentando o codigo sincronizado tentando o codigo sincronizado 6tentando o codigo sincronizado
+; 2
+; tentando o codigo sincronizadotentando o codigo sincronizado  2
+; 4tentando o codigo sincronizado 0
+;  1
+; 
+; tentando o codigo sincronizado 1
+; {:espera #<Ref@5ebb94e1: <-(9 3 5 8 7)-<>,
+;  :laboratorio1 #<Ref@6b793eaa: <-()-<>,
+;  :laboratorio2 #<Ref@107bc5bd: <-()-<>,
+;  :laboratorio3 #<Ref@74796d54: <-()-<>}
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizadotentando o codigo sincronizadotentando o codigo sincronizado  tentando o codigo sincronizado32
+; 
+;  7
+; tentando o codigo sincronizadotentando o codigo sincronizado 0
+; tentando o codigo sincronizadotentando o codigo sincronizado  0
+; tentando o codigo sincronizado 9
+; tentando o codigo sincronizadotentando o codigo sincronizado  94
+;  1
+; tentando o codigo sincronizado 1
+; tentando o codigo sincronizado 8
+; tentando o codigo sincronizadotentando o codigo sincronizado  8
+; 
+; 5tentando o codigo sincronizado 4
+; 
+; tentando o codigo sincronizadotentando o codigo sincronizado 5
+;  6
+; tentando o codigo sincronizado 6
+#<Future@4b60b4a8: :pending>
+clj꞉hospital.aula6꞉> 
+;  7
+; tentando o codigo sincronizado 7
+; 2
+; tentando o codigo sincronizado 2
+; {:espera #<Ref@217f9bf3: <-(3 0 9 1 8)-<>,
+;  :laboratorio1 #<Ref@716e8432: <-()-<>,
+;  :laboratorio2 #<Ref@1db9d156: <-()-<>,
+;  :laboratorio3 #<Ref@1897e1df: <-()-<>}
+; Evaluating file: aula6.clj
+; tentando o codigo sincronizado 4
+; tentando o codigo sincronizado tentando o codigo sincronizado2
+; tentando o codigo sincronizado tentando o codigo sincronizado9 tentando o codigo sincronizado
+; tentando o codigo sincronizadotentando o codigo sincronizado  9
+; tentando o codigo sincronizado 0
+; tentando o codigo sincronizado tentando o codigo sincronizado7 
+; tentando o codigo sincronizado tentando o codigo sincronizado 18
+; 7tentando o codigo sincronizado6 
+; 3tentando o codigo sincronizado
+;   2tentando o codigo sincronizado
+;  tentando o codigo sincronizado 2
+;  5
+; 36tentando o codigo sincronizado 5
+#<Future@1efaaf9f: :pending>
+clj꞉hospital.aula6꞉> 
+; 0
+; tentando o codigo sincronizado tentando o codigo sincronizado 1
+; 
+; 
+; tentando o codigo sincronizado 8
+; 0
+; 
+; tentando o codigo sincronizado 
+; 0
+; tentando o codigo sincronizado 7
+; tentando o codigo sincronizado tentando o codigo sincronizado 17
+; 
+; tentando o codigo sincronizadotentando o codigo sincronizado  13
+; 
+; tentando o codigo sincronizado 6
+; {:espera #<Ref@5f725557: <-(4 9 2 5 8)-<>,
+;  :laboratorio1 #<Ref@60eadc8f: <-()-<>,
+;  :laboratorio2 #<Ref@5e88c629: <-()-<>,
+;  :laboratorio3 #<Ref@28ad4d1a: <-()-<>}

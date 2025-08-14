@@ -4,9 +4,7 @@
 
 
 (defn novo-hospital []
-  {
-   :espera fila-vazia
+  {:espera fila-vazia
    :laboratorio1 fila-vazia
    :laboratorio2 fila-vazia
-   :laboratorio3 fila-vazia
-  })
+   :laboratorio3 fila-vazia})
