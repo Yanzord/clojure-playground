@@ -143,3 +143,77 @@ clj꞉hospital.aula1꞉> 
 ; false
 nil
 clj꞉hospital.aula1꞉> 
+; Evaluating file: aula2.clj
+; true
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; 
+; Execution error (IllegalArgumentException) at hospital.aula2/eval11030$fn$G (aula2.clj:33).
+; No implementation of method: :deve-assinar-pre-autorizacao? of protocol: #'hospital.aula2/Cobravel found for class: hospital.aula2.PacientePlanoDeSaude
+; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+; 
+; Syntax error (ClassNotFoundException) compiling at (src/hospital/aula2.clj:68:1).
+; java.Lang.Number
+; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+; 
+; Syntax error (ClassNotFoundException) compiling at (src/hospital/aula2.clj:68:1).
+; java.Lang.Number
+; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+; 56
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+; 56
+; 1755192085546
+nil
+clj꞉hospital.aula2꞉> 
+; Evaluating file: aula2.clj
+; false
+; false
+; true
+; 56
+; 1755192160378
+; 1755192160385
+nil
+clj꞉hospital.aula2꞉> 
