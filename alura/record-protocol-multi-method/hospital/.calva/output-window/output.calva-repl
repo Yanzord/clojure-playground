@@ -460,3 +460,76 @@ clj꞉hospital.aula5꞉> 
 ; true
 nil
 clj꞉hospital.aula5꞉> 
+; Evaluating file: aula1.clj
+#'hospital.aula1/testa-uso-de-pacientes
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+#'hospital.aula1/testa-uso-de-pacientes
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; [{:id 15, :nome "Yan"}
+;  {:id 20, :nome "Daniela"}
+;  {:id 25, :nome "Paulo"}]
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; [{15 {:id 15, :nome "Yan"},
+;   20 {:id 20, :nome "Daniela"},
+;   25 {:id 25, :nome "Paulo"}}]
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+nil
+clj꞉hospital.aula1꞉> 
+(concat [1 2] [3 4])
+
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ["01/01/2019"]}
+; {20 ["01/01/2019" "01/01/2020"]}
+; {15 ["01/03/2019"]}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente 15 sao (01/01/2019 01/03/2019)
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; 
+; Execution error (FileNotFoundException) at hospital.aula1/eval14451$loading (aula1.clj:1).
+; Could not locate schema/core__init.class, schema/core.clj or schema/core.cljc on classpath.
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; 
+; Execution error (FileNotFoundException) at hospital.aula1/eval14460$loading (aula1.clj:1).
+; Could not locate schema/core__init.class, schema/core.clj or schema/core.cljc on classpath.
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉hospital.core꞉> 
+; Evaluating file: aula1.clj
+; 
+; ; clj  hospital.aula1 
+; Execution error (FileNotFoundException) at hospital.aula1/eval14482$loading (aula1.clj:1).
+; Could not locate schema/core__init.class, schema/core.clj or schema/core.cljc on classpath.
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 

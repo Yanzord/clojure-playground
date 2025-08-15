@@ -1,0 +1,153 @@
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/schemas/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:64885 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9006 (REPL:10).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 
+; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
+; Value does not match schema: (not (instance? java.lang.Long "Guilherme"))
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+#'hospital.aula1/teste-simples
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 30
+; Guilherme
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 30
+; Guilherme
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 30
+; 
+; Execution error (ExceptionInfo) at hospital.aula1/eval12365$teste-simples (aula1.clj:53).
+; Input to teste-simples does not match schema: 
+; 
+; 	   [(named (not (instance? java.lang.Long "Guilherme")) x)]  
+; 
+; 
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 30
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; 
+; Execution error (ExceptionInfo) at hospital.aula1/eval12442$imprime-relatorio-de-paciente (aula1.clj:63).
+; Input to imprime-relatorio-de-paciente does not match schema: 
+; 
+; 	   [nil (named (not (instance? java.lang.Long a-clojure.lang.PersistentArrayMap)) paciente)]  
+; 
+; 
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 30
+; {:id 15, :nome "Yan"}
+nil
+clj꞉hospital.aula1꞉> 
+; Evaluating file: aula1.clj
+; {15 {:id 15, :nome "Yan"},
+;  20 {:id 20, :nome "Daniela"},
+;  25 {:id 25, :nome "Paulo"}}
+; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
+; Visitas do paciente {:id 20, :nome Daniela} sao nil
+; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
+; 15
+; 30
+; {:id 15, :nome "Yan"}
+; 
+; Execution error (ExceptionInfo) at hospital.aula1/eval12640$novo-paciente (aula1.clj:66).
+; Input to novo-paciente does not match schema: 
+; 
+; 	   [(named (not (instance? java.lang.Long "Yan")) id) (named (not (instance? java.lang.String 15)) nome)]  
+; 
+; 
+; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula1꞉> 
