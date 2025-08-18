@@ -57,16 +57,16 @@
 ;  (update hospital departamento conj pessoa)
 ;    (throw (ex-info "Nao cabe ninguem neste departamento" {:paciente pessoa :tipo :impossivel-colocar-pessoa-na-fila}))))
 
-(defn- tenta-colocar-na-fila
-  [hospital departamento pessoa]
-  (if (cabe-na-fila? hospital departamento)
-    (update hospital departamento conj pessoa)))
+;(defn- tenta-colocar-na-fila
+;  [hospital departamento pessoa]
+;  (if (cabe-na-fila? hospital departamento)
+;    (update hospital departamento conj pessoa)))
 
-(defn chega-em
-  [hospital departamento pessoa]
-  (if-let [novo-hospital (tenta-colocar-na-fila hospital departamento pessoa)]
-    { :hospital novo-hospital :resultado :sucesso }
-    { :hospital hospital :resultado :impossivel-colocar-pessoa-na-fila }))
+;(defn chega-em
+;  [hospital departamento pessoa]
+;  (if-let [novo-hospital (tenta-colocar-na-fila hospital departamento pessoa)]
+;    { :hospital novo-hospital :resultado :sucesso }
+;    { :hospital hospital :resultado :impossivel-colocar-pessoa-na-fila }))
 
 ; antes de fazer swap chega-em vai ter que tratar o resultado
 ; nao da pra fugir disso (preocupacoes), se o resultado eh pra ser usado com atomos ou similares
@@ -74,3 +74,29 @@
 ;(defn chega-em!
 ;  [hospital departamento pessoa]
 ;  chega-em hospital departamento pessoa)
+
+(defn chega-em
+  [hospital departamento pessoa]
+  (if (cabe-na-fila? hospital departamento)
+  (update hospital departamento conj pessoa)
+    (throw (ex-info "Nao cabe ninguem neste departamento" {:paciente pessoa}))))
+
+
+; codigo de um curso anterior
+(defn atende [hospital departamento]
+  (update hospital departamento pop))
+
+(defn proxima
+  "Retorna o proximo paciente da fila"
+  [hospital departamento]
+  (-> hospital
+      departamento
+      peek))
+
+(defn transfere
+  "Transfere o proximo paciente da fila de para a fila para"
+  [hospital de para]
+  (let [pessoa (proxima hospital de)]
+    (-> hospital
+        (atende de)
+        (chega-em para pessoa))))

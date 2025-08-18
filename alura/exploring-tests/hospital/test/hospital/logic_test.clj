@@ -1,6 +1,8 @@
 (ns hospital.logic-test
+  (:use clojure.pprint)
   (:require [clojure.test :refer :all]
-            [hospital.logic :refer :all]))
+            [hospital.logic :refer :all]
+            [hospital.model :as h.model]))
 
 (deftest cabe-na-fila?-test
 
@@ -48,20 +50,18 @@
 ;    (is (= (update {:espera [1 2 3 4]} :espera conj 5) 
 ;           (chega-em {:espera [1 2 3 4]} :espera 5)))
 
-    ;(is (= {:espera [1 2 3 4 5]}
-     ;      (chega-em {:espera [1 2 3 4]} :espera 5)))
+    (is (= {:espera [1 2 3 4 5]}
+           (chega-em {:espera [1 2 3 4]} :espera 5)))
 
     ; teste nao sequencial
-    ;(is (= {:espera [1 2 5]}
-     ;      (chega-em {:espera [1 2]} :espera 5))))
+    (is (= {:espera [1 2 5]}
+           (chega-em {:espera [1 2]} :espera 5))))
   
     
-    (is (= {:hospital {:espera [1 2 3 4 5]} :resultado :sucesso}
-          (chega-em {:espera [1 2 3 4]} :espera 5)))
-  
-      ; teste nao sequencial 
-    (is (= {:hospital {:espera [1 2 5]} :resultado :sucesso}
-          (chega-em {:espera [1 2]} :espera 5))))
+    ;(is (= {:hospitaly {:espera [1 2 3 4 5]} :resultado :sucesso}
+    ;      (chega-em {:espera [1 2 3 4]} :espera 5)))
+    ;(is (= {:hospital {:espera [1 2 5]} :resultado :sucesso}
+    ;      (chega-em {:espera [1 2]} :espera 5))))
 
   (testing "nao aceita quando nao cabe na fila"
     ; verificando que uma exception foi jogada
@@ -71,6 +71,9 @@
     ; strings de testo SOLTO sao super faceis de quebrar
     ;(is (thrown-with-msg? clojure.lang.ExceptionInfo "Nao cabe ninguem neste departamento"
     ;             (chega-em hospital-cheio :espera 97)))
+
+    (is (thrown? clojure.lang.ExceptionInfo
+                          (chega-em hospital-cheio :espera 97)))
 
     ; mesmo que eu escolha uma exception do genero, perigoso!
     ;(is (thrown? IllegalStateException
@@ -91,6 +94,26 @@
     ;       (= :impossivel-colocar-pessoa-na-fila (:tipo (ex-data e)))
     ;       )))
 
-    (is (= {:hospital hospital-cheio :resultado :impossivel-colocar-pessoa-na-fila}
-           (chega-em hospital-cheio :espera 97)))
+    ;(is (= {:hospital hospital-cheio :resultado :impossivel-colocar-pessoa-na-fila}
+    ;       (chega-em hospital-cheio :espera 97)))
     )))
+
+
+(deftest transfere-test
+  (testing "aceita pessoas se cabe"
+    (let [hospital-original {:espera [5] :raio-x []}]
+      (is (= {:espera [] :raio-x [5]}
+             (transfere hospital-original :espera :raio-x))))
+    
+    (let [hospital-original {:espera (conj h.model/fila-vazia 51 5) :raio-x (conj h.model/fila-vazia 13)}]
+      (pprint (transfere hospital-original :espera :raio-x))
+      (is (= {:espera [5] 
+              :raio-x [13 51]}
+             (transfere hospital-original :espera :raio-x))))
+    )
+  
+  (testing "recusa pessoas se nao cabe"
+    (let [hospital-cheio {:espera [5] :raio-x [1 2 53 42 13]}]
+      (is (thrown? clojure.lang.ExceptionInfo
+                    (transfere hospital-cheio :espera :raio-x))))
+    ))
