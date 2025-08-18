@@ -197,3 +197,75 @@ clj꞉hospital.logic-test꞉> 
 
 ; 6 tests finished, all passing 👍, ns: 1, vars: 1
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 7 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
