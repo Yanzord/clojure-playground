@@ -154,3 +154,97 @@ clj꞉hospital.aula3꞉> 
 ; {:id 15, :nome "Yan", :plano nil}
 nil
 clj꞉hospital.aula3꞉> 
+; Evaluating file: aula4.clj
+; [:raio-x]
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; [:raio-x]
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+; {:id 15, :nome "Yan", :plano [], :nascimento "02/04/1998"}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+; {:id 15, :nome "Yan", :plano [], :nascimento "02/04/1998"}
+; {}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+; {:id 15, :nome "Yan", :plano [], :nascimento "02/04/1998"}
+; {}
+; {15 {:id 15, :nome "Yan", :plano [:raio-x]}}
+nil
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+; {:id 15, :nome "Yan", :plano [], :nascimento "02/04/1998"}
+; {}
+; {15 {:id 15, :nome "Yan", :plano [:raio-x]}}
+; 
+; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
+; Value does not match schema: {(not (inteiro-positivo -15)) invalid-key}
+; Evaluation of file aula4.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+; {:id 15, :nome "Yan", :plano [], :nascimento "02/04/1998"}
+; {}
+; {15 {:id 15, :nome "Yan", :plano [:raio-x]}}
+; 
+; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
+; Value does not match schema: {15 {:plano missing-required-key}}
+; Evaluation of file aula4.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula4꞉> 
+; Evaluating file: aula4.clj
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
+; {:id 15, :nome "Yan", :plano [], :nascimento "02/04/1998"}
+; {}
+; {15 {:id 15, :nome "Yan", :plano [:raio-x]},
+;  20 {:id 20, :nome "Daniela", :plano []}}
+nil
+clj꞉hospital.aula4꞉> 

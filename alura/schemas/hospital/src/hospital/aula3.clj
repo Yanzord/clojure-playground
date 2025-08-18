@@ -26,7 +26,6 @@
 
 ; sera que faz sentido "mini-schema" como aliases?
 ; (def procedimento s/Keyword)
-
 (s/defn novo-pedido :- Pedido
   [paciente :- Paciente valor :- ValorFinanceiro procedimento :- s/Keyword]
   {:paciente paciente :valor valor :procedimento procedimento})
