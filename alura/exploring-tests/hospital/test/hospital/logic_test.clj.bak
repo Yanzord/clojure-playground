@@ -1,0 +1,7 @@
+(ns hospital.logic-test
+  (:require [clojure.test :refer :all]
+            [hospital.logic :refer :all]))
+
+(deftest cabe-na-fila-test 
+  (testing "Que cabe na fila"
+    (is (= 1 1))))
