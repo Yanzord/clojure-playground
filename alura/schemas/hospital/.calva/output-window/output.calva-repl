@@ -1,3 +1,35 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
 ; Jacking in...
 ; Connecting using "Leiningen" project type.
 ; You can make Calva auto-select this.
@@ -5,311 +37,120 @@
 ; 
 
 ; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/schemas/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:64885 ...
+; Using host:port 127.0.0.1:50513 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-; Execution error (FileNotFoundException) at hospital.core/eval9006 (REPL:10).
+; Execution error (FileNotFoundException) at hospital.core/eval9006 (REPL:42).
 ; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
 clj꞉hospital.core꞉> 
 ; Jack-in done.
 clj꞉hospital.core꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: (not (instance? java.lang.Long "Guilherme"))
-; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-#'hospital.aula1/teste-simples
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 30
-; Guilherme
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 30
-; Guilherme
-nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 30
-; 
-; Execution error (ExceptionInfo) at hospital.aula1/eval12365$teste-simples (aula1.clj:53).
-; Input to teste-simples does not match schema: 
-; 
-; 	   [(named (not (instance? java.lang.Long "Guilherme")) x)]  
-; 
-; 
-; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 30
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; 
-; Execution error (ExceptionInfo) at hospital.aula1/eval12442$imprime-relatorio-de-paciente (aula1.clj:63).
-; Input to imprime-relatorio-de-paciente does not match schema: 
-; 
-; 	   [nil (named (not (instance? java.lang.Long a-clojure.lang.PersistentArrayMap)) paciente)]  
-; 
-; 
-; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 30
+; Evaluating file: aula3.clj
 ; {:id 15, :nome "Yan"}
 nil
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula1.clj
-; {15 {:id 15, :nome "Yan"},
-;  20 {:id 20, :nome "Daniela"},
-;  25 {:id 25, :nome "Paulo"}}
-; {15 ("01/01/2019" "01/03/2019"), 20 ["01/01/2019" "01/01/2020"]}
-; Visitas do paciente {:id 20, :nome Daniela} sao nil
-; Visitas do paciente 20 sao [01/01/2019 01/01/2020]
-; 15
-; 30
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
 ; {:id 15, :nome "Yan"}
 ; 
-; Execution error (ExceptionInfo) at hospital.aula1/eval12640$novo-paciente (aula1.clj:66).
+; Execution error (ExceptionInfo) at hospital.aula3/eval11450$novo-paciente (aula3.clj:13).
 ; Input to novo-paciente does not match schema: 
 ; 
-; 	   [(named (not (instance? java.lang.Long "Yan")) id) (named (not (instance? java.lang.String 15)) nome)]  
+; 	   [(named (not (pos-int? -15)) id) nil]  
 ; 
 ; 
-; Evaluation of file aula1.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula1꞉> 
-; Evaluating file: aula2.clj
+; Evaluation of file aula3.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
 ; {:id 15, :nome "Yan"}
+; 
+; Execution error (ExceptionInfo) at hospital.aula3/eval12212$novo-paciente (aula3.clj:13).
+; Input to novo-paciente does not match schema: 
+; 
+; 	   [(named (not (inteiro-positivo -15)) id) nil]  
+; 
+; 
+; Evaluation of file aula3.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; {:id 15, :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
 nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
 ; {:id 15, :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
+; 
+; Execution error (ExceptionInfo) at hospital.aula3/eval12352$novo-pedido (aula3.clj:31).
+; Input to novo-pedido does not match schema: 
+; 
+; 	   [nil (named (not (maior-que-zero -15.53)) valor) nil]  
+; 
+; 
+; Evaluation of file aula3.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; {:id 15, :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
+; [15]
+#'hospital.aula3/Plano
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; {:id 15, :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
+; [15]
+; [15 20 30 40 50]
+; [0]
+; []
+; nil
+; nil
+; [:raio-x]
 nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
 ; {:id 15, :nome "Yan"}
-; {:id "15", :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
+; [15]
+; [15 20 30 40 50]
+; [0]
+; []
+; nil
+; nil
+; [:raio-x]
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
 nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; 
-; Syntax error compiling def at (src/hospital/aula2.clj:14:1).
-; Expecting var, but Paciente is mapped to class hospital.aula2.Paciente
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/schemas/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:51253 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-; Execution error (FileNotFoundException) at hospital.core/eval9006 (REPL:183).
-; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
-clj꞉hospital.core꞉> 
-; Jack-in done.
-clj꞉hospital.core꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
+; {:id 15, :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
+; [15]
+; [15 20 30 40 50]
+; [0]
+; []
+; nil
+; nil
+; [:raio-x]
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
 nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
+clj꞉hospital.aula3꞉> 
+; Evaluating file: aula3.clj
 ; {:id 15, :nome "Yan"}
+; {:paciente {:id 15, :nome "Yan"}, :valor 15.53, :procedimento :raio-x}
+; [15]
+; [15 20 30 40 50]
+; [0]
+; []
+; nil
+; nil
+; [:raio-x]
+; {:id 15, :nome "Yan", :plano [:raio-x :ultrassom]}
+; {:id 15, :nome "Yan", :plano [:raio-x]}
+; {:id 15, :nome "Yan", :plano []}
+; {:id 15, :nome "Yan", :plano nil}
 nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: {:nome missing-required-key, :name disallowed-key}
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: {:plano disallowed-key}
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: {:nome missing-required-key}
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at hospital.aula2/eval12276$novo-paciente (aula2.clj:34).
-; Output of novo-paciente does not match schema: 
-; 
-; 	   {:plano disallowed-key}  
-; 
-; 
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-15
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: (not (hospital.aula2/estritamente-positivo? 0))
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: (not (hospital.aula2/estritamente-positivo? -15))
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: (not (estritamente-positivo 0))
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: {:id (not (hospital.aula2/estritamente-positivo? -15))}
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-nil
-clj꞉hospital.aula2꞉> 
-; Evaluating file: aula2.clj
-; {:id Num, :nome Str}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; {:id 15, :nome "Yan"}
-; 
-; Execution error (ExceptionInfo) at schema.core/validator$fn (core.clj:155).
-; Value does not match schema: {:id (not (hospital.aula2/fn--12747 -15))}
-; Evaluation of file aula2.clj failed: class clojure.lang.Compiler$CompilerException
-clj꞉hospital.aula2꞉> 
+clj꞉hospital.aula3꞉> 
