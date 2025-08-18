@@ -38,38 +38,59 @@
 
 
 
-
-
-(deftest chega-em-test 
+(deftest chega-em-test
   
+  (let [hospital-cheio {:espera [1 35 42 64 21]}]
+
   (testing "aceita pessoas enquanto cabem pessoas na fila"
 ; implementacao ruim pois testa que escrevemos o que escrevemos.
 ; isto eh, testa que erramos o que erramos. e que acertamos o que acertamos.
 ;    (is (= (update {:espera [1 2 3 4]} :espera conj 5) 
 ;           (chega-em {:espera [1 2 3 4]} :espera 5)))
-    
-    (is (= {:espera [1 2 3 4 5]}
-           (chega-em {:espera [1 2 3 4]} :espera 5)))
-    
+
+    ;(is (= {:espera [1 2 3 4 5]}
+     ;      (chega-em {:espera [1 2 3 4]} :espera 5)))
+
     ; teste nao sequencial
-    (is (= {:espera [1 2 5]}
-           (chega-em {:espera [1 2]} :espera 5))))
+    ;(is (= {:espera [1 2 5]}
+     ;      (chega-em {:espera [1 2]} :espera 5))))
   
+    
+    (is (= {:hospital {:espera [1 2 3 4 5]} :resultado :sucesso}
+          (chega-em {:espera [1 2 3 4]} :espera 5)))
+  
+      ; teste nao sequencial 
+    (is (= {:hospital {:espera [1 2 5]} :resultado :sucesso}
+          (chega-em {:espera [1 2]} :espera 5))))
+
   (testing "nao aceita quando nao cabe na fila"
     ; verificando que uma exception foi jogada
     ; codigo classico horrivel. usamos uma exception GENERICA.
     ; mas qq outro erro generico vai jogar essa exception, e nos vamos achar que deu certo quando deu errado
-    
+
     ; strings de testo SOLTO sao super faceis de quebrar
     ;(is (thrown-with-msg? clojure.lang.ExceptionInfo "Nao cabe ninguem neste departamento"
-    ;             (chega-em {:espera [1 35 42 64 21]} :espera 97)))
-    
+    ;             (chega-em hospital-cheio :espera 97)))
+
     ; mesmo que eu escolha uma exception do genero, perigoso!
     ;(is (thrown? IllegalStateException
-    ;                 (chega-em {:espera [1 35 42 64 21]} :espera 97)))
-    
+    ;                 (chega-em hospital-cheio :espera 97)))
+
     ; outra abordagem, no nil
     ; mas o perigo do swap, teriamos que trabalhar em outro ponto a condicao de erro
-    ;(is (nil? (chega-em {:espera [1 35 42 64 21]} :espera 97)))
-    
-    ))
+    ;(is (nil? (chega-em hospital-cheio :espera 97)))
+
+    ; outra maneira de testar
+    ; onde ao inves de como java, utilizar o TIPO da exception para entender
+    ; o TIPO (outro tipo) de erro que ocorreu, estou usando os dados da exception para isso
+    ; menos sensivel que a mensagem de erro (mesmo que eu usasse regex)
+    ; mas ainda eh uma validacao trabalhosa
+    ;(is (try
+    ;     (chega-em hospital-cheio :espera 76)
+    ;     (catch clojure.lang.ExceptionInfo e
+    ;       (= :impossivel-colocar-pessoa-na-fila (:tipo (ex-data e)))
+    ;       )))
+
+    (is (= {:hospital hospital-cheio :resultado :impossivel-colocar-pessoa-na-fila}
+           (chega-em hospital-cheio :espera 97)))
+    )))

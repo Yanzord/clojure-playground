@@ -269,3 +269,121 @@ clj꞉hospital.logic꞉> 
 
 ; 9 tests finished, all passing 👍, ns: 1, vars: 2
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/chega-em
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; FAIL in hospital.logic-test/chega-em-test (logic_test.clj:51):
+; aceita pessoas enquanto cabem pessoas na fila
+; expected:
+{:espera [1 2 3 4 5]}
+
+; actual:
+{:hospital {:espera [1 2 3 4 5]}, :resultado :sucesso}
+
+; diff:
+- {:espera [1 2 3 4 5]}
+
++ {:hospital {:espera [1 2 3 4 5]}, :resultado :sucesso}
+
+; FAIL in hospital.logic-test/chega-em-test (logic_test.clj:55):
+; aceita pessoas enquanto cabem pessoas na fila
+; expected:
+{:espera [1 2 5]}
+
+; actual:
+{:hospital {:espera [1 2 5]}, :resultado :sucesso}
+
+; diff:
+- {:espera [1 2 5]}
+
++ {:hospital {:espera [1 2 5]}, :resultado :sucesso}
+
+; FAIL in hospital.logic-test/chega-em-test (logic_test.clj:86):
+; nao aceita quando nao cabe na fila
+; expected:
+{:hospital [1 35 42 64 21],
+ :resultado :impossivel-colocar-pessoa-na-fila}
+
+; actual:
+{:hospital {:espera [1 35 42 64 21]},
+ :resultado :impossivel-colocar-pessoa-na-fila}
+
+; diff:
+- {:hospital [1 35 42 64 21]}
+
++ {:hospital {:espera [1 35 42 64 21]}}
+
+; 9 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; FAIL in hospital.logic-test/chega-em-test (logic_test.clj:51):
+; aceita pessoas enquanto cabem pessoas na fila
+; expected:
+{:espera [1 2 3 4 5]}
+
+; actual:
+{:hospital {:espera [1 2 3 4 5]}, :resultado :sucesso}
+
+; diff:
+- {:espera [1 2 3 4 5]}
+
++ {:hospital {:espera [1 2 3 4 5]}, :resultado :sucesso}
+
+; FAIL in hospital.logic-test/chega-em-test (logic_test.clj:55):
+; aceita pessoas enquanto cabem pessoas na fila
+; expected:
+{:espera [1 2 5]}
+
+; actual:
+{:hospital {:espera [1 2 5]}, :resultado :sucesso}
+
+; diff:
+- {:espera [1 2 5]}
+
++ {:hospital {:espera [1 2 5]}, :resultado :sucesso}
+
+; 9 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
