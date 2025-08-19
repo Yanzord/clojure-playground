@@ -118,5 +118,25 @@
   (testing "recusa pessoas se nao cabe"
     (let [hospital-cheio {:espera (conj h.model/fila-vazia "5") :raio-x (conj h.model/fila-vazia "1" "2" "53" "42" "13")}]
       (is (thrown? clojure.lang.ExceptionInfo
-                    (transfere hospital-cheio :espera :raio-x))))
-    ))
+                   (transfere hospital-cheio :espera :raio-x))))
+    )
+  
+  ; sera que faz sentido eu garantir que o schema esta do outro lado?
+  ; lembrando que esse teste nao garante exatamente isso, garante so o erro do nulo
+  ; ... eh obvio que ninguem vai apagar um teste automatizado do nada, vai sentir o peso de apagar
+  ; mas nao eh obvio que ninguem vai apagar uma restricao de um schema, pq naquele instante 
+  ; pode fazer sentido na cabeca da pessoa que nao entende ainda o dominio das restricoes do sistema 
+  (testing "nao pode invocar transferencia sem hospital"
+    (is (thrown? clojure.lang.ExceptionInfo (transfere nil :espera :raio-x))))
+  
+  
+  (testing "condicoes obrigatorias"
+    (let [hospital {:espera (conj h.model/fila-vazia "5") :raio-x (conj h.model/fila-vazia "1" "2" "53" "42")}] 
+      (is (thrown? AssertionError 
+                   (transfere hospital :nao-existe :raio-x)))
+      
+      (is (thrown? AssertionError
+                   (transfere hospital :raio-x :nao-existe)))
+      ))
+  
+  )

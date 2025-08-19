@@ -356,3 +356,230 @@ clj꞉hospital.logic-test꞉> 
 
 ; 12 tests finished, all passing 👍, ns: 1, vars: 3
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-test (logic.clj:125):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Input to transfere does not match schema: 
+
+	   [(named (not (map? nil)) hospital) nil nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name de} #schema.core.One{:schema Keyword, :optional? false, :name para}], :value [nil :espera :raio-x], :error [(named (not (map? nil)) hospital) nil nil]} (logic.clj:125)
+; 13 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 13 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-test (logic.clj:135):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Output of proxima does not match schema: 
+
+	   (not (instance? java.lang.String nil))  
+
+ {:type :schema.core/error, :schema java.lang.String, :value nil, :error (not (instance? java.lang.String nil))} (logic.clj:135)
+; 14 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-test (logic.clj:136):
+; Uncaught exception, not in assertion
+; error: java.lang.AssertionError: Assert failed: (contains? hospital de) (logic.clj:136)
+; 14 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 14 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 15 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+; 
+; ; clj  hospital.logic 
+; Syntax error reading source at (src/hospital/logic.clj:104:68).
+; Unmatched delimiter: )
+; Evaluation of file logic.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-test (logic.clj:110):
+; aceita pessoas se cabe
+; error: java.lang.AssertionError: Assert failed: (= (count (get % de)) (dec (count (get % de)))) (logic.clj:110)
+; expected:
+(=
+ {:espera [], :raio-x ["5"]}
+ (transfere hospital-original :espera :raio-x))
+
+; ERROR in hospital.logic-test/transfere-test (logic.clj:115):
+; aceita pessoas se cabe
+; error: java.lang.AssertionError: Assert failed: (= (count (get % de)) (dec (count (get % de)))) (logic.clj:115)
+; expected:
+(=
+ {:espera ["5"], :raio-x ["13" "51"]}
+ (transfere hospital-original :espera :raio-x))
+
+; 15 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 15 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Syntax error (ClassNotFoundException) compiling at (test/hospital/logic_test.clj:0:0).
+; clojure.lang.ExceptionInfto
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; FAIL in hospital.logic-test/transfere-test (logic_test.clj:108):
+; aceita pessoas se cabe
+; expected:
+{:espera [], :raio-x ["5"]}
+
+; actual:
+{:espera ("5"), :raio-x ("5")}
+
+; diff:
+- {:espera []}
+
++ {:espera <-("5")-<}
+
+; FAIL in hospital.logic-test/transfere-test (logic_test.clj:113):
+; aceita pessoas se cabe
+; expected:
+{:espera ["5"], :raio-x ["13" "51"]}
+
+; actual:
+{:espera ("51" "5"), :raio-x ("13" "51")}
+
+; diff:
+- {:espera ["5"]}
+
++ {:espera <-("51" "5")-<}
+
+; 15 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; FAIL in hospital.logic-test/transfere-test (logic_test.clj:108):
+; aceita pessoas se cabe
+; expected:
+{:espera [], :raio-x ["5"]}
+
+; actual:
+{:espera (), :raio-x ("5" "5")}
+
+; diff:
+- {:raio-x ["5"]}
+
++ {:raio-x <-("5" "5")-<}
+
+; FAIL in hospital.logic-test/transfere-test (logic_test.clj:113):
+; aceita pessoas se cabe
+; expected:
+{:espera ["5"], :raio-x ["13" "51"]}
+
+; actual:
+{:espera ("5"), :raio-x ("13" "51" "51")}
+
+; diff:
+- {:raio-x ["13" "51"]}
+
++ {:raio-x <-("13" "51" "51")-<}
+
+; 15 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 15 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/transfere
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 15 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
