@@ -1157,3 +1157,448 @@ clj꞉hospital.logic-test꞉> 
  {:type :schema.core/error, :schema java.lang.String, :value nil, :error (not (instance? java.lang.String nil))} (logic.clj:85)
 ; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; nao funcionu
+; nao funcionu
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; nao funcionu
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [:ultrassom :ultrassom :raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :raio-x :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :raio-x :raio-x :raio-x :raio-x :ultrassom :ultrassom :ultrassom :raio-x :raio-x]
+; [:ultrassom :ultrassom :raio-x :raio-x :ultrassom :raio-x :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :raio-x :raio-x :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :raio-x :raio-x :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom]
+; [:ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :raio-x]
+; [:ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom]
+; nao funcionu
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [:raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x]
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (AFn.java:92):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: hospital.logic-test/transfere-ignorando-erro (AFn.java:92)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [:ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom]
+; [:ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom]
+; [:ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom]
+; [:ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x]
+; [:raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x]
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (AFn.java:92):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: hospital.logic-test/transfere-ignorando-erro (AFn.java:92)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [:ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :raio-x :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :raio-x :raio-x]
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; [:ultrassom :ultrassom :ultrassom :ultrassom :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :raio-x :raio-x :raio-x :ultrassom :raio-x :raio-x :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :raio-x :ultrassom :ultrassom :ultrassom :raio-x :raio-x :ultrassom :ultrassom]
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; [:ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :raio-x :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :ultrassom :raio-x]
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; [:raio-x :ultrassom :ultrassom :raio-x :raio-x :raio-x :raio-x :raio-x :raio-x :ultrassom :ultrassom :raio-x :raio-x :ultrassom :raio-x :raio-x :ultrassom :ultrassom :ultrassom :raio-x :ultrassom :ultrassom]
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; [:raio-x :raio-x :ultrassom :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :raio-x :raio-x :ultrassom :ultrassom :ultrassom :raio-x :raio-x :ultrassom :ultrassom :raio-x :raio-x :ultrassom :raio-x :raio-x :ultrassom :raio-x :ultrassom :raio-x :ultrassom :ultrassom :raio-x :ultrassom :ultrassom :raio-x :raio-x :raio-x :ultrassom]
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; nao funcionou
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/generators-and-property-tests/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:56322 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9763 (REPL:1451).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:93):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Nao cabe ninguem neste departamento {:paciente "F7J2hP"} (logic.clj:93)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:93):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Nao cabe ninguem neste departamento {:paciente "W6w07HY5c"} (logic.clj:93)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/total-de-pacientes
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:93):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Output of proxima does not match schema: 
+
+	   (not (instance? java.lang.String nil))  
+
+ {:type :schema.core/error, :schema java.lang.String, :value nil, :error (not (instance? java.lang.String nil))} (logic.clj:93)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/total-de-pacientes
+clj꞉hospital.logic꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/total-de-pacientes
+clj꞉hospital.logic꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:114):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Output of proxima does not match schema: 
+
+	   (not (instance? java.lang.String nil))  
+
+ {:type :schema.core/error, :schema java.lang.String, :value nil, :error (not (instance? java.lang.String nil))} (logic.clj:114)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/total-de-pacientes
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:114):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Output of transfere does not match schema: 
+
+	   {:raio-x #object[clojure.lang.PersistentQueue 0xe86720f "clojure.lang.PersistentQueue@29e3e9ce"]}  
+
+ {:type :schema.core/error, :schema {Keyword (queue Str)}, :value {:espera #object[clojure.lang.PersistentQueue 0x705131e7 "clojure.lang.PersistentQueue@1"], :raio-x #object[clojure.lang.PersistentQueue 0x32fd6efd "clojure.lang.PersistentQueue@a3bd8690"], :ultrassom #object[clojure.lang.PersistentQueue 0x7c44fe3c "clojure.lang.PersistentQueue@896acc1"]}, :error {:raio-x #object[clojure.lang.PersistentQueue 0xe86720f "clojure.lang.PersistentQueue@29e3e9ce"]}} (logic.clj:114)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/total-de-pacientes
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
