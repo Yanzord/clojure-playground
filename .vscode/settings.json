@@ -1,0 +1,18 @@
+{
+    "calva.replConnectSequences": [
+        {
+            "name": "Leiningen Default",
+            "projectType": "Leiningen",
+            "profiles": [],
+            "cljsType": "none",
+            "afterCLJReplJackInCode": "",
+            "afterCLJSReplJackInCode": ""
+        }
+    ],
+    "calva.defaultReplConnectSequences": ["Leiningen Default"],
+    "calva.autoOpenREPL": true,
+    "calva.autoOpenJackInTerminal": true,
+    "calva.jackInDependencyVersions": {
+        "clojure": "1.11.1"
+    }
+}

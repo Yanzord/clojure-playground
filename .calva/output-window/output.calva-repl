@@ -30,6 +30,6 @@ You can configure this with the setting:
   "calva.outputDestinations"
 
 
-; Connecting ...
-; Reading port file: file:///Users/yan.pereira/github/yan/clojure-playground/.nrepl-port ...
-; No nrepl port file found.
+; Jacking in...
+; TypeError: Cannot read properties of undefined (reading 'label')
+; Aborting jack-in.
