@@ -1068,3 +1068,92 @@ clj꞉hospital.logic-test꞉> 
 
 ; 207 tests finished, all passing 👍, ns: 1, vars: 2
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [8GI3S1D6PF MV9qfbM6z6 393cc3]
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [eIteg7E 8vZapVxy28] [x9D01NV wg0qp1CZ JbEL2 6560vk3gE]
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+; 
+; Syntax error compiling at (test/hospital/logic_test.clj:90:9).
+; Unable to resolve symbol: total-de-pacientes in this context
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [] [84RP7TF9l7 e8V1z2 wF7k4 a9IEct3W4n]
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+; 
+; Syntax error compiling at (test/hospital/logic_test.clj:90:9).
+; Unable to resolve symbol: total-de-pacientes in this context
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+; 
+; Syntax error compiling at (test/hospital/logic_test.clj:90:9).
+; No such var: hospital.logic/total-de-pacientes
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic.clj
+#'hospital.logic/total-de-pacientes
+clj꞉hospital.logic꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:79):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Input to transfere does not match schema: 
+
+	   [(named {:espera (not (queue? a-clojure.lang.PersistentVector)), :raio-x (not (queue? a-clojure.lang.PersistentVector)), :ultrassom (not (queue? a-clojure.lang.PersistentVector))} hospital) nil nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name de} #schema.core.One{:schema Keyword, :optional? false, :name para}], :value [{:espera ["4XeC54dS" "PVNH1ClVb"], :raio-x ["WSeHF" "OrDdiC3" "O80y6386"], :ultrassom ["vf7Ia941" "ePG8t6Qt"]} :espera :raio-x], :error [(named {:espera (not (queue? a-clojure.lang.PersistentVector)), :raio-x (not (queue? a-clojure.lang.PersistentVector)), :ultrassom (not (queue? a-clojure.lang.PersistentVector))} hospital) nil nil]} (logic.clj:79)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 208 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (logic.clj:85):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Output of proxima does not match schema: 
+
+	   (not (instance? java.lang.String nil))  
+
+ {:type :schema.core/error, :schema java.lang.String, :value nil, :error (not (instance? java.lang.String nil))} (logic.clj:85)
+; 208 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 

@@ -67,3 +67,40 @@
    (is (= {:espera (conj fila pessoa)} 
       (chega-em {:espera fila} :espera pessoa)))
    ))
+
+; coloquei sufixo mas voce vai ver prefixo tambem no mundo
+; nao sou o maior fa mas eh o que a vida nos oferece
+(def nome-aleatorio-gen
+  (gen/fmap clojure.string/join 
+            (gen/vector gen/char-alphanumeric 5 10)))
+
+(defn transforma-vetor-em-fila [vetor]
+  (reduce conj h.model/fila-vazia vetor))
+
+(def fila-nao-cheia-gen 
+  (gen/fmap
+   transforma-vetor-em-fila
+   (gen/vector nome-aleatorio-gen 0 4)))
+
+(defspec transfere-tem-que-manter-a-quantidade-de-pessoas 5
+  (prop/for-all 
+   [espera fila-nao-cheia-gen
+    raio-x fila-nao-cheia-gen
+    ultrassom fila-nao-cheia-gen
+    vai-para (gen/elements [:raio-x :ultrassom])]
+   (let [hospital-inicial {:espera espera
+                   :raio-x raio-x
+                   :ultrassom ultrassom}
+         hospital-final (transfere hospital-inicial :espera vai-para)] 
+     
+     (= (hospital.logic/total-de-pacientes hospital-inicial) 
+        (hospital.logic/total-de-pacientes hospital-final))
+     )
+   ))
+
+
+
+
+
+
+
