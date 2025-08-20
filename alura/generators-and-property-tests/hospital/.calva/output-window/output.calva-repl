@@ -385,3 +385,686 @@ clj꞉hospital.logic-test꞉> 
 ; [l]
 ; 16 tests finished, all passing 👍, ns: 1, vars: 1
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [   ]
+; []
+; [Pa  2z ]
+; [9D 4 2g1]
+; [52 7]
+; []
+; [P38]
+; [ DdVByd 34F4]
+; [00M86 9Qx9nU]
+; []
+; [ ]
+; [8]
+; [w]
+; [4f0]
+; []
+; [925]
+; []
+; [Kx4w jg 8eA8 9NU6TZ]
+; [9 4 HIXs4D]
+; [c4B]
+; [ZO3g1Cwd50 34N4f802Pg 40OP2D]
+; [OYKi39 380tFFb]
+; [l0gr2Ar218T E37qL92f0p2X]
+; [G323672o6 Lg8Z]
+; []
+; [WV6vJR7  cibk9e]
+; [4sobnT4Lq0oR5x XR4YR4 r b5]
+; [0r 1kk18Hyyi83AN2 Nxjv]
+; [ckU47bW1]
+; []
+; [g4ByAhE49198 M3jjd568msh8q94]
+; []
+; [ozln0DgXI7wW93gJQhvfh xfBQzi1iQEnoOb3jwK 3Ui75rs]
+; [1p95ltI k2i23c5o2A5sP ojknbaW50z2Z]
+; [dtsizT61Z1 sPdLNI93DtQ647Dca5 8vgulPbMfr72Ac30 C78CL89L]
+; []
+; []
+; [a AFAU9mh7JkpcpGDYUOWBGVtZP v1w9v s0H1LmSg65C1d88bG]
+; [QP3a r9uhfw2l6b16M0X0NwcFwtv]
+; [GmHDmr411824xC 4D2T4CEz4ZQ4LNBaXPOi]
+; [TTLjB3ySoZ9 Ng7NUO10TDqL6xFz7yu obK7KS2WVkUF6vr4vz72D66 a6omrJ4aKa0rQD5]
+; [8cQc2MdqqNI6pP]
+; [10YNW]
+; [VerBVxME2Smgi 2UDVUOt3GPwVj8YTb8G6A4wYlH9x00aB]
+; [AM66897IdVPC70zOvKCs051J 41Uo0k 6zNB7BHcC]
+; [AT4s7efgO657f54379AcFA61473m06Iq2 H4fVg03m6YlwA1O2IJYX6VmRnv8Zxg DSpFotRFAnWU7xXXp2sllmDIeF89r]
+; [eq8Dr84Fo5LCw 70Z sdJCVAhhG4DnkngnTE4M]
+; [E5ard3Hwj345ZQhS06A9D57H36I939f4 L9dFCC1OT1Yy21Egc3ylS4AGZ04WGg T5jhO9n]
+; [0nVI11mud]
+; [29ndFD8dQk626jt66u6Nq2e2n 6726coHDhgCnx25WL9QFx32nH2YHM]
+; [1NfC a3089rK8WAr7755k]
+; [KSbTv3x0I JefJuRRD9ho3Brgu]
+; [W9P8ju9c65yGHK9P5cA3s8nfMw9Pm Toz6Xx abY515aH35f665A7JweH7LB1qIXVbnh390X2s5R 0lsTp44p]
+; []
+; []
+; [YYGty8zntgucW0Ns2kj7naG YtnllOOVX79h2Q2hAHmt267RBqUFJ928tsA Gp5fmix5x47XH43cwX3NawkT936]
+; [HR 2U9 K7yOAt0s]
+; [iAv49]
+; [5WROBRON9nQE2S0O 67rh2254NoEtIA8k1e30qqOQRG8v0Be24R2Q30h4wi8e 1SzhS1Q5BOF06r93140fvYx6gAixT29ZH93qvYvQHBJ IzpZVyA62k5Ea8CoVu7CbFvE4DB]
+; [X3685mAEvs72KgS 72O6u21Q0lYOB22k225kZ5QhW3 9x94wApgKZLcT42hUw2928VNFFq0]
+; []
+; [38n3ffz4I4F1y8LYn425ILHGE27YyV2 g8i2JCDH8LT5592iL1nN6T25Fo 5K77kvZfbKUtk983G4882kY1nh8VYgR Nh6eGMmN3X2CAarzC7sfz70vOe1NS45hoGvl0EKQoeqDdJS8]
+; [J5dR9mHY36fx57geclToj6X987l8Exmn6L6z7JD4f2o 51SUu9idLYUtRhX9KNV1o14K42em8M0u7tsPZUg eQUge43ZVvsV28t470849aH7FBDPI6Lo3yZPh2a3G AMR6UDIs1puV9Y83uJgRON3k3o9aE1]
+; [1f93RDuZ9098oXd090dri6xQ60H73k 71vqJ4D0v17ZsEm5P3a6gPx72Lnb62K5vq7wGhq5mQQ2zClvIy]
+; [N60TfccVcfOL9VgBtSK34]
+; [rNnVsUAdng9K5yq6ds0PZIFMKhaAr0S377W597mtHOdsNo5]
+; [nwCwtR ]
+; [5jZn0s6bpr9LNwm7m9g8z8RpV19WvJ6A7v4 1BU2PJeNk1v87d8lVlY4JeT5n9lP49E6q0sLgrUE4Imzt5 E69420hcYYCt0O9j29JF52]
+; [6Urt6Jp8WpS7An]
+; [glloEp qYofMaLAEwVXX8UKPNRVu26M42ps7W3EvJmjS63p58o28Kd7o0ZO9]
+; []
+; [3QTsei0V7Rl1qhmn1cB10fUWiJHDKQ27gSo8NCv2zWV16A unNv6QJ2764A3QG58391Q2JO2227j72BRi1122bA0vmoBDzP C5QDcOrnJ6sgN8t1T29BbEO6n53QZD963YYlFvh TO4OKwUr7O8rMVvHB24X69f6PYc68v0dQxZ1OnpZ3U]
+; [25DmSZl7Ux 6g4MP9725Kli0i mHo34OvkftVjL4o79SJLudr17503rZBfMm2khaW1oP3W7F8L]
+; [A62O7R1w9qA53685 a1kJjY91q4jPy ]
+; [3Adu2HWoi4iD16F7588IKm8m93u5MZugkbYF2f i8NQ5v YNR6SWhOwF4 cRv9SVKCBT93TO5659Ig9DmZ1RXPMyW22W2eefhW4n8p864nD]
+; [1KTj7o577xVV8YL1j5o5Tlg8PKH0XZ4 s3hj4c78L8xfEn5bk2g5hXSg5KJatuIcmvik6f 0O5jV6dx3SqIS8Q6FCKQ]
+; [90GgEIR12seMZgFo5N0onspdd4B36744nH5cxzFNcMa8Lkro1E4jLo5]
+; [VXB12zQZQHzKKL6E0B0bB3]
+; [L1ohaDrg163Rl0h6Ke6X331NKXv2bJ1y770f]
+; [Ogjx39D5ehEps2l2H9A5j1K4X16449O3YD6AyL5yA926Pj 5aFK34VDyhKYzIxdiX20h9N03yhrlQc7Ii3E94]
+; []
+; [1Bbco02V1rd69rq6az6ZK8]
+; [9i62LQ3xsU3IWQT4oex9dfV98Y666kHD98hlL7 0AILKNKs230gG3F1qK7vma21pHUIt9Pp2334brizHUMMC5xL6NKt66c39a547Ek 1L0nF0w2OB48tZrvR7kYj4J5St5L07lCuGeIB5UxX34rN5CR5NB1GsYMelvrg73ls1gNhbYm 0Utx3C3xL78qu]
+; [i8zy6lOPYf0671njF6431IE8wDsit5RHdQ3Epjw4Nw4fdP76xa1Wac31LXmRPp5G7hwrqj7 p2uHms3mwkiR7dFY54Fe7kIm6fA7A6HMbZpJsuaTc23R4xZ2gm49aKn j8xWUC2KF5lDEMWG7Epe502lF51CH8BXOIjsJkxIBp3pXV6WK2m P9qk94D1is85P6c3R2ZLv2KxXqq62ke3d9ZTp3zw9hL58u5]
+; [2E0ZZk1AomKcN1iXgK408J8YmTOea2yz49zaQouOvXqT10dC4Z3pd4ObsBaGtZSbJZZI00StI1 h5v0mCIrB2xEs RIsd179QM19]
+; [dPRMaboNfi08WAL9Jg5fn8YJ8d1sI76D30 KN4G2Ti6ksQ9F1hnsBANGgmc7 kTr49Ppi62dm59h3v08Nk7qI7Iq2t8LVlpao81I]
+; [8efO6mCAk2Lpw4EfPWGb7h0sQu6jW33ZsZApE5o05LYLkJmytvIGm2ZTQcxS3Lu7rR3HHanr2bLa Wi0bZRqup65pun87p777Y9h40 Lx6TAe5110NJgkgRm4hB9Ka chcXtM5jYKjSZY2BBe9254J2K8iBt2giJa2E58BTH5ulX58SHSx6e84hR2le5KIunb]
+; [KtQ6Uz8K90iOza2x83f58Psa8MHV6S6655H9X6JY6LROBG5U43wILdX0Ah5Lie5pgH0363NEFuCk]
+; [G2yCj1xOBCSB9y9H28NtgX10HoisC9Bts0qN99L6Uq7mAW23xI8WXbuZFVkP]
+; [xUr390jwLD26K2rQh5289p1dTJld0AXoJ6spao26C5364p710OYQJp4Zm29Ex0TzI2MRgvGZJ94]
+; [78NYBe9pr738MOpe12XF3NFm0u7QLY5x6Z2GaY 878iBdlG5zgY2aG0P6Oj7T0U3r56Joo0Q0hJjE819104hYUD6k451l7bkX23BxwnjReuhhZ9Dal 7EHW2n3W15Exgh6025pBO044cvT5MAX4W3PArU03o72UKW]
+; [NPYIqb2K4nz60d4ax2]
+; [r2GQ9O9M485KW16UmC94D]
+; [X7zHLx9G7aFegJYfG12g1A z27GcjhJgejTGAeqUTC5E6bmG6NwTS73gV10HgIuIKA0QEEmHEXFR41e7F1osjX4kBIL4g7WVNOB Ld8twvd1XYum97]
+; [thDY89AtEUmzQgnMSFdY7QW1tBDM5sE6XrgNg7]
+; [b5FHSUQh1OciESpnn4Rq063c L43WUVegXJS2Tg1N34FrVESI6qGKv6DMY8Md5uf1AG4DepQug2Ge7j6E37lnOY8FmPygDckvj1IM 9SCi6b0a0KVVZ9ouki8x4nTuH19iCx8AH2]
+; []
+; [eer36uG83mHNJ7o4dlTKTzY9VO9bf6P4qaWnVMc6DeZ25A1122iP2O23LP7evuC5a65E8q7O264JgSx z301dPktW8im6c5nSP6gHuwvJe9inC68h260U79 Gt7wIrHFP3csWF4EyhGKmsTmQa66C87KfQq6d8qu30EmamHB4xsPmQ13ju70l24gf5331d5NmLS1oL87i25eU7]
+; [3Qxj1R1R51z0s0a7eR1MQYS 2ax9sw1ra3601GiyUn249z0EbAKZ321e5I0951q83fze5 QM1HLugr6xDT9]
+; [7zFL 3bSWQuOYgx7ZRoVV4zbiIlxqPY13vX41vD0Mcx0mUy0q77pCS1uzMpz459h478hSU0uKQ9 1FCtu8Ngrb552A]
+; [SBAQr6OH2jRwr1xHQW6t6QSY210ZjEpQn4676qchrTN 90uWuHI20R62m8hLrRtwzVON17rgvY2qe7O7R65M1Ip27wk87evH6YbbPfh 5KK5J6xR0YXtLaoDqJD7NDbFg680nF1l9xw2CGj563a3222kMDG042]
+; []
+; [3bVx5VS2oGo9ed8wc79XK B4fa6iGpzrNOo2aZeX4O9TyJOc993Q6c0qp25ZG5Ln7l3509V32V7HCRJDfH51W8E5Y Y47oNLXz5KzPS90h5561Y3p556xhH31bcpRqq766aRPm5iBCGtdH71fvwg10W8dR3q5eWZoOqf0INdapYA6yemHeNopv 9DSqVffQW00LKdslu]
+; [sgejj08g841614G9kjm48b3SlXxpn6aJ3gbd20yV]
+; [spAWRlpu0Kf3CN6011153907RSNha4wNZYDeW78B58cr9uxIa1pXu7k013oMojtG6e15Euo1 d5905Egl8Eum2b7Q69xX8w01rWmYjA5GT3s4Es0WciWR3d624Z5n45kdywPHf1fRHz3reW i483XIoHxW2c1IKB5CZzAOn3Qqtgd6LNO149dSANj IMsp5M8BngaQ62L18]
+; [iF3582G0BI6p0P1L0YbT4Q7UcEo]
+; [5kDRwXjgD2hcEwC4sOHf1fLCiT28P9PZPZzzl9COE5ntNquhU7 vuhhk783n 1F7Slk540Aq646Yd88IOX9Pze9p9O7074xYlT06522brO3MJaVuBAoajD0pQ7H6ks]
+; [8C2ma30l7Sujz2KRtDt sQ4Bj8a77Prl1YB]
+; [Cezc5eDCbNS6NFTlp0m90X4ziAFFR6DR4LEFV5Q2eER1Ev6477ugJLPKLAQEV57CAAG]
+; [Fi1SIks61eH4vH3Sn0Qg3KpC88ih125viBoDFcuUzSg9UbysAs5WOuDXF4u18aV17Eit57k6Oq4674EBPVByLzieI VL2E2ogfBKx]
+; 16 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [  ]
+; [S ]
+; [ ]
+; [nr U8X]
+; [vz]
+; [48Ra F3PF T]
+; []
+; []
+; [ pB4K BKHp1]
+; []
+; FAIL in hospital.logic-test/cabe-na-fila?-test (logic_test.clj:22):
+; Que cabe pessoas em filas de tamanho ate 4 inclusive
+; expected:
+(cabe-na-fila? {:espera fila} :espera)
+
+; actual:
+(not (cabe-na-fila? {:espera ["" "" "s" "19g" "9No"]} :espera))
+
+; 16 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [ ]
+; []
+; [G0   s3]
+; [O1u  3E8]
+; [B 325o ]
+; [KaaK Y 1Xdm qSl2g]
+; [h2r9 pyoY4 Qm]
+; [JbO8 46U2R0 z CP93]
+; [R Dl9r5M r]
+; [iab j1J7o0]
+; 16 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/chega-em-test
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+;  [  ]
+;  [  ]
+; l [  ]
+; 4av [  ]
+; oE6 [  ]
+; k [  ]
+;  [  ]
+; 70BwFi [  ]
+; 1339juMy [  ]
+; BZdAv [  ]
+;  [0 W]
+;  [0 W]
+; o3 [0 W]
+; CK [0 W]
+; y7t [0 W]
+;  [0 W]
+; 7v [0 W]
+; l2R0Ar [0 W]
+; kH1Rjw1 [0 W]
+; J [0 W]
+;  []
+;  []
+; f []
+;  []
+;  []
+;  []
+;  []
+; f []
+; YdB9T []
+; Q []
+;  []
+; 0 []
+;  []
+; E []
+; W []
+; 8DaVQ []
+; E1l4K0 []
+; YIRBbx []
+; N99 []
+; dt []
+;  []
+; 0 []
+; S []
+;  []
+; BSGh []
+; h4U []
+; tPnbC []
+;  []
+; wyzvth []
+;  []
+;  [7vj]
+; O [7vj]
+;  [7vj]
+;  [7vj]
+; 2dfv [7vj]
+; k [7vj]
+; 1M3 [7vj]
+; rPntl [7vj]
+; J0Ed7 [7vj]
+; Umol9XCAn [7vj]
+;  []
+; 6 []
+; H []
+; 2q []
+; C7 []
+;  []
+; drC6Ei []
+; vk9 []
+; P []
+; x2fP []
+;  [Zrlu4Aq w3J FF24wZ1 De]
+; 1 [Zrlu4Aq w3J FF24wZ1 De]
+; wL [Zrlu4Aq w3J FF24wZ1 De]
+; 9G [Zrlu4Aq w3J FF24wZ1 De]
+; W6 [Zrlu4Aq w3J FF24wZ1 De]
+; KUHv [Zrlu4Aq w3J FF24wZ1 De]
+; Sok3S [Zrlu4Aq w3J FF24wZ1 De]
+; g [Zrlu4Aq w3J FF24wZ1 De]
+; 2b1m8g6l [Zrlu4Aq w3J FF24wZ1 De]
+; 8n5 [Zrlu4Aq w3J FF24wZ1 De]
+;  [OLxs85 wx9 r6 Rc]
+; 4 [OLxs85 wx9 r6 Rc]
+;  [OLxs85 wx9 r6 Rc]
+; DaP [OLxs85 wx9 r6 Rc]
+; Sn [OLxs85 wx9 r6 Rc]
+; 7x [OLxs85 wx9 r6 Rc]
+; 1 [OLxs85 wx9 r6 Rc]
+; LC [OLxs85 wx9 r6 Rc]
+;  [OLxs85 wx9 r6 Rc]
+; ri0k2ih [OLxs85 wx9 r6 Rc]
+;  []
+;  []
+;  []
+; 8z1 []
+; 02Ks []
+; r []
+; c1Q5G []
+; Jjv8P17 []
+; a5TToh []
+; 5oS []
+; 16 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/explorando-a-api
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [  ] 
+; [ ] w
+; [P5 IC ] 5
+; [] z6
+; [3I QXVX 0I ] V
+; [91] WTD39
+; [jJ9tT b  OlW0] 7yW5m
+; [ 2YXjZk  G] bdOAe
+; [pvEe7I29 U0SB9GC S149mL5 804D] e
+; [2 9N2YpO e2iXw61h HYcFN] Ox9
+;  [   ]
+; k [   ]
+;  [   ]
+;  [   ]
+; 4ir [   ]
+; dJ8n [   ]
+; 922 [   ]
+;  [   ]
+; 4o40KhCn [   ]
+; Y [   ]
+;  [3 T ]
+; 4 [3 T ]
+;  [3 T ]
+; 2 [3 T ]
+; m46 [3 T ]
+;  [3 T ]
+; 8z0Pus [3 T ]
+; KCAZ [3 T ]
+; ODyQD5MD [3 T ]
+; 9lps3RdS [3 T ]
+;  []
+; 8 []
+; B9 []
+; AMa []
+;  []
+; c []
+; Nt90cw []
+; 02JD1zt []
+; Yg []
+; 1mm []
+;  [w 0 ]
+;  [w 0 ]
+; A [w 0 ]
+; 8 [w 0 ]
+;  [w 0 ]
+; R8A [w 0 ]
+; hr3 [w 0 ]
+; xF [w 0 ]
+; J2E62 [w 0 ]
+; 46f0m2R3 [w 0 ]
+;  [Lb  Vvl5 0Qz]
+;  [Lb  Vvl5 0Qz]
+;  [Lb  Vvl5 0Qz]
+; 1y [Lb  Vvl5 0Qz]
+;  [Lb  Vvl5 0Qz]
+; 8JI [Lb  Vvl5 0Qz]
+; YsC4 [Lb  Vvl5 0Qz]
+; 3zj [Lb  Vvl5 0Qz]
+; cxr [Lb  Vvl5 0Qz]
+; Ag [Lb  Vvl5 0Qz]
+;  []
+; q []
+; vm []
+; Zx []
+;  []
+; J3hWW []
+; U8 []
+;  []
+; 319K54 []
+; k9V5 []
+;  [ 29ozvc ]
+; 1 [ 29ozvc ]
+; g [ 29ozvc ]
+; 7D4 [ 29ozvc ]
+; f [ 29ozvc ]
+; m942 [ 29ozvc ]
+; KPl [ 29ozvc ]
+; 61T [ 29ozvc ]
+; 53F [ 29ozvc ]
+; e0GZ [ 29ozvc ]
+;  []
+;  []
+;  []
+; K []
+;  []
+;  []
+; 2 []
+; AE54EbE []
+; 90Z9b []
+; N []
+;  [mboo]
+;  [mboo]
+; 3 [mboo]
+; v [mboo]
+;  [mboo]
+; 1goe2 [mboo]
+; qtwT [mboo]
+;  [mboo]
+; j93fQW [mboo]
+; IAZT2w [mboo]
+;  [9cHbz3w lZ66Y4g4m]
+; 5 [9cHbz3w lZ66Y4g4m]
+; 2T [9cHbz3w lZ66Y4g4m]
+; 1E [9cHbz3w lZ66Y4g4m]
+; bU [9cHbz3w lZ66Y4g4m]
+; Cs7 [9cHbz3w lZ66Y4g4m]
+; zhE910 [9cHbz3w lZ66Y4g4m]
+; 6NL8FF [9cHbz3w lZ66Y4g4m]
+; P [9cHbz3w lZ66Y4g4m]
+; 4j3K [9cHbz3w lZ66Y4g4m]
+; 17 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/explorando-a-api
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [  ] 
+; [ U] A
+; [] 
+; [] 
+; [m1A6 l322] s2
+; [] 
+; [q 6A] g6
+; [] OA2f
+; [yb06TLXc 1wOc] Zsr
+; [PQhcw0F23 90a 0tJ X3pv50vU] wNmx
+;  [  ]
+; d [  ]
+; 5 [  ]
+; 546 [  ]
+; B2Cg [  ]
+; A1dl [  ]
+;  [  ]
+;  [  ]
+; z8dr7D [  ]
+; AB [  ]
+;  []
+; 5 []
+; 8 []
+;  []
+; rnZE []
+; 0Ibv []
+; 2a2 []
+; tR9R []
+; tk0baPEd []
+; X []
+;  [kY  gh]
+; H [kY  gh]
+;  [kY  gh]
+; b3Z [kY  gh]
+; 4 [kY  gh]
+;  [kY  gh]
+; W8 [kY  gh]
+; 7 [kY  gh]
+; JL [kY  gh]
+; 67F [kY  gh]
+;  [gD W]
+;  [gD W]
+; pD [gD W]
+; 1 [gD W]
+; S [gD W]
+;  [gD W]
+; C [gD W]
+; L16q [gD W]
+; 3l [gD W]
+; S5Ex21W7 [gD W]
+;  [1g 4 ]
+;  [1g 4 ]
+; 1 [1g 4 ]
+; pK [1g 4 ]
+; 6E5M [1g 4 ]
+; rVQ8 [1g 4 ]
+; 1 [1g 4 ]
+;  [1g 4 ]
+; QrVeh8w [1g 4 ]
+; P13AU9v [1g 4 ]
+;  [W]
+; o [W]
+; y [W]
+; 45 [W]
+; 6 [W]
+; y5 [W]
+; w [W]
+; hv [W]
+; qQ9T [W]
+; 35aB [W]
+;  [W0108 iz4 NW]
+; 7 [W0108 iz4 NW]
+; U [W0108 iz4 NW]
+;  [W0108 iz4 NW]
+;  [W0108 iz4 NW]
+; 1 [W0108 iz4 NW]
+; q61wM [W0108 iz4 NW]
+; Sxs4y [W0108 iz4 NW]
+;  [W0108 iz4 NW]
+; 60C5747S2 [W0108 iz4 NW]
+;  []
+;  []
+; 1 []
+; m []
+; g4 []
+; d0t []
+;  []
+; 4 []
+; bycNdXmv []
+; R2S8Ay []
+;  [5P01x79 Jdt2046M T0 ]
+;  [5P01x79 Jdt2046M T0 ]
+; 3 [5P01x79 Jdt2046M T0 ]
+; Qx [5P01x79 Jdt2046M T0 ]
+;  [5P01x79 Jdt2046M T0 ]
+;  [5P01x79 Jdt2046M T0 ]
+; oK8D [5P01x79 Jdt2046M T0 ]
+; lK6OXs [5P01x79 Jdt2046M T0 ]
+; po7koe [5P01x79 Jdt2046M T0 ]
+; d [5P01x79 Jdt2046M T0 ]
+;  [3Gx8UU]
+; e [3Gx8UU]
+; v [3Gx8UU]
+; F2T [3Gx8UU]
+; l [3Gx8UU]
+; DACaA [3Gx8UU]
+; xRR [3Gx8UU]
+; t4 [3Gx8UU]
+; im8Fmo8 [3Gx8UU]
+; Jb8W3 [3Gx8UU]
+; 107 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉hospital.logic-test꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; [  ] 
+; [] 9
+; [eC 3t  ] d
+; [k3 e4L ] Z
+; [I 96a] 2
+; [5 l] Afqm
+; [Tq5E] 7Ec
+; [Q3JR2rx CZtu qjY m] 126
+; [sZ5 39HS 9O] 6rAX7
+; [94u v4WI 3r ] F
+;  []
+;  []
+; 2 []
+; B5 []
+; 6C0X []
+; L []
+; LN []
+; P []
+; Q367Q []
+; xIsIiyib []
+;  [  ]
+; G [  ]
+; k4 [  ]
+;  [  ]
+; l [  ]
+;  [  ]
+; O [  ]
+; 0nH [  ]
+; p911b2V [  ]
+; 7SgpU [  ]
+;  []
+; u []
+;  []
+; Zi4 []
+; 606S []
+;  []
+; F []
+; 4dyP []
+;  []
+; rAuN1IqZ []
+;  [e TLF pDl]
+;  [e TLF pDl]
+; 4 [e TLF pDl]
+; Fs [e TLF pDl]
+;  [e TLF pDl]
+;  [e TLF pDl]
+; 35dl [e TLF pDl]
+;  [e TLF pDl]
+; KlQZa [e TLF pDl]
+; 0gLHbQ [e TLF pDl]
+;  []
+;  []
+; 2 []
+; n []
+; Jk2 []
+; Jerm8 []
+; 1Ubj []
+; g5M5FS2 []
+; 6266 []
+; BL41zF []
+;  []
+; t []
+; uP []
+; UR []
+;  []
+;  []
+; e []
+; Basw []
+; M054Y []
+; 0fVIQNm []
+;  [43 jDwu T5p ]
+;  [43 jDwu T5p ]
+;  [43 jDwu T5p ]
+; l [43 jDwu T5p ]
+;  [43 jDwu T5p ]
+; 3Ts47 [43 jDwu T5p ]
+; v7m [43 jDwu T5p ]
+; Z7I [43 jDwu T5p ]
+; z4twC [43 jDwu T5p ]
+; 551U77r2 [43 jDwu T5p ]
+;  []
+;  []
+;  []
+; 25 []
+; X171 []
+; 93zNO []
+; WDE05 []
+;  []
+; Va9qmv []
+; 6cJC []
+;  [M78cK aF77S]
+;  [M78cK aF77S]
+; T2 [M78cK aF77S]
+; Je2 [M78cK aF77S]
+; N [M78cK aF77S]
+; EPPH [M78cK aF77S]
+; zefG2 [M78cK aF77S]
+; hgNc [M78cK aF77S]
+; M8mwfl [M78cK aF77S]
+;  [M78cK aF77S]
+;  [L]
+; Q [L]
+; bD [L]
+; 3JF [L]
+; aj [L]
+; i3Z6b [L]
+; G [L]
+; 6285P [L]
+; 73i9 [L]
+; D939 [L]
+; 108 tests finished, all passing 👍, ns: 1, vars: 4
+clj꞉hospital.logic-test꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/generators-and-property-tests/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:52272 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9763 (REPL:1029).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 107 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/generators-and-property-tests/hospital; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:52319 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at hospital.core/eval9763 (REPL:1055).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5
+clj꞉hospital.logic-test꞉> 
+; Running tests for the following namespaces:
+;   hospital.logic-test
+;   hospital.logic
+
+; 207 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉hospital.logic-test꞉> 
