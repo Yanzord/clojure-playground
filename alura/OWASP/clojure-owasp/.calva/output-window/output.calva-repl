@@ -1,0 +1,37 @@
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/OWASP/clojure-owasp; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:53208 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at clojure-owasp.core/eval9006 (REPL:10).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉clojure-owasp.core꞉> 
+; Jack-in done.
+clj꞉clojure-owasp.core꞉> 
+; Evaluating file: owasp1.clj
+; /bin/kafka server.properties
+nil
+clj꞉clojure-owasp.owasp1꞉> 
+; Evaluating file: owasp1.clj
+; /bin/kafka server.properties
+; /bin/kafka server.properties; ls /
+nil
+clj꞉clojure-owasp.owasp1꞉> 
+; Evaluating file: owasp1.clj
+; 
+; Execution error (IOException) at java.lang.ProcessImpl/forkAndExec (ProcessImpl.java:-2).
+; error=2, No such file or directory
+; Evaluation of file owasp1.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp1꞉> 
+; Evaluating file: owasp1.clj
+; select * from Users where username='yan' and password='123'
+; select * from Users where username='yan' and password=''or id=1 having '1'='1''
+; select * from Users where username='yan' and password=''or admin=1 having '1'='1''
+nil
+clj꞉clojure-owasp.owasp1꞉> 

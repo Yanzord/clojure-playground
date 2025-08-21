@@ -4746,3 +4746,7 @@ clj꞉hospital.logic-test꞉> 
 
 ; 259 tests finished, all passing 👍, ns: 1, vars: 4
 clj꞉hospital.logic-test꞉> 
+; Evaluating file: owasp1.clj
+; /bin/kafka server.properties
+nil
+clj꞉clojure-owasp.owasp1꞉> 
