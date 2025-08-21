@@ -6,6 +6,7 @@
             [clojure.test.check.clojure-test :refer (defspec)]
             [clojure.test.check.properties :as prop]
             [clojure.test.check.generators :as gen]
+            [schema-generators.generators :as g]
             [schema.core :as s]))
 
 (s/set-fn-validation! true)
@@ -126,9 +127,71 @@
      )
    ))
 
+(defn adiciona-fila-de-espera [[hospital fila]]
+  (assoc hospital :espera fila))
 
+(def hospital-gen
+  (gen/fmap 
+   adiciona-fila-de-espera 
+   (gen/tuple (gen/not-empty (g/generator h.model/Hospital))
+              fila-nao-cheia-gen)))
 
+(def chega-em-gen 
+  (gen/tuple (gen/return chega-em) 
+             (gen/return :espera) 
+             nome-aleatorio-gen
+             (gen/return 1)))
 
+(defn adiciona-inexistente-ao-departamento [departamento]
+  (keyword (str departamento "inexistente")))
 
+(defn transfere-gen [hospital]
+  (let [departamentos (keys hospital)
+        departamentos-inexistentes (map adiciona-inexistente-ao-departamento departamentos)
+        todos-os-departamentos (concat departamentos departamentos-inexistentes)]
+    (gen/tuple (gen/return transfere) 
+               (gen/elements todos-os-departamentos) 
+               (gen/elements todos-os-departamentos)
+               (gen/return 0))))
 
+(defn acao-gen [hospital]
+  (gen/one-of [chega-em-gen 
+               (transfere-gen hospital)]))
+
+(defn acoes-gen [hospital]
+  (gen/not-empty (gen/vector (acao-gen hospital) 1 100)))
+
+; a sacada do tratamento do erro eh que
+; estamos criando um teste que valida a propriedade do sistema
+; independentemente de as acoes uma a uma terem sucesso ou fracasso
+; inclusive com parametros invalidos
+; aqui inclusive voce pode discutir de desativar o schema e o assertion temporariamente
+; para ver em execucao com ele desativado (em producao)
+; vai manter as propriedades mesmo em situacoes de erro. super poderoso.
+(defn executa-uma-acao [situacao [acao-fn departamento destino diferenca-se-sucesso]]
+  (let [hospital (:hospital situacao)
+        diferenca-atual (:diferenca situacao)]
+   (try
+    (let [hospital-novo (acao-fn hospital departamento destino)]
+      {:hospital hospital-novo 
+       :diferenca (+ diferenca-se-sucesso diferenca-atual)})
+    (catch IllegalStateException e
+      situacao)
+     ; esse eh o caso super especifico e novamente um caso de erro generico que ficamos refens
+     ; da situacao. mas se a equipe de dev junto com a equipe de negocio decidir que nao eh na transferencia que
+     ; deve ser tratado esse erro, voce poderia sinalizar o erro de outras maneiras
+     ; retornos, outras exceptions etc. mas ai caimos na mesma situacao de ter que tratar aqui
+     ; se queremos criar um framework de geracao automatica de acoes e tratamento de erros, provavelmente
+     ; voce vai ter um padrao de tratamento de erros no seu sistema
+     (catch AssertionError e
+       situacao))))
+
+(defspec simula-um-dia-do-hospital-nao-perde-pessoas 50
+  (prop/for-all [hospital-inicial hospital-gen]
+                (let [acoes (gen/generate (acoes-gen hospital-inicial))
+                      situacao-inicial {:hospital hospital-inicial :diferenca 0}
+                      total-pacientes-inicial (hospital.logic/total-de-pacientes hospital-inicial)
+                      situacao-final (reduce executa-uma-acao situacao-inicial acoes)
+                      total-pacientes-final (hospital.logic/total-de-pacientes (:hospital situacao-final))]
+                  (is (= (- total-pacientes-final (:diferenca situacao-final)) total-pacientes-inicial)))))
 

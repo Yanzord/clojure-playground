@@ -13,3 +13,4 @@
 (s/def PacienteID s/Str)
 (s/def Departamento (s/queue PacienteID))
 (s/def Hospital {s/Keyword Departamento})
+
