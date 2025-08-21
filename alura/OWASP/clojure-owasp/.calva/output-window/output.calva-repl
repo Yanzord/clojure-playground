@@ -35,3 +35,129 @@ clj꞉clojure-owasp.owasp1꞉> 
 ; select * from Users where username='yan' and password=''or admin=1 having '1'='1''
 nil
 clj꞉clojure-owasp.owasp1꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password pato123})}
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password pato123})}
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; 
+; Execution error (FileNotFoundException) at clojure-owasp.owasp2/eval10378$loading (owasp2.clj:1).
+; Could not locate crypto_password/bcrypt__init.class, crypto_password/bcrypt.clj or crypto_password/bcrypt.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; 
+; Execution error (FileNotFoundException) at clojure-owasp.owasp2/eval10387$loading (owasp2.clj:1).
+; Could not locate crypto_password/bcrypt__init.class, crypto_password/bcrypt.clj or crypto_password/bcrypt.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/OWASP/clojure-owasp; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:54091 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at clojure-owasp.core/eval9006 (REPL:68).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉clojure-owasp.core꞉> 
+; Jack-in done.
+clj꞉clojure-owasp.core꞉> 
+; Evaluating file: owasp2.clj
+; 
+; Execution error (FileNotFoundException) at clojure-owasp.owasp2/eval9267$loading (owasp2.clj:1).
+; Could not locate crypto_password/bcrypt__init.class, crypto_password/bcrypt.clj or crypto_password/bcrypt.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: core_test.clj
+#'clojure-owasp.core-test/a-test
+clj꞉clojure-owasp.core-test꞉> 
+; Evaluating file: owasp2.clj
+; 
+; ; clj  clojure-owasp.owasp2 
+; Execution error (FileNotFoundException) at clojure-owasp.owasp2/eval9563$loading (owasp2.clj:1).
+; Could not locate crypto_password/bcrypt__init.class, crypto_password/bcrypt.clj or crypto_password/bcrypt.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; 
+; Execution error (FileNotFoundException) at clojure-owasp.owasp2/eval9572$loading (owasp2.clj:1).
+; Could not locate crypto_password/bcrypt__init.class, crypto_password/bcrypt.clj or crypto_password/bcrypt.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yan.pereira/github/yan/clojure-playground/alura/OWASP/clojure-owasp; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:54191 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+; Execution error (FileNotFoundException) at clojure-owasp.core/eval9006 (REPL:107).
+; Could not locate clojure/tools/namespace/repl__init.class, clojure/tools/namespace/repl.clj or clojure/tools/namespace/repl.cljc on classpath.
+clj꞉clojure-owasp.core꞉> 
+; Jack-in done.
+clj꞉clojure-owasp.core꞉> 
+; Evaluating file: owasp2.clj
+; 
+; Execution error (FileNotFoundException) at clojure-owasp.owasp2/eval9548$loading (owasp2.clj:1).
+; Could not locate crypto_password/bcrypt__init.class, crypto_password/bcrypt.clj or crypto_password/bcrypt.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password pato123})}
+; $2a$11$XY5bU196.R5O6sMzmAODxuyX3d4mpvu/q8sIbvQYJxX6JWj9SkGAm
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password pato123})}
+; $2a$11$zYzWb6njC9wGNRBhnLS4Su6/F9igtuec58hqOcqMATwzDFnMOyn8e
+true
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; $2a$11$z4mlAqFldQLKuNEDXCID5OSimsMzcsbV/mfCAB3Y5OlK0NE9aSGu2
+; {Users ({:username yan.pereira, :password $2a$11$wgFF3RY9LTKrDZIfp/VgueQimYdKcw9aUlxeDkS6Nw1.X9FO1wCby})}
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password $2a$11$NTKBiMQZKU2OGhQ9sl72g.IYRoOcrRVyUSHX1/sokrc408yX.tZri})}
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password $2a$11$UiayqPOrTCq4kZkNXF.Q/uvO5I6e6NXvbjSV5ItiyQtPgSohY6x0G})}
+; 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; common-passwords.txt (No such file or directory)
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password $2a$11$3jN1Zx9sFk5atW0gmyM9pupjQb9FEcQM.PMHQcnMlqG2CKg3Sa6KW})}
+; [senha yan qwerty 123456]
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; {Users ({:username yan.pereira, :password $2a$11$doxNxM8Tgx8.2F5CiWTLXu4DoB6Wt.fj86G.M1VulsES3BCSNhZEK})}
+; true nil
+nil
+clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp2.clj
+; true nil
+; {Users ({:username yan.pereira, :password $2a$11$.5VtUMyNlD7dMffMAJEmqOFxVCzn5MmYMCXDpVP356By/zCa3PWjq})}
+; 
+; Execution error at clojure-owasp.owasp2/register-new-user (owasp2.clj:43).
+; Password is too common
+; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp2꞉> 
