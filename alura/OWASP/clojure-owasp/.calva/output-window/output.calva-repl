@@ -161,3 +161,18 @@ clj꞉clojure-owasp.owasp2꞉> 
 ; Password is too common
 ; Evaluation of file owasp2.clj failed: class clojure.lang.Compiler$CompilerException
 clj꞉clojure-owasp.owasp2꞉> 
+; Evaluating file: owasp3.clj
+; {Users ({:username yan.pereira, :password $2a$11$efYI0Ls5qSznfTkA4DcjPOJaRyc.QAmPWCVzhpiJx6KHkT43RZini})}
+; 
+; ; clj  clojure-owasp.owasp3 
+; Execution error at clojure-owasp.owasp3/register-new-user (owasp3.clj:23).
+; Password is too common
+; Evaluation of file owasp3.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp3꞉> 
+; Evaluating file: owasp3.clj
+; /upload {:uploaded-file hi.txt}
+; executing for /upload
+; /login {:password password}
+; executing for /login
+nil
+clj꞉clojure-owasp.owasp3꞉> 
