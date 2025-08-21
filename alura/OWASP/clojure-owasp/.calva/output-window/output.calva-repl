@@ -404,3 +404,19 @@ clj꞉clojure-owasp.owasp7꞉> 
 ;                               </html>
 nil
 clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp8.clj
+; 1.11111113E7
+nil
+clj꞉clojure-owasp.owasp8꞉> 
+; Evaluating file: owasp8.clj
+; 1.11111113E7
+; 4
+nil
+clj꞉clojure-owasp.owasp8꞉> 
+; Evaluating file: owasp8.clj
+; 1.11111113E7
+; 
+; Execution error at clojure-owasp.owasp8/treat-dot-comms (owasp8.clj:4).
+; No dispatch macro for: =
+; Evaluation of file owasp8.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp8꞉> 
