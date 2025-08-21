@@ -332,3 +332,75 @@ clj꞉clojure-owasp.owasp6꞉> 
 ; {:error 500, :body Upload failed}
 nil
 clj꞉clojure-owasp.owasp6꞉> 
+; Evaluating file: owasp7.clj
+; 
+; ; clj  clojure-owasp.owasp7 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; src/common-passwords.txt (No such file or directory)
+; Evaluation of file owasp7.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+#'clojure-owasp.owasp7/register-new-user
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+; {Users ({:username yan.pereira, :password $2a$11$3nw.I.nSO.zP9g3r/JTixe99U/LFx0.JG8Q7TTBMl9RxrTpQeHgz6, :name Yan Pereira})}
+; {Users ({:username guilherme.silveira, :password $2a$11$.MJHMJnYIga8bSAThAQTx.FYWde3wjTGEjMC3OHLeymL2WgCjwswG, :name Guilherme Silveira} {:username yan.pereira, :password $2a$11$3nw.I.nSO.zP9g3r/JTixe99U/LFx0.JG8Q7TTBMl9RxrTpQeHgz6, :name Yan Pereira})}
+#'clojure-owasp.owasp7/public-profile-template
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+; {Users ({:username yan.pereira, :password $2a$11$Lj9b5.f652w/oPSTGlwWkeXxG6UO.UbQ0SFQsEgkXpJ24lKYjUcbu, :name Yan Pereira})}
+; {Users ({:username guilherme.silveira, :password $2a$11$hI1YVGryI/xIeaSI02U1v.X/0gSZ/ChrUdy6n1BmOuHZKq0TTOTqS, :name Guilherme Silveira} {:username yan.pereira, :password $2a$11$Lj9b5.f652w/oPSTGlwWkeXxG6UO.UbQ0SFQsEgkXpJ24lKYjUcbu, :name Yan Pereira})}
+; {Users ({:username guilherme.silveira, :password $2a$11$hI1YVGryI/xIeaSI02U1v.X/0gSZ/ChrUdy6n1BmOuHZKq0TTOTqS, :name Guilherme Silveira} {:username yan.pereira, :password $2a$11$Lj9b5.f652w/oPSTGlwWkeXxG6UO.UbQ0SFQsEgkXpJ24lKYjUcbu, :name Yan Pereira})}
+nil
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+; {Users ({:username yan.pereira, :password $2a$11$ODxF8L881QsWdn7LbkpaZO6dYTwGPwNlxnx1VpqVOzipb/mJEcq8y, :name Yan Pereira})}
+; {Users ({:username guilherme.silveira, :password $2a$11$QzVJmqlSwrI4OTAsBwjATuU6QxGGobc7L9Jzrn3N7mcpZVo/Rr9vW, :name Guilherme Silveira} {:username yan.pereira, :password $2a$11$ODxF8L881QsWdn7LbkpaZO6dYTwGPwNlxnx1VpqVOzipb/mJEcq8y, :name Yan Pereira})}
+; {Users ({:username guilherme.silveira, :password $2a$11$QzVJmqlSwrI4OTAsBwjATuU6QxGGobc7L9Jzrn3N7mcpZVo/Rr9vW, :name Guilherme Silveira} {:username yan.pereira, :password $2a$11$ODxF8L881QsWdn7LbkpaZO6dYTwGPwNlxnx1VpqVOzipb/mJEcq8y, :name Yan Pereira})}
+; yan.pereira nil
+nil
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+; {yan.pereira {:username yan.pereira, :password $2a$11$5xq0eOv98Aw291qb0il.NOFGxOhnWquJCbwI61ze.Gm5W3azxa7GG, :name Yan Pereira}}
+; {yan.pereira {:username yan.pereira, :password $2a$11$5xq0eOv98Aw291qb0il.NOFGxOhnWquJCbwI61ze.Gm5W3azxa7GG, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$1tvrbtAh8ZrbnB0j3aUGF.OD3azNP19xH.bj3TAqV5py8VES06EVm, :name Guilherme Silveira}}
+; {yan.pereira {:username yan.pereira, :password $2a$11$5xq0eOv98Aw291qb0il.NOFGxOhnWquJCbwI61ze.Gm5W3azxa7GG, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$1tvrbtAh8ZrbnB0j3aUGF.OD3azNP19xH.bj3TAqV5py8VES06EVm, :name Guilherme Silveira}}
+; yan.pereira {:username yan.pereira, :password $2a$11$5xq0eOv98Aw291qb0il.NOFGxOhnWquJCbwI61ze.Gm5W3azxa7GG, :name Yan Pereira}
+nil
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+; {yan.pereira {:username yan.pereira, :password $2a$11$aLcokYc/rH1eKm/BxzG7aOJUfPlA26Qk0VWdtDG1TGLZ91z6nD0r6, :name Yan Pereira}}
+; {yan.pereira {:username yan.pereira, :password $2a$11$aLcokYc/rH1eKm/BxzG7aOJUfPlA26Qk0VWdtDG1TGLZ91z6nD0r6, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$kaZcE1ftuQvZKX3GHt7F6efcfTcyK/Xhhf0pTfD9k.XYCcCfIAyy., :name Guilherme Silveira}}
+; {yan.pereira {:username yan.pereira, :password $2a$11$aLcokYc/rH1eKm/BxzG7aOJUfPlA26Qk0VWdtDG1TGLZ91z6nD0r6, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$kaZcE1ftuQvZKX3GHt7F6efcfTcyK/Xhhf0pTfD9k.XYCcCfIAyy., :name Guilherme Silveira}}
+; yan.pereira {:username yan.pereira, :password $2a$11$aLcokYc/rH1eKm/BxzG7aOJUfPlA26Qk0VWdtDG1TGLZ91z6nD0r6, :name Yan Pereira}
+; <html>
+;                               <head><title>Welcome</title></head>
+;                               <body>
+;                               <h1>Yan Pereira</h1>
+;                               yan.pereira
+;                               </body>
+;                               </html>
+nil
+clj꞉clojure-owasp.owasp7꞉> 
+; Evaluating file: owasp7.clj
+; {yan.pereira {:username yan.pereira, :password $2a$11$81pJCGp9RMY2kUhIw4CZTOT0K2rzI2p.Ze40oB3.K2nEiCFGfwg3C, :name Yan Pereira}}
+; {yan.pereira {:username yan.pereira, :password $2a$11$81pJCGp9RMY2kUhIw4CZTOT0K2rzI2p.Ze40oB3.K2nEiCFGfwg3C, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$oV7dqo8Y2xrK3BJH0pYnGufT2k9IAF4gUB2e9VssQta1CXye0VyJm, :name Guilherme Silveira}}
+; {yan.pereira {:username yan.pereira, :password $2a$11$81pJCGp9RMY2kUhIw4CZTOT0K2rzI2p.Ze40oB3.K2nEiCFGfwg3C, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$oV7dqo8Y2xrK3BJH0pYnGufT2k9IAF4gUB2e9VssQta1CXye0VyJm, :name Guilherme Silveira}}
+; yan.pereira {:username yan.pereira, :password $2a$11$81pJCGp9RMY2kUhIw4CZTOT0K2rzI2p.Ze40oB3.K2nEiCFGfwg3C, :name Yan Pereira}
+; <html>
+;                               <head><title>Welcome</title></head>
+;                               <body>
+;                               <h1>Yan Pereira</h1>
+;                               yan.pereira
+;                               </body>
+;                               </html>
+; {yan.pereira {:username yan.pereira, :password $2a$11$81pJCGp9RMY2kUhIw4CZTOT0K2rzI2p.Ze40oB3.K2nEiCFGfwg3C, :name Yan Pereira}, guilherme.silveira {:username guilherme.silveira, :password $2a$11$JqAl8LivTBFEzCG4cXd7Ru/gqOvPIikttIOePjvrP1USGzXhl/t9., :name <script>alert('oi')</script>Guilherme Silveira}}
+; guilherme.silveira {:username guilherme.silveira, :password $2a$11$JqAl8LivTBFEzCG4cXd7Ru/gqOvPIikttIOePjvrP1USGzXhl/t9., :name <script>alert('oi')</script>Guilherme Silveira}
+; <html>
+;                               <head><title>Welcome</title></head>
+;                               <body>
+;                               <h1><script>alert('oi')</script>Guilherme Silveira</h1>
+;                               guilherme.silveira
+;                               </body>
+;                               </html>
+nil
+clj꞉clojure-owasp.owasp7꞉> 

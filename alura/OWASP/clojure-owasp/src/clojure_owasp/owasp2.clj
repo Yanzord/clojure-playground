@@ -31,7 +31,7 @@
       slurp
       clojure.string/split-lines))
 
-(def common-passwords (read-file "src/common-passwords.txt"))
+(def common-passwords (read-file "resources/common-passwords.txt"))
 
 (defn is-common? [password]
   (some #(= password %) common-passwords))
