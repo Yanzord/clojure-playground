@@ -420,3 +420,87 @@ clj꞉clojure-owasp.owasp8꞉> 
 ; No dispatch macro for: =
 ; Evaluation of file owasp8.clj failed: class clojure.lang.Compiler$CompilerException
 clj꞉clojure-owasp.owasp8꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+; nil
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+; nil
+; 
+; Execution error (NullPointerException) at clojure-owasp.owasp10/attempt-login (owasp10.clj:16).
+; Cannot invoke "Object.getClass()" because "x" is null
+; Evaluation of file owasp10.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+; nil
+; {yan.pereira 1}
+; {yan.pereira 2}
+; {yan.pereira 3}
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+; nil
+; nil
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+; nil
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; 
+; Execution error at clojure-owasp.owasp10/login (owasp10.clj:31).
+; Ha! Too many attempts!
+; Evaluation of file owasp10.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; nil
+; {:yan.pereira 30}
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; nil
+; {:yan.pereira 29}
+; 
+; Execution error (NullPointerException) at clojure-owasp.owasp10/login (owasp10.clj:33).
+; Cannot invoke "Object.getClass()" because "x" is null
+; Evaluation of file owasp10.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; nil
+; {:yan.pereira 29}
+; {:yan.pereira 0}
+nil
+clj꞉clojure-owasp.owasp10꞉> 
+; Evaluating file: owasp10.clj
+; true
+; false
+; nil
+; nil
+; {:matheus.bernardes 29}
+; true
+; {:matheus.bernardes 0}
+; nil
+; nil
+; {:matheus.bernardes 29, :guilherme.silveira 1}
+; {123.54.2.12 30}
+; 
+; Execution error at clojure-owasp.owasp10/login (owasp10.clj:40).
+; Ha! Too many attempts!
+; Evaluation of file owasp10.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp10꞉> 
