@@ -312,3 +312,23 @@ clj꞉clojure-owasp.owasp5꞉> 
 ; Can not read this news /news/owasp-new-report-is-out 175
 nil
 clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp6.clj
+; /login
+; Execution for path /login
+; {:code 200, :body result for /login, :headers {:X-frameros Our Framework 3.1}}
+nil
+clj꞉clojure-owasp.owasp6꞉> 
+; Evaluating file: owasp6.clj
+; /login
+; Execution for path /login
+; {:code 200, :body result for /login, :headers {:X-framework Our Framework 3.1}}
+nil
+clj꞉clojure-owasp.owasp6꞉> 
+; Evaluating file: owasp6.clj
+; /login
+; Execution for path /login
+; {:code 200, :body result for /login, :headers {:X-framework Our Framework 3.1}}
+; /upload
+; {:error 500, :body Upload failed}
+nil
+clj꞉clojure-owasp.owasp6꞉> 
