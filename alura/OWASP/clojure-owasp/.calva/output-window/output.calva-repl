@@ -205,3 +205,110 @@ clj꞉clojure-owasp.core꞉> 
 ; {:tag :client, :attrs nil, :content [{:tag :username, :attrs nil, :content [yan.pereira]} {:tag :name, :attrs nil, :content [Yan]} {:tag :lastname, :attrs nil, :content [Pereira]} {:tag :score, :attrs nil, :content [100]} {:tag :foo, :attrs nil, :content nil}]}
 nil
 clj꞉clojure-owasp.owasp4꞉> 
+; Evaluating file: owasp5.clj
+; 
+; ; clj  clojure-owasp.owasp5 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; /tmp/lyricsgeni-e-o-zeppelin (No such file or directory)
+; Evaluation of file owasp5.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; resources/geni-e-o-zeppelin (No such file or directory)
+; Evaluation of file owasp5.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+nil
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+nil
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; 
+; Execution error (IllegalArgumentException) at clojure-owasp.owasp5/get-lyric (owasp5.clj:6).
+; Cannot open <nil> as a Reader.
+; Evaluation of file owasp5.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+nil
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+; 687432
+nil
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+; 687432
+; Checking 1314-ABCD 687432
+"Updated687432"
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+; 687432
+; Checking 1314-ABCD 687432
+"Updated 687432"
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+; 687432
+; Checking 1314-ABCD 687432
+; Checking 1314-ABCD 687432
+"Updated 175"
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+; 687432
+nil
+clj꞉clojure-owasp.owasp5꞉> 
+; Evaluating file: owasp5.clj
+; Musica Geni e o Zeppelin
+; 
+; Checking 1314-ABCD 687432
+; 687432
+; Checking 1314-ABCD 175
+; nil
+; 687432
+; Checking 1314-ABCD 687432
+; Checking 1314-ABCD 175
+; Can not read this news /news/owasp-new-report-is-out 175
+nil
+clj꞉clojure-owasp.owasp5꞉> 

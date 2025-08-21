@@ -14,4 +14,4 @@
       java.io.ByteArrayInputStream.
       parse-document))
 
-(println (get-document "src/nasty.xml"))
+(println (get-document "resources/nasty.xml"))
