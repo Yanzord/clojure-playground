@@ -1,1 +1,0 @@
-["^ ","~$valid-name?",["^ ","~:row",4,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$clojure-owasp.owasp","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:boolean","~:arglist-str","[name]"]],"~:type","~:fn"],"~:filename","/Users/yan.pereira/github/yan/clojure-playground/alura/OWASP/clojure-owasp/src/clojure_owasp/owasp.clj"]
