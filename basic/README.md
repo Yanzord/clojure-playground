@@ -1,22 +1,33 @@
-# basic
+# Basic - Fundamentos de Clojure
 
-A Clojure library designed to ... well, that part is up to you.
+## Objetivo de Estudo
+Este projeto contém exemplos práticos dos conceitos fundamentais da linguagem Clojure, servindo como introdução aos elementos básicos da programação funcional.
 
-## Usage
+## O que este projeto representa
+Uma coleção de exemplos práticos cobrindo os pilares básicos do Clojure:
 
-FIXME
+### Conteúdo dos Módulos
 
-## License
+**functions.clj**
+- Definição de funções simples
+- Funções com múltiplos parâmetros
+- Interpolação de strings
 
-Copyright © 2025 FIXME
+**variables.clj** 
+- Uso de variáveis locais com `let`
+- Escopo de variáveis
+- Binding de valores
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+**vectors.clj**
+- Operações básicas com vetores (get, first, last, count)
+- Adição de elementos com `conj`
+- Inserção em posições específicas
+- Funções de alta ordem: `filter`, `map`, `reduce`
+- Manipulação de coleções
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+## Conceitos Praticados
+- Sintaxe básica do Clojure
+- Definição e chamada de funções
+- Trabalho com coleções (vetores)
+- Programação funcional (funções como first-class citizens)
+- Imutabilidade de estruturas de dados
