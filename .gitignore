@@ -1,0 +1,110 @@
+# Clojure e Leiningen
+target/
+classes/
+checkouts/
+profiles.clj
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+.lein-*
+.nrepl-port
+.prepl-port
+.hgignore
+.hg/
+
+# Clojure adicionais
+.cpcache/
+.shadow-cljs/
+node_modules/
+.rebel_readline_history
+.socket-repl-port
+
+# IDEs - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# IDEs - VS Code
+.vscode/
+*.code-workspace
+
+# IDEs - Eclipse
+.project
+.metadata
+.classpath
+.settings/
+bin/
+
+# Calva (Clojure extension para VS Code)
+.calva/
+.calva-repl/
+
+# Cursive (Clojure plugin para IntelliJ)
+.cursive/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.cider-history
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Sistema Operacional - macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Sistema Operacional - Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Sistema Operacional - Linux
+*~
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Clj-kondo cache
+.clj-kondo/.cache/
+
+# LSP
+.lsp/
+.clj-kondo/.cache/
+
+# Figwheel
+figwheel_server.log
+pom.xml.bak
+
+# Shadow-cljs
+.shadow-cljs/
+node_modules/
+
+# deps.edn
+.cpcache/
+
+# Boot
+.boot/
