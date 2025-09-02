@@ -37,7 +37,10 @@
              {:db/ident       :produto/preco
               :db/valueType   :db.type/bigdec
               :db/cardinality :db.cardinality/one
-              :db/doc         "O preco de um produto com precisao monetaria"}])
+              :db/doc         "O preco de um produto com precisao monetaria"}
+             {:db/ident       :produto/palavra-chave
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/many}])
 
 (defn cria-schema [conn]
   (d/transact conn schema))
@@ -90,9 +93,28 @@
          :where [?produto :produto/preco ?preco]
                 [?produto :produto/nome ?nome]] db))
 
-; estou sendo explicitonos campos 1 a 1
-(defn todos-os-produtos-por-preco [db]
+; estou sendo explicito nos campos 1 a 1
+(defn todos-os-produtos-por-preco-minimo [db preco-minimo-requisitado]
   (d/q '[:find ?nome ?preco
+         :in $ ?preco-minimo
          :keys produto/nome produto/preco
          :where [?produto :produto/preco ?preco]
-         [?produto :produto/nome ?nome]] db))
+                [(> ?preco ?preco-minimo)]
+                [?produto :produto/nome ?nome]] db preco-minimo-requisitado))
+
+; eu tenho 10mil...se eu tenho 1000 produtos com preco > 5000, so 10 produtos com quantidade < 10
+; passar por 10 mil
+;[(> preco  5000)]                                           ; => 5000 datom
+;[(< quantidade 10)]                                         ; => 10 datom
+;
+;; passar por 10 mil
+;[(< quantidade 10)]                                         ; => 10 datom
+;[(> preco  5000)]                                           ; => 10 datom
+;
+; em geral vamos deixar as condicoes da mais restritiva pra menos restritiva...
+; pois o plano de ação somos nós quem tomamos
+
+(defn todos-os-produtos-por-palavra-chave [db palavra-chave-buscada]
+  (d/q '[:find (pull ?produto [*])
+         :in $ ?palavra-chave
+         :where [?produto :produto/palavra-chave ?palavra-chave]] db palavra-chave-buscada))
