@@ -1,4 +1,4 @@
-(ns ecommerce.aula2
+(ns ecommerce.aula3
   (:use clojure.pprint)
   (:require [datomic.api :as d])
   (:require [ecommerce.db :as db])
@@ -8,21 +8,28 @@
 
 (db/cria-schema! conn)
 
+(def eletronicos (model/nova-categoria "Eletronicos"))
+(def esporte (model/nova-categoria "Esporte"))
+
+(pprint @(db/adiciona-categorias! conn [eletronicos esporte]))
+
+(def categorias (db/todas-as-categorias (d/db conn)))
+(pprint categorias)
+
 (def computador (model/novo-produto (model/uuid) "Computador Novo" "/computador-novo" 2500.10M))
 (def celular-caro (model/novo-produto (model/uuid) "Celular caro" "/celular" 8888.83M))
 (def calculadora {:produto/nome "Calculadora com 4 operacoes"})
 (def celular-barato (model/novo-produto "Celular barato" "/celular-barato" 0.1M))
+(def xadrez (model/novo-produto "Tabuleiro de Xadrez" "/tabuleiro-de-xadrez" 30M))
 
-(pprint @(d/transact conn [computador celular-caro calculadora celular-barato]))
+(pprint @(db/adiciona-produtos! conn [computador celular-caro calculadora celular-barato xadrez]))
 
 (def produtos (db/todos-os-produtos (d/db conn)))
 (pprint produtos)
 
-; no momento que uso um identificador igual a algo que ja existe nao eh uma nova entidade
-; eh uma atualizacao da entidade existente
-(def celular-barato-2 (model/novo-produto (:produto/id celular-barato) "CELULAR BARATO!!!!!" "/celular-baratissimo" 0.001M))
-(pprint celular-barato-2)
-(pprint @(d/transact conn [celular-barato-2]))
+(db/atribui-categorias! conn [computador celular-caro celular-barato] eletronicos)
+
+(db/atribui-categorias! conn [xadrez] esporte)
 
 (def produtos (db/todos-os-produtos (d/db conn)))
 (pprint produtos)

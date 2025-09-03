@@ -4,9 +4,9 @@
   (:require [ecommerce.db :as db])
   (:require [ecommerce.model :as model]))
 
-(def conn (db/abre-conexao))
+(def conn (db/abre-conexao!))
 
-(db/cria-schema conn)
+(db/cria-schema! conn)
 
 (let
  [computador (model/novo-produto (model/uuid) "Computador Novo" "/computador-novo" 2500.10M)
