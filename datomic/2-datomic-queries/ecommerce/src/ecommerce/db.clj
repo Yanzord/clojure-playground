@@ -11,7 +11,6 @@
 (defn apaga-banco! []
   (d/delete-database db-uri))
 
-
 ; Produtos 
 ; id?
 ; nome String 1 ==> Computador Novo
@@ -27,8 +26,7 @@
 ; 17 :produto/slug /telefone
 ; 17 :produto/preco 8888.88
 
-(def schema [
-             ; Produtos
+(def schema [; Produtos
              {:db/ident       :produto/nome
               :db/valueType   :db.type/string
               :db/cardinality :db.cardinality/one
@@ -51,7 +49,7 @@
              {:db/ident       :produto/categoria
               :db/valueType   :db.type/ref
               :db/cardinality :db.cardinality/one}
-             
+
              ; Categorias
              {:db/ident       :categoria/nome
               :db/valueType   :db.type/string
@@ -59,8 +57,7 @@
              {:db/ident       :categoria/id
               :db/valueType   :db.type/uuid
               :db/cardinality :db.cardinality/one
-              :db/unique      :db.unique/identity
-             }])
+              :db/unique      :db.unique/identity}])
 
 (defn cria-schema! [conn]
   (d/transact conn schema))
@@ -111,7 +108,7 @@
   (d/q '[:find ?nome ?preco
          :keys nome preco
          :where [?produto :produto/preco ?preco]
-                [?produto :produto/nome ?nome]] db))
+         [?produto :produto/nome ?nome]] db))
 
 ; estou sendo explicito nos campos 1 a 1
 (defn todos-os-produtos-por-preco-minimo [db preco-minimo-requisitado]
@@ -119,8 +116,8 @@
          :in $ ?preco-minimo
          :keys produto/nome produto/preco
          :where [?produto :produto/preco ?preco]
-                [(> ?preco ?preco-minimo)]
-                [?produto :produto/nome ?nome]] db preco-minimo-requisitado))
+         [(> ?preco ?preco-minimo)]
+         [?produto :produto/nome ?nome]] db preco-minimo-requisitado))
 
 ; eu tenho 10mil...se eu tenho 1000 produtos com preco > 5000, so 10 produtos com quantidade < 10
 ; passar por 10 mil
@@ -138,7 +135,6 @@
   (d/q '[:find (pull ?produto [*])
          :in $ ?palavra-chave
          :where [?produto :produto/palavra-chave ?palavra-chave]] db palavra-chave-buscada))
-
 
 (defn um-produto-por-dbid [db produto-id]
   (d/pull db '[*] produto-id))
@@ -169,3 +165,27 @@
 ; mas vamos manter dois poise se utilizarmos schema fica mais facil de trabalhar
 (defn adiciona-categorias! [conn categorias]
   (d/transact conn categorias))
+
+(defn todos-os-nomes-de-produtos-e-categorias [db]
+  (d/q '[:find ?nome-do-produto ?nome-da-categoria
+         :keys produto categoria
+         :where [?produto :produto/nome ?nome-do-produto]
+         [?produto :produto/categoria ?categoria]
+         [?categoria :categoria/nome ?nome-da-categoria]] db))
+
+
+; exemplo com forward navigation
+; ?produto :produto/categoria >>>>>>>
+;; (defn todos-os-produtos-da-categoria [db nome-da-categoria]
+;;   (d/q '[:find (pull ?produto [:produto/nome :produto/slug {:produto/categoria [:categoria/nome]}])
+;;          :in $ ?nome
+;;          :where [?categoria :categoria/nome ?nome]
+;;          [?produto :produto/categoria ?categoria]] db nome-da-categoria))
+
+; exemplo com backward navigation
+; >>>>>>> :produto/categoria ?categoria
+(defn todos-os-produtos-da-categoria [db nome-da-categoria]
+  (d/q '[:find (pull ?categoria [:categoria/nome {:produto/_categoria [:produto/nome :produto/slug]}])
+         :in $ ?nome
+         :where [?categoria :categoria/nome ?nome]] db nome-da-categoria))
+         
