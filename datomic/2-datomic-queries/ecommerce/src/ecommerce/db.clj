@@ -57,7 +57,13 @@
              {:db/ident       :categoria/id
               :db/valueType   :db.type/uuid
               :db/cardinality :db.cardinality/one
-              :db/unique      :db.unique/identity}])
+              :db/unique      :db.unique/identity}
+             
+             ; Transacoes
+             {:db/ident       :tx-data/ip
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/one
+             }])
 
 (defn cria-schema! [conn]
   (d/transact conn schema))
@@ -158,8 +164,12 @@
   (let [a-transacionar (db-adds-de-atribuicao-de-categorias produtos categoria)]
     (d/transact conn a-transacionar)))
 
-(defn adiciona-produtos! [conn produtos]
+(defn adiciona-produtos! 
+  ([conn produtos]
   (d/transact conn produtos))
+  ([conn produtos ip]
+   (let [db-add-ip [:db/add "datomic.tx" :tx-data/ip ip]]
+     (d/transact conn (conj produtos db-add-ip)))))
 
 ; como esses dois estao genericos poderiam ser um so
 ; mas vamos manter dois poise se utilizarmos schema fica mais facil de trabalhar
@@ -203,3 +213,34 @@
          :where [?produto :produto/preco ?preco]
          [?produto :produto/categoria ?categoria]
          [?categoria :categoria/nome ?nome]] db))
+
+;; ; variacao que faz duas queries soltas
+;; (defn todos-os-produtos-mais-caros [db]
+;;   (let [preco-mais-alto (ffirst (d/q '[:find (max ?preco)
+;;          :where [_ :produto/preco ?preco]] db))]
+;;     (d/q '[:find (pull ?produto [*])
+;;            :in $ ?preco
+;;            :where [?produto :produto/preco ?preco]] db preco-mais-alto)))
+
+; queremos fazer as duas queries de uma vez so
+; podemos criar nested queries
+(defn todos-os-produtos-mais-caros [db]
+  (d/q '[:find (pull ?produto [*])
+         :where [(q '[:find (max ?preco)
+                      :where [_ :produto/preco ?preco]] 
+                    $) [[?preco]]]
+                [?produto :produto/preco ?preco]] db))
+
+
+(defn todos-os-produtos-mais-baratos [db]
+  (d/q '[:find (pull ?produto [*])
+         :where [(q '[:find (min ?preco)
+                      :where [_ :produto/preco ?preco]]
+                    $) [[?preco]]]
+         [?produto :produto/preco ?preco]] db))
+
+(defn todos-os-produtos-do-ip [db ip]
+  (d/q '[:find (pull ?produto [*])
+         :in $ ?ip-buscado
+         :where [?transacao :tx-data/ip ?ip-buscado]
+                [?produto :produto/id _ ?transacao]] db ip))
