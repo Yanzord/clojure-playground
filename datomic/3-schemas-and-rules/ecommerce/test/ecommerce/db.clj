@@ -1,0 +1,223 @@
+(ns ecommerce.db
+  (:use clojure.pprint)
+  (:require [datomic.api :as d]
+            [ecommerce.model :as model]
+            [schema.core :as s]
+            [clojure.walk :as walk]))
+
+(def db-uri "datomic:dev://localhost:4334/ecommerce")
+
+(defn abre-conexao! []
+  (d/create-database db-uri)
+  (d/connect db-uri))
+
+(defn apaga-banco! []
+  (d/delete-database db-uri))
+
+; Produtos 
+; id?
+; nome String 1 ==> Computador Novo
+; slug String 1 ==> /computador_novo
+; preco pronto flutuante 1 ==> 3500.10
+; categoria_id integer ==> 3
+
+; id_entidade atributo valor
+; 15 :produto/nome Computador Novo
+; 15 :produto/slug /computador_novo
+; 15 :produto/preco 3500.10
+; 17 :produto/nome Telefone Caro
+; 17 :produto/slug /telefone
+; 17 :produto/preco 8888.88
+
+(def schema [; Produtos
+             {:db/ident       :produto/nome
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/one
+              :db/doc         "O nome de um produto"}
+             {:db/ident       :produto/slug
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/one
+              :db/doc         "O caminho para acessar esse produto via http"}
+             {:db/ident       :produto/preco
+              :db/valueType   :db.type/bigdec
+              :db/cardinality :db.cardinality/one
+              :db/doc         "O preco de um produto com precisao monetaria"}
+             {:db/ident       :produto/palavra-chave
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/many}
+             {:db/ident       :produto/id
+              :db/valueType   :db.type/uuid
+              :db/cardinality :db.cardinality/one
+              :db/unique      :db.unique/identity}
+             {:db/ident       :produto/categoria
+              :db/valueType   :db.type/ref
+              :db/cardinality :db.cardinality/one}
+
+             ; Categorias
+             {:db/ident       :categoria/nome
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/one}
+             {:db/ident       :categoria/id
+              :db/valueType   :db.type/uuid
+              :db/cardinality :db.cardinality/one
+              :db/unique      :db.unique/identity}
+
+             ; Transacoes
+             {:db/ident       :tx-data/ip
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/one}])
+
+(defn cria-schema! [conn]
+  (d/transact conn schema))
+
+(s/defn adiciona-produtos!
+  ([conn produtos :- [model/Produto]]
+   (d/transact conn produtos))
+  ([conn produtos :- [model/Produto] ip]
+   (let [db-add-ip [:db/add "datomic.tx" :tx-data/ip ip]]
+     (d/transact conn (conj produtos db-add-ip)))))
+
+(def todos-os-produtos-por-slug-fixo-q
+  '[:find ?entidade
+    :where [?entidade :produto/slug "/computador-novo"]])
+
+(defn todos-os-produtos-por-slug-fixo [db]
+  (d/q todos-os-produtos-por-slug-fixo-q db))
+
+; nao estou usando notacao hungara e extract
+; eh comum no sql: String sql = "select * from where slug = ::SLUG::"
+; conexao.query(sql, {::SLUG:: "/computador-novo"})
+(defn todos-os-produtos-por-slug [db slug]
+  (d/q '[:find ?entidade
+         :in $ ?slug-a-ser-buscado ; proposital diferente da variavel para evitar erros
+         :where [?entidade :produto/slug ?slug-a-ser-buscado]] db slug))
+
+; entity => ?entidade => ?produto => ?p
+; se nao vai usar... _
+(defn todos-os-slugs [db]
+  (d/q '[:find ?slug
+         :where [_ :produto/slug ?slug]] db))
+
+(defn todos-os-produtos-por-preco [db]
+  (d/q '[:find ?nome ?preco
+         :keys nome preco
+         :where [?produto :produto/preco ?preco]
+         [?produto :produto/nome ?nome]] db))
+
+; estou sendo explicito nos campos 1 a 1
+(defn todos-os-produtos-por-preco-minimo [db preco-minimo-requisitado]
+  (d/q '[:find ?nome ?preco
+         :in $ ?preco-minimo
+         :keys produto/nome produto/preco
+         :where [?produto :produto/preco ?preco]
+         [(> ?preco ?preco-minimo)]
+         [?produto :produto/nome ?nome]] db preco-minimo-requisitado))
+
+(defn todos-os-produtos-por-palavra-chave [db palavra-chave-buscada]
+  (d/q '[:find (pull ?produto [*])
+         :in $ ?palavra-chave
+         :where [?produto :produto/palavra-chave ?palavra-chave]] db palavra-chave-buscada))
+
+(defn um-produto-por-dbid [db produto-id]
+  (d/pull db '[*] produto-id))
+
+(defn um-produto [db produto-id]
+  (d/pull db '[*] [:produto/id produto-id]))
+
+(defn db-adds-de-atribuicao-de-categorias [produtos categoria]
+  (reduce (fn [db-adds produto] (conj db-adds [:db/add
+                                               [:produto/id (:produto/id produto)]
+                                               :produto/categoria
+                                               [:categoria/id (:categoria/id categoria)]]))
+          []
+          produtos))
+
+(defn atribui-categorias! [conn produtos categoria]
+  (let [a-transacionar (db-adds-de-atribuicao-de-categorias produtos categoria)]
+    (d/transact conn a-transacionar)))
+
+; como esses dois estao genericos poderiam ser um so
+; mas vamos manter dois poise se utilizarmos schema fica mais facil de trabalhar
+(s/defn adiciona-categorias! [conn categorias :- [model/Categoria]]
+  (d/transact conn categorias))
+
+(defn todos-os-nomes-de-produtos-e-categorias [db]
+  (d/q '[:find ?nome-do-produto ?nome-da-categoria
+         :keys produto categoria
+         :where [?produto :produto/nome ?nome-do-produto]
+         [?produto :produto/categoria ?categoria]
+         [?categoria :categoria/nome ?nome-da-categoria]] db))
+
+; exemplo com backward navigation
+; >>>>>>> :produto/categoria ?categoria
+(defn todos-os-produtos-da-categoria [db nome-da-categoria]
+  (d/q '[:find (pull ?categoria [:categoria/nome {:produto/_categoria [:produto/nome :produto/slug]}])
+         :in $ ?nome
+         :where [?categoria :categoria/nome ?nome]] db nome-da-categoria))
+
+(defn resumo-dos-produtos [db]
+  (d/q '[:find (min ?preco) (max ?preco) (count ?preco) (sum ?preco)
+         :keys minimo maximo quantidade preco-total
+         :with ?produto
+         :where [?produto :produto/preco ?preco]] db))
+
+(defn resumo-dos-produtos-por-categoria [db]
+  (d/q '[:find ?nome (min ?preco) (max ?preco) (count ?preco) (sum ?preco)
+         :keys categoria minimo maximo quantidade preco-total
+         :with ?produto
+         :where [?produto :produto/preco ?preco]
+         [?produto :produto/categoria ?categoria]
+         [?categoria :categoria/nome ?nome]] db))
+
+(defn todos-os-produtos-mais-caros [db]
+  (d/q '[:find (pull ?produto [*])
+         :where [(q '[:find (max ?preco)
+                      :where [_ :produto/preco ?preco]]
+                    $) [[?preco]]]
+         [?produto :produto/preco ?preco]] db))
+
+(defn todos-os-produtos-mais-baratos [db]
+  (d/q '[:find (pull ?produto [*])
+         :where [(q '[:find (min ?preco)
+                      :where [_ :produto/preco ?preco]]
+                    $) [[?preco]]]
+         [?produto :produto/preco ?preco]] db))
+
+(defn todos-os-produtos-do-ip [db ip]
+  (d/q '[:find (pull ?produto [*])
+         :in $ ?ip-buscado
+         :where [?transacao :tx-data/ip ?ip-buscado]
+         [?produto :produto/id _ ?transacao]] db ip))
+
+(defn dissoc-db-id [entidade]
+  (if (map? entidade)
+    (dissoc entidade :db/id)
+    entidade))
+
+(defn datomic-para-entidade [entidades]
+  (walk/prewalk dissoc-db-id entidades))
+
+; pull generico, vantagem preguica, desvantagem pode trazer mais do que eu queira
+(s/defn todos-os-produtos :- [model/Produto] [db]
+  (datomic-para-entidade (d/q '[:find [(pull ?entidade [* {:produto/categoria [*]}]) ...]
+         :where
+         [?entidade :produto/nome]] db)))
+
+(s/defn todas-as-categorias :- [model/Categoria] [db]
+  (datomic-para-entidade (d/q '[:find [(pull ?categoria [*]) ...]
+         :where [?categoria :categoria/id]] db)))
+
+(defn cria-dados-de-exemplo [conn]
+  (def eletronicos (model/nova-categoria "Eletronicos"))
+  (def esporte (model/nova-categoria "Esporte"))
+  (pprint @(adiciona-categorias! conn [eletronicos esporte]))
+
+  (def computador (model/novo-produto (model/uuid) "Computador Novo" "/computador-novo" 2500.10M))
+  (def celular-caro (model/novo-produto (model/uuid) "Celular caro" "/celular" 8888.83M))
+  ;(def calculadora {:produto/nome "Calculadora com 4 operacoes"})
+  (def celular-barato (model/novo-produto "Celular barato" "/celular-barato" 0.1M))
+  (def xadrez (model/novo-produto "Tabuleiro de Xadrez" "/tabuleiro-de-xadrez" 30M))
+  (pprint @(adiciona-produtos! conn [computador celular-caro celular-barato xadrez] "255.255.255.0"))
+
+  (atribui-categorias! conn [computador celular-caro celular-barato] eletronicos)
+  (atribui-categorias! conn [xadrez] esporte))
