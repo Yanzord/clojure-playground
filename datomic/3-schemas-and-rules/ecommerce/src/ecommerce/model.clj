@@ -8,13 +8,14 @@
    :categoria/nome s/Str})
 
 (def Produto
-  {(s/optional-key :produto/nome)          s/Str
+  {:produto/id                             java.util.UUID
+   (s/optional-key :produto/nome)          s/Str
    (s/optional-key :produto/slug)          s/Str
    (s/optional-key :produto/preco)         BigDecimal
-   :produto/id                             java.util.UUID
    (s/optional-key :produto/palavra-chave) [s/Str]
    (s/optional-key :produto/categoria)     Categoria
-   (s/optional-key :produto/estoque)       s/Int})
+   (s/optional-key :produto/estoque)       s/Int
+   (s/optional-key :produto/digital)       s/Bool})
 
 (defn novo-produto
   ([nome slug preco]
@@ -31,7 +32,8 @@
     :produto/nome    nome
     :produto/slug    slug
     :produto/preco   preco
-    :produto/estoque estoque}))
+    :produto/estoque estoque
+    :produto/digital false}))
 
 ; a "desvantagem" eh o copy e paste nas chaves
 ; poderiamos optar por um mapa
