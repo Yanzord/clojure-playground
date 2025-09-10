@@ -61,8 +61,12 @@
               :db/cardinality :db.cardinality/one}
              {:db/ident       :produto/variacao
               :db/valueType   :db.type/ref
-              :db/isComponent true 
+              :db/isComponent true
               :db/cardinality :db.cardinality/many}
+             {:db/ident       :produto/visualizacoes
+              :db/valueType   :db.type/long
+              :db/cardinality :db.cardinality/one
+              :db/noHistory   true}
 
              {:db/ident       :variacao/id
               :db/valueType   :db.type/uuid
@@ -234,7 +238,7 @@
         txs (map (fn [atributo] [:db/cas [:produto/id produto-id] atributo (get antigo atributo) (get a-atualizar atributo)]) atributos)]
     (d/transact conn txs)))
 
-(s/defn adiciona-variacao! 
+(s/defn adiciona-variacao!
   [conn produto-id :- java.util.UUID variacao :- s/Str preco :- BigDecimal]
   (d/transact conn [{:db/id          "variacao-temporaria"
                      :variacao/nome  variacao
@@ -248,6 +252,20 @@
          :where [?produto :produto/nome]]
        db))
 
-(s/defn remove-produto! 
+(s/defn remove-produto!
   [conn produto-id :- java.util.UUID]
   (d/transact conn [[:db/retractEntity [:produto/id produto-id]]]))
+
+(s/defn visualizacoes [db produto-id :- java.util.UUID]
+  (or (d/q '[:find ?visualizacoes .
+         :in $ ?id
+         :where [?p :produto/id ?id]
+         [?p :produto/visualizacoes ?visualizacoes]]
+       db produto-id) 0))
+
+(s/defn visualizacao!
+  [conn produto-id :- java.util.UUID]
+  (let [ate-agora (visualizacoes (d/db conn) produto-id)
+        novo-valor (inc ate-agora)]
+    (d/transact conn [{:produto/id            produto-id
+                       :produto/visualizacoes novo-valor}])))
