@@ -98,3 +98,12 @@
 (s/defn remove!
   [conn produto-id :- java.util.UUID]
   (d/transact conn [[:db/retractEntity [:produto/id produto-id]]]))
+
+(defn historico-de-precos [db produto-id]
+  (->> (d/q '[:find  ?instante ?preco
+         :in $ ?id
+         :where [?produto :produto/id ?id]
+         [?produto :produto/preco ?preco ?tx true]
+         [?tx :db/txInstant ?instante]]
+       (d/history db) produto-id)
+       (sort-by first)))
