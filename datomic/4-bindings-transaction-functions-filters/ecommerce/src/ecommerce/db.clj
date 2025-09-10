@@ -3,7 +3,8 @@
   (:require [datomic.api :as d]
             [ecommerce.model :as model]
             [schema.core :as s]
-            [clojure.walk :as walk]))
+            [clojure.walk :as walk]
+            [clojure.set :as cset]))
 
 (def db-uri "datomic:dev://localhost:4334/ecommerce")
 
@@ -58,8 +59,22 @@
              {:db/ident       :produto/digital
               :db/valueType   :db.type/boolean
               :db/cardinality :db.cardinality/one}
+             {:db/ident       :produto/variacao
+              :db/valueType   :db.type/ref
+              :db/isComponent true 
+              :db/cardinality :db.cardinality/many}
 
-             ; Categorias
+             {:db/ident       :variacao/id
+              :db/valueType   :db.type/uuid
+              :db/cardinality :db.cardinality/one
+              :db/unique      :db.unique/identity}
+             {:db/ident       :variacao/nome
+              :db/valueType   :db.type/string
+              :db/cardinality :db.cardinality/one}
+             {:db/ident       :variacao/preco
+              :db/valueType   :db.type/bigdec
+              :db/cardinality :db.cardinality/one}
+
              {:db/ident       :categoria/nome
               :db/valueType   :db.type/string
               :db/cardinality :db.cardinality/one}
@@ -68,11 +83,9 @@
               :db/cardinality :db.cardinality/one
               :db/unique      :db.unique/identity}
 
-             ; Transacoes
              {:db/ident       :tx-data/ip
               :db/valueType   :db.type/string
               :db/cardinality :db.cardinality/one}])
-
 
 (defn dissoc-db-id [entidade]
   (if (map? entidade)
@@ -107,7 +120,7 @@
 
 (s/defn um-produto! :- model/Produto [db produto-id :- java.util.UUID]
   (let [produto (um-produto db produto-id)]
-    (when (nil? produto) 
+    (when (nil? produto)
       (throw (ex-info "Nao encontrei uma entidade" {:type :errors/not-found :id produto-id})))
     produto))
 
@@ -131,17 +144,17 @@
 ; pull generico, vantagem preguica, desvantagem pode trazer mais do que eu queira
 (s/defn todos-os-produtos :- [model/Produto] [db]
   (datomic-para-entidade (d/q '[:find [(pull ?entidade [* {:produto/categoria [*]}]) ...]
-         :where
-         [?entidade :produto/nome]] db)))
+                                :where
+                                [?entidade :produto/nome]] db)))
 
 (s/defn todas-as-categorias :- [model/Categoria] [db]
   (datomic-para-entidade (d/q '[:find [(pull ?categoria [*]) ...]
-         :where [?categoria :categoria/id]] db)))
+                                :where [?categoria :categoria/id]] db)))
 
 (defn cria-dados-de-exemplo [conn]
   (def eletronicos (model/nova-categoria "Eletronicos"))
   (def esporte (model/nova-categoria "Esporte"))
-  (pprint @(adiciona-categorias! conn [eletronicos esporte]))
+  (adiciona-categorias! conn [eletronicos esporte])
 
   (def computador (model/novo-produto (model/uuid) "Computador Novo" "/computador-novo" 2500.10M 10))
   (def celular-caro (model/novo-produto (model/uuid) "Celular caro" "/celular" 8888.83M))
@@ -149,7 +162,7 @@
   (def celular-barato (model/novo-produto "Celular barato" "/celular-barato" 0.1M))
   (def xadrez (model/novo-produto (model/uuid) "Tabuleiro de Xadrez" "/tabuleiro-de-xadrez" 30M 5))
   (def jogo (assoc (model/novo-produto (model/uuid) "Jogo online" "/jogo-online" 20M) :produto/digital true))
-  (pprint @(adiciona-produtos-ou-altera-produtos! conn [computador celular-caro celular-barato xadrez jogo] "255.255.255.0"))
+  (adiciona-produtos-ou-altera-produtos! conn [computador celular-caro celular-barato xadrez jogo] "255.255.255.0")
 
   (atribui-categorias! conn [computador celular-caro celular-barato jogo] eletronicos)
   (atribui-categorias! conn [xadrez] esporte))
@@ -170,7 +183,7 @@
 (s/defn todos-os-produtos-vendaveis :- [model/Produto] [db]
   (datomic-para-entidade (d/q '[:find [(pull ?produto [* {:produto/categoria [*]}]) ...]
                                 :in $ %
-                                :where (pode-vender? ?produto)] 
+                                :where (pode-vender? ?produto)]
                               db regras)))
 
 (s/defn um-produto-vendavel :- (s/maybe model/Produto) [db produto-id :- java.util.UUID]
@@ -188,12 +201,12 @@
 (s/defn todos-os-produtos-nas-categorias :- [model/Produto] [db categorias :- [s/Str]]
   (datomic-para-entidade (d/q '[:find [(pull ?produto [* {:produto/categoria [*]}]) ...]
                                 :in $ % [?nome-da-categoria ...]
-                                :where 
+                                :where
                                 (produto-na-categoria ?produto ?nome-da-categoria)]
                               db regras categorias)))
 
 (s/defn todos-os-produtos-nas-categorias-e-digital :- [model/Produto] [db categorias :- [s/Str] digital? :- s/Bool]
-  (datomic-para-entidade 
+  (datomic-para-entidade
    (d/q '[:find [(pull ?produto [* {:produto/categoria [*]}]) ...]
           :in $ % [?nome-da-categoria ...] ?eh-digital?
           :where
@@ -201,3 +214,40 @@
           [?produto :produto/digital ?eh-digital?]]
         db regras categorias digital?)))
 
+;; (s/defn atualiza-preco [conn produto-id :- java.util.UUID preco-antigo :- BigDecimal preco-novo :- BigDecimal]
+;;   (if (= preco-antigo (:produto/preco (d/pull conn [*] (:produto/id produto-id))))
+;;     ; essa abordagem horrivel nao garante atomicidade
+;;     ; a linha anterior rodou. ponto, a linha sequinte roda
+;;     ; nao garante o que queriamos :(
+;;     (d/transact conn [{:produto/id produto-id :produto/preco preco-novo}])
+;;     (throw (ex-info "Valor foi alterado entre leitura e escrita" {:type :errors/transaction-validation-error}))))
+
+(s/defn atualiza-preco!
+  [conn produto-id :- java.util.UUID preco-antigo :- BigDecimal preco-novo :- BigDecimal]
+  (d/transact conn [[:db/cas [:produto/id produto-id] :produto/preco preco-antigo preco-novo]]))
+
+(s/defn atualiza-produto!
+  [conn antigo :- model/Produto a-atualizar :- model/Produto]
+  (let [produto-id (:produto/id antigo)
+        atributos (cset/intersection (set (keys antigo)) (set (keys a-atualizar)))
+        atributos (disj atributos :produto/id)
+        txs (map (fn [atributo] [:db/cas [:produto/id produto-id] atributo (get antigo atributo) (get a-atualizar atributo)]) atributos)]
+    (d/transact conn txs)))
+
+(s/defn adiciona-variacao! 
+  [conn produto-id :- java.util.UUID variacao :- s/Str preco :- BigDecimal]
+  (d/transact conn [{:db/id          "variacao-temporaria"
+                     :variacao/nome  variacao
+                     :variacao/preco preco
+                     :variacao/id    (model/uuid)}
+                    {:produto/id       produto-id
+                     :produto/variacao "variacao-temporaria"}]))
+
+(defn total-de-produtos [db]
+  (d/q '[:find [(count ?produto)]
+         :where [?produto :produto/nome]]
+       db))
+
+(s/defn remove-produto! 
+  [conn produto-id :- java.util.UUID]
+  (d/transact conn [[:db/retractEntity [:produto/id produto-id]]]))
