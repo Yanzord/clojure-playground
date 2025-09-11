@@ -1,4 +1,4 @@
-(ns ecommerce.aula4
+(ns ecommerce.aula5
   (:use clojure.pprint)
   (:require [datomic.api :as d]
             [ecommerce.db.config :as db.config]
@@ -22,19 +22,22 @@
 (def venda3 (db.venda/adiciona! conn (:produto/id primeiro) 8))
 (pprint venda1)
 
+(pprint @(db.venda/altera-situacao! conn venda1 "preparando"))
+(pprint @(db.venda/altera-situacao! conn venda2 "preparando"))
+(pprint @(db.venda/altera-situacao! conn venda2 "a caminho"))
+(pprint @(db.venda/altera-situacao! conn venda2 "entregue"))
+
+(pprint (db.venda/historico (d/db conn) venda2))
+
 (pprint @(db.venda/cancela! conn venda1))
+(pprint (db.venda/historico (d/db conn) venda1))
 
 (pprint (count (db.venda/todas-nao-canceladas (d/db conn))))
 (pprint (count (db.venda/todas-inclusive-canceladas (d/db conn))))
 (pprint (count (db.venda/canceladas (d/db conn))))
 
-(pprint @(db.produto/adiciona-ou-altera! conn [{:produto/id (:produto/id primeiro)
-                                                :produto/preco 300M}]))
-(pprint @(db.produto/adiciona-ou-altera! conn [{:produto/id (:produto/id primeiro)
-                                                :produto/preco 400M}]))
-(pprint @(db.produto/adiciona-ou-altera! conn [{:produto/id (:produto/id primeiro)
-                                                :produto/preco 355M}]))
-(pprint @(db.produto/adiciona-ou-altera! conn [{:produto/id (:produto/id primeiro)
-                                                :produto/preco 100M}]))
+(pprint (db.venda/historico-geral (d/db conn) #inst "2025-09-11T12:53:00.400-00:00"))
 
-(pprint (db.produto/historico-de-precos (d/db conn) (:produto/id primeiro)))
+(pprint (db.venda/historico-geral (d/db conn) #inst "2025-09-11T12:53:00.456-00:00"))
+
+
