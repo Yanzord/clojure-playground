@@ -1,4 +1,4 @@
-(ns ecommerce.aula2
+(ns ecommerce.aula3
   (:use clojure.pprint)
   (:require [datomic.api :as d]
             [ecommerce.db.config :as db.config]
@@ -28,3 +28,9 @@
 (time (dotimes [_ 100] (db.produto/busca-mais-caro (d/db conn))))
 (println "Busca dos mais caros que")
 (time (dotimes [_ 100] (count (db.produto/busca-mais-caro-que (d/db conn) 50000M))))
+(println "Busca por preco")
+(def preco-mais-caro (db.produto/busca-mais-caro (d/db conn)))
+(time (dotimes [_ 100] (count (db.produto/busca-por-preco (d/db conn) preco-mais-caro))))
+
+(println "Busca por preco e nome")
+(time (dotimes [_ 100] (count (db.produto/busca-por-preco-e-nome (d/db conn) 1000M "com"))))
