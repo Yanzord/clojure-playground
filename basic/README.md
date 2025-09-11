@@ -1,33 +1,40 @@
-# Basic - Fundamentos de Clojure
+# Conceitos Básicos de Clojure
 
-## Objetivo de Estudo
-Este projeto contém exemplos práticos dos conceitos fundamentais da linguagem Clojure, servindo como introdução aos elementos básicos da programação funcional.
+Introdução prática aos elementos fundamentais da linguagem Clojure através de exemplos executáveis cobrindo sintaxe básica, funções, variáveis locais e operações com coleções.
 
-## O que este projeto representa
-Uma coleção de exemplos práticos cobrindo os pilares básicos do Clojure:
+## Objetivo
 
-### Conteúdo dos Módulos
+Demonstração dos pilares básicos do Clojure para iniciantes na linguagem, fornecendo exemplos práticos e executáveis dos conceitos essenciais da programação funcional.
 
-**functions.clj**
-- Definição de funções simples
-- Funções com múltiplos parâmetros
-- Interpolação de strings
+## Módulos de Estudo
 
-**variables.clj** 
-- Uso de variáveis locais com `let`
-- Escopo de variáveis
-- Binding de valores
+### functions.clj
+Fundamentos de definição e uso de funções em Clojure.
+- Definição de funções com `defn`
+- Funções com múltiplos parâmetros e aridades
+- Interpolação de strings e concatenação
+- Documentação de funções
 
-**vectors.clj**
-- Operações básicas com vetores (get, first, last, count)
-- Adição de elementos com `conj`
-- Inserção em posições específicas
-- Funções de alta ordem: `filter`, `map`, `reduce`
-- Manipulação de coleções
+### variables.clj  
+Gerenciamento de variáveis locais e escopo.
+- Binding local com `let`
+- Escopo de variáveis e shadowing
+- Imutabilidade de valores locais
+- Estruturação de código com bindings
 
-## Conceitos Praticados
-- Sintaxe básica do Clojure
+### vectors.clj
+Operações fundamentais com vetores e coleções.
+- Acesso a elementos: `get`, `first`, `last`, `count`
+- Modificação imutável: `conj`, inserção em posições específicas
+- Higher-order functions: `filter`, `map`, `reduce`
+- Transformação e manipulação de coleções
+- Composição de operações funcionais
+
+## Conceitos Abordados
+
+- Sintaxe básica e estrutura de código Clojure
 - Definição e chamada de funções
-- Trabalho com coleções (vetores)
-- Programação funcional (funções como first-class citizens)
 - Imutabilidade de estruturas de dados
+- Programação funcional com funções como first-class citizens
+- Operações com vetores e coleções persistentes
+- Threading de dados através de pipelines de transformação

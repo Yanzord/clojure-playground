@@ -1,159 +1,74 @@
-# Record, Protocol e Multi-Method - Hospital
+# Records, Protocols e Multi-Methods
 
-## Objetivo de Estudo
-Este projeto é baseado no curso da Alura sobre estruturas avançadas de dados e polimorfismo em Clojure, explorando Records, Protocols e Multi-methods através da evolução do sistema de hospital.
+Curso sobre estruturas avançadas de dados e polimorfismo funcional em Clojure, explorando alternativas à orientação a objetos através de Records, Protocols e Multi-methods aplicados a sistema hospitalar.
 
-## O que este projeto representa
-Uma exploração das alternativas ao polimorfismo orientado a objetos em Clojure, demonstrando como criar abstrações flexíveis e extensíveis usando os mecanismos nativos da linguagem para tipos e comportamentos.
+## Objetivo
 
-### Estrutura do Projeto
+Demonstrar como criar abstrações flexíveis e extensíveis usando mecanismos nativos do Clojure para tipos e comportamentos, oferecendo alternativas ao polimorfismo orientado a objetos tradicional.
 
-**aula1.clj** - Records: Estruturas Tipadas
+## Estrutura das Aulas
+
+### aula1.clj
+Records: estruturas de dados tipadas.
 - Introdução aos Records como alternativa aos maps simples
 - Sintaxes de criação: `->Record`, `Record.`, `map->Record`
-- Diferenças entre Records e maps tradicionais
-- Validação e comportamento de tipos estruturados
+- Diferenças entre Records e maps em performance e semântica
+- Acesso via keywords vs métodos de campo
 
-**aula2.clj** - Protocols: Polimorfismo Funcional  
-- Definição de Protocols como contratos de comportamento
+### aula2.clj
+Protocols: contratos de comportamento.
+- Definição de Protocols como interfaces funcionais
 - `extend-type` para implementação de protocols
-- Polimorfismo sem hierarquia de classes
+- Polimorfismo baseado em tipo sem hierarquia de classes
 - Extensão de tipos Java existentes
 
-## Conceitos de Types e Abstractions
+### aula3.clj
+Multi-methods: dispatch avançado.
+- Dispatch customizado baseado em valores arbitrários
+- Implementação de comportamento polimórfico complexo
+- Hierarquias de dispatch e relações entre tipos
 
-### Records: Estruturas de Dados Tipadas
+### aula4.clj
+Integração e patterns avançados.
+- Combinação de Records, Protocols e Multi-methods
+- Patterns de design funcional
+- Extensibilidade e composição de comportamentos
 
-**Definição e Criação:**
-```clojure
-(defrecord Paciente [id nome nascimento])
+### aula5.clj  
+Casos de uso práticos e comparações.
+- Aplicação prática em domínio hospitalar
+- Comparação com abordagens orientadas a objetos
+- Trade-offs e decisões de design
 
-; Sintaxes de criação
-(->Paciente 15 "Yan" "02/04/1998")           ; Posicional
-(Paciente. 15 "Yan" "02/04/1998")            ; Java interop
-(map->Paciente {:id 15 :nome "Yan"})         ; A partir de map
-```
+## Conceitos Abordados
 
-**Características dos Records:**
-- Comportam-se como maps mas com tipo específico
-- Acesso via keywords: `(:id paciente)`  
-- Acesso via métodos: `(.nome paciente)`
-- Equality baseada em valor, não identidade
-- Performance otimizada para campos definidos
+### Records vs Maps
+- Records como estruturas tipadas com performance otimizada
+- Múltiplas sintaxes de criação e acesso a dados
+- Comportamento híbrido: tipagem + flexibilidade de maps
+- Equality baseada em valor e acesso via keywords/métodos
 
-### Protocols: Contratos de Comportamento
+### Protocols como Contratos
+- Definição de interfaces funcionais sem hierarquia de classes
+- `extend-type` para implementação de comportamentos
+- Polimorfismo baseado em tipo com dispatch otimizado
+- Extensão retroativa de tipos existentes (inclusive Java)
 
-**Definição de Protocol:**
-```clojure
-(defprotocol Cobravel
-  (deve-assinar-pre-autorizacao? [paciente procedimento valor]))
-```
+### Multi-methods
+- Dispatch customizado baseado em valores arbitrários
+- Polimorfismo mais flexível que protocols
+- Hierarquias de dispatch e relações complexas entre tipos
+- Trade-off entre flexibilidade e performance
 
-**Implementação via extend-type:**
-```clojure
-(extend-type PacienteParticular
-  Cobravel
-  (deve-assinar-pre-autorizacao? [paciente procedimento valor]
-    (>= valor 50)))
-```
+### Design Patterns Funcionais
+- Separação clara entre dados (Records) e comportamento (Protocols)
+- Composition over inheritance
+- Expression problem solution: fácil adição de tipos e comportamentos
+- Open/closed principle sem herança tradicional
 
-## Vantagens sobre OOP Tradicional
+## Cenários Práticos
 
-### Separação de Dados e Comportamento
-- **Dados**: Records definem estrutura
-- **Comportamento**: Protocols definem operações
-- **Flexibilidade**: Comportamentos podem ser adicionados sem modificar tipos
-
-### Expression Problem Solution
-- Fácil adição de novos tipos (Records)
-- Fácil adição de novos comportamentos (Protocols)
-- Sem recompilação de código existente
-
-### Extensibilidade
-- Protocols podem ser implementados para tipos existentes (Java)
-- Tipos podem implementar múltiplos protocols
-- Implementações podem ser adicionadas a posteriori
-
-## Padrões de Design
-
-### Multiple Dispatch via Protocols
-```clojure
-; Comportamento diferente baseado no tipo
-(deve-assinar-pre-autorizacao? particular :raio-x 40)      ; false
-(deve-assinar-pre-autorizacao? plano-saude :raio-x 40)     ; true
-```
-
-### Extensão de Tipos Java
-```clojure
-(extend-type java.util.Date
-  Dateable
-  (to-ms [this] (.getTime this)))
-  
-(extend-type java.lang.Number  
-  Dateable
-  (to-ms [this] this))
-```
-
-### Composition over Inheritance
-- Records compõem dados sem hierarquia
-- Protocols compõem comportamentos
-- Flexibilidade sem acoplamento de herança
-
-## Comparação com Alternativas
-
-### vs Maps Simples
-- **Records**: Tipo específico, validação, performance
-- **Maps**: Flexibilidade total, sem tipo
-
-### vs Classes OOP
-- **Records+Protocols**: Composição flexível
-- **Classes**: Herança rígida, acoplamento
-
-### vs Multi-methods
-- **Protocols**: Performance otimizada, dispatch simples
-- **Multi-methods**: Dispatch complexo, mais flexível
-
-## Patterns Avançados
-
-### Protocol como Interface
-```clojure
-; Múltiplos tipos implementando mesmo protocolo
-(defprotocol Cobravel
-  (deve-assinar-pre-autorizacao? [...])
-  (calcula-valor-final [...]))
-```
-
-### Records com Validação
-```clojure
-(defn adiciona-paciente [pacientes paciente]
-  (if-let [id (:id paciente)]
-    (assoc pacientes id paciente)
-    (throw (ex-info "Paciente sem id" {:paciente paciente}))))
-```
-
-### Extensão Retroativa
-```clojure
-; Adicionar comportamento a tipos já existentes
-(extend-type java.util.Calendar
-  Dateable
-  (to-ms [this] (to-ms (.getTime this))))
-```
-
-## Arquitetura Emergente
-
-### Data-Driven Programming
-- Records como especificação de dados
-- Protocols como especificação de comportamento
-- Implementações independentes e composáveis
-
-### Open/Closed Principle
-- Aberto para extensão (novos tipos, novos protocols)
-- Fechado para modificação (código existente intocado)
-- Evolução sem quebra de compatibilidade
-
-### Performance Benefits
-- Dispatch otimizado via protocols
-- Acesso otimizado a campos de records
-- JIT compilation friendly
-
-Este projeto demonstra como Clojure oferece mecanismos poderosos para criar abstrações flexíveis e extensíveis, combinando a simplicidade de dados imutáveis com o polimorfismo necessário para sistemas complexos, sem os custos da orientação a objetos tradicional.
+- Sistema hospitalar com diferentes tipos de pacientes
+- Polimorfismo para regras de cobrança e autorização
+- Extensão de comportamentos sem modificar código existente
+- Integração com tipos Java existentes

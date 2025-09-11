@@ -1,44 +1,47 @@
-# ecommerce
+# Bindings, Transaction Functions e Filtros
 
-FIXME: description
+Curso avançado sobre bindings de queries, transaction functions para lógica no banco e filtros de database para views personalizadas e controle de acesso em Datomic.
 
-## Installation
+## Objetivo
 
-Download from http://example.com/FIXME.
+Dominar técnicas avançadas de bindings, implementação de lógica de negócio no banco via transaction functions e criação de views filtradas para segurança e personalização.
 
-## Usage
+## Estrutura das Aulas
 
-FIXME: explanation
+### aula1.clj
+Bindings avançados em queries.
+- Bindings complexos e destrutrueção
+- Variáveis e expressões em queries
+- Otimização via bindings eficientes
 
-    $ java -jar ecommerce-0.1.0-standalone.jar [args]
+### aula2.clj
+Transaction functions básicas.
+- Definição e instalação de transaction functions
+- Lógica de negócio executada no banco
+- Validação e processamento atomico
 
-## Options
+### aula3.clj
+Transaction functions avançadas.
+- Functions complexas com múltiplas operações
+- Composição e reutilização de functions
+- Error handling e recuperação
 
-FIXME: listing of options this app accepts.
+### aula4.clj
+Filtros de database básicos.
+- Criação de database filters
+- Views personalizadas de dados
+- Filtragem por atributos e valores
 
-## Examples
+### aula5.clj
+Filtros avançados e segurança.
+- Filtros complexos e condicionais
+- Controle de acesso via filtros
+- Segurança e privacy de dados
 
-...
+## Conceitos Abordados
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2025 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Bindings avançados e otimização de queries
+- Transaction functions para lógica no servidor
+- Database filters para views personalizadas
+- Controle de acesso e segurança de dados
+- Performance e otimização de operações

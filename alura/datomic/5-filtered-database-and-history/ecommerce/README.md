@@ -1,44 +1,47 @@
-# ecommerce
+# Database Filtrado e Histórico
 
-FIXME: description
+Curso sobre database filters avançados e exploração completa de funcionalidades de histórico temporal do Datomic para auditoria, versionamento e navegação temporal.
 
-## Installation
+## Objetivo
 
-Download from http://example.com/FIXME.
+Explorar recursos avançados de filtragem de database e navegação completa no histórico temporal para auditoria, análise de mudanças e queries em diferentes pontos do tempo.
 
-## Usage
+## Estrutura das Aulas
 
-FIXME: explanation
+### aula1.clj
+Database filters avançados.
+- Criação de filtros complexos e condicionais
+- Composição de múltiplos filtros
+- Performance e otimização de filtros
 
-    $ java -jar ecommerce-0.1.0-standalone.jar [args]
+### aula2.clj
+Navegação no histórico básica.
+- Acesso ao histórico de entidades
+- Queries em pontos específicos do tempo
+- Comparação entre estados temporais
 
-## Options
+### aula3.clj
+Histórico avançado e auditoria.
+- Auditoria completa de mudanças
+- Rastreamento de alterações por usuário
+- Análise de evolução de dados
 
-FIXME: listing of options this app accepts.
+### aula4.clj
+Queries temporais complexas.
+- Queries que atravessam múltiplos pontos no tempo
+- Análise de tendências e padrões temporais
+- Agregações históricas
 
-## Examples
+### aula5.clj
+Integração de filtros e histórico.
+- Combinação de filtros com navegação temporal
+- Views históricas personalizadas
+- Cases de uso avançados para aplicações
 
-...
+## Conceitos Abordados
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2025 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Database filters avançados e personalização
+- Navegação e consulta no histórico temporal
+- Auditoria e rastreamento de alterações
+- Queries temporais e análise histórica
+- Integração de recursos para casos complexos

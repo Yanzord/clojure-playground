@@ -1,44 +1,53 @@
-# ecommerce
+# Queries Datomic
 
-FIXME: description
+Curso sobre sistema de queries avançado do Datomic usando Datalog para consultas complexas, joins, relacionamentos e otimização de performance em sistema de e-commerce.
 
-## Installation
+## Objetivo
 
-Download from http://example.com/FIXME.
+Dominar sintaxe Datalog e técnicas avançadas de consulta, desde queries básicas até relacionamentos complexos, joins eficientes e padrões de otimização.
 
-## Usage
+## Estrutura das Aulas
 
-FIXME: explanation
+### aula1.clj
+Fundamentos de queries Datalog.
+- Sintaxe básica de queries
+- Clauses find, where e binding
+- Queries simples com filtros
 
-    $ java -jar ecommerce-0.1.0-standalone.jar [args]
+### aula2.clj
+Queries com relacionamentos.
+- Navegação entre entidades relacionadas
+- Joins implícitos via referências
+- Consultas multi-entidade
 
-## Options
+### aula3.clj
+Queries complexas e agregação.
+- Funções de agregação e transformação
+- Queries com múltiplos critérios
+- Ordenação e limitação de resultados
 
-FIXME: listing of options this app accepts.
+### aula4.clj
+Otimização e performance.
+- Padrões eficientes de consulta
+- Índices e estratégias de otimização
+- Análise de performance de queries
 
-## Examples
+### aula5.clj
+Queries avançadas e cases especiais.
+- Consultas temporais e históricas
+- Queries recursivas
+- Técnicas avançadas de Datalog
 
-...
+### aula6.clj
+Integração e patterns práticos.
+- Queries para aplicações reais
+- Integração com código Clojure
+- Best practices para queries
 
-### Bugs
+## Conceitos Abordados
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2025 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Sintaxe Datalog e semântica de queries
+- Joins e relacionamentos entre entidades
+- Agregação, transformação e análise de dados
+- Otimização de performance e índices
+- Patterns avançados e queries temporais

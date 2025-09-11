@@ -1,151 +1,82 @@
-# Clojure Playground 🎯
+# Clojure Playground
 
-Este repositório contém minha jornada de estudos em Clojure, documentando o aprendizado desde conceitos básicos até técnicas avançadas de desenvolvimento funcional. Cada projeto representa uma etapa específica da evolução do conhecimento na linguagem.
+Repositório de estudos em Clojure cobrindo desde conceitos fundamentais até técnicas avançadas de desenvolvimento funcional. Cada projeto representa uma etapa específica da progressão na linguagem.
 
-## 🎯 Propósito do Repositório
+## Propósito
 
-Um laboratório prático para explorar os conceitos fundamentais e avançados do Clojure, servindo como:
-- **Referência pessoal** para consultas futuras
-- **Documentação do progresso** na linguagem
-- **Base de conhecimento** para projetos reais
-- **Portfólio técnico** das competências adquiridas
+Laboratório prático para explorar conceitos fundamentais e avançados do Clojure, servindo como referência pessoal, documentação de progresso e base de conhecimento para projetos reais.
 
-## 📚 Estudos Realizados
+## Estrutura dos Estudos
 
 ### Fundamentos
 
-#### [`basic/`](basic/) - Conceitos Básicos
-Primeiros passos com Clojure: funções, variáveis locais, vetores e operações fundamentais.
-- **Conceitos**: Sintaxe básica, `let`, `defn`
-- **Estruturas**: Vetores, funções de alta ordem (`map`, `filter`, `reduce`)
-
----
+**[`basic/`](basic/)** - Conceitos Básicos  
+Introdução à sintaxe do Clojure: funções, variáveis locais, vetores e operações com coleções.
 
 ### Curso Alura - Progressão Completa
 
-#### [`alura/functional-programming/`](alura/functional-programming/) - Programação Funcional
-Fundamentos do paradigma funcional através de exemplos práticos de e-commerce.
-- **Conceitos**: Higher-order functions, predicados, composição
-- **Threading**: `->` e `->>`
-- **Estruturas**: Maps, keywords, destrutruração
+**[`alura/clojure/1-functional-programming/`](alura/clojure/1-functional-programming/)** - Programação Funcional  
+Fundamentos do paradigma funcional através de exemplos práticos de e-commerce. Aborda higher-order functions, predicados, composição, threading macros e manipulação de estruturas de dados.
 
-#### [`alura/day-to-day-collections/`](alura/day-to-day-collections/) - Coleções no Dia a Dia  
-Manipulação avançada de coleções através de um sistema de loja.
-- **Conceitos**: Recursão, `group-by`, pipelines de transformação
-- **Práticas**: Análise de dados, agregações, relatórios
+**[`alura/clojure/2-day-to-day-collections/`](alura/clojure/2-day-to-day-collections/)** - Coleções no Dia a Dia  
+Manipulação avançada de coleções através de sistema de loja. Cobre recursão, `group-by`, pipelines de transformação e análise de dados.
 
-#### [`alura/exploring-tests/`](alura/exploring-tests/) - Explorando Testes
-Test Driven Development e práticas modernas de testing.
-- **Conceitos**: TDD, testes de borda, property validation
-- **Ferramentas**: `clojure.test`, exception handling
-- **Arquitetura**: Separação de responsabilidades, error handling
+**[`alura/clojure/3-mutability-with-atoms-and-refs/`](alura/clojure/3-mutability-with-atoms-and-refs/)** - Mutabilidade Controlada  
+Gerenciamento de estado mutável com Atoms e Refs. Explora STM (Software Transactional Memory), thread-safety e padrões de concorrência.
 
-#### [`alura/generators-and-property-tests/`](alura/generators-and-property-tests/) - Testes Generativos
-Property-based testing com geradores automáticos de dados.
-- **Conceitos**: Property-based testing, `test.check`
-- **Técnicas**: Geradores customizados, simulação de cenários
-- **Validação**: Invariantes sistêmicas, casos extremos
+**[`alura/clojure/4-record-protocol-multi-method/`](alura/clojure/4-record-protocol-multi-method/)** - Types e Abstrações  
+Polimorfismo funcional com Records e Protocols. Demonstra alternativas à orientação a objetos, separação dados/comportamento e extensibilidade.
 
-#### [`alura/mutability-with-atoms-and-refs/`](alura/mutability-with-atoms-and-refs/) - Mutabilidade Controlada
-Gerenciamento de estado mutável com Atoms e Refs.
-- **Conceitos**: Atoms, Refs, STM (Software Transactional Memory)
-- **Concorrência**: Thread-safety, `swap!`, `dosync`
-- **Patterns**: Compare-and-swap, transações coordenadas
+**[`alura/clojure/5-schemas/`](alura/clojure/5-schemas/)** - Validação de Dados  
+Schemas para validação e documentação de contratos usando Prismatic Schema. Aborda validação runtime, documentação viva e trade-offs de performance.
 
-#### [`alura/record-protocol-multi-method/`](alura/record-protocol-multi-method/) - Types e Abstrações
-Polimorfismo funcional com Records e Protocols.
-- **Conceitos**: Records, Protocols, polimorfismo sem herança
-- **Design**: Separação dados/comportamento, extensibilidade
-- **Patterns**: Expression problem solution
+**[`alura/clojure/6-exploring-tests/`](alura/clojure/6-exploring-tests/)** - Explorando Testes  
+Test Driven Development e práticas modernas de testing com `clojure.test`.
 
-#### [`alura/schemas/`](alura/schemas/) - Validação de Dados
-Schemas para validação e documentação de contratos.
-- **Conceitos**: Prismatic Schema, validação runtime
-- **Práticas**: Documentação viva, contratos explícitos
-- **Trade-offs**: Performance vs segurança
+**[`alura/clojure/7-generators-and-property-tests/`](alura/clojure/7-generators-and-property-tests/)** - Testes Generativos  
+Property-based testing com `test.check` para validação de invariantes sistêmicas.
 
-#### [`alura/OWASP/`](alura/OWASP/) - Segurança em Aplicações
-Vulnerabilidades comuns e suas mitigações em Clojure.
-- **Vulnerabilidades**: Injection, authentication failures
-- **Soluções**: Validação, criptografia, rate limiting
-- **Bibliotecas**: `crypto-password`, sanitização
+**[`alura/clojure/OWASP/`](alura/clojure/OWASP/)** - Segurança em Aplicações  
+Vulnerabilidades comuns e mitigações em Clojure, incluindo validação, criptografia e sanitização.
 
----
+### Datomic
+
+**[`alura/datomic/`](alura/datomic/)** - Banco de Dados Imutável  
+Curso completo sobre Datomic cobrindo desde fundamentos até recursos avançados como queries, schemas, transaction functions e geradores.
 
 ### Materiais de Referência
 
-#### [`clojure-for-the-brave-and-true/`](clojure-for-the-brave-and-true/) - Livro de Referência
-Exercícios e exemplos do livro "Clojure for the Brave and True".
-- **Fundamentos**: Estruturas de dados core, sintaxe
-- **Projetos**: Hobbit-hitter, modelagem de dados
-- **Metodologia**: Aprendizado incremental e divertido
+**[`clojure-for-the-brave-and-true/`](clojure-for-the-brave-and-true/)** - Livro de Referência  
+Exercícios baseados no livro "Clojure for the Brave and True" cobrindo estruturas de dados core, sintaxe e projetos práticos.
 
----
+## Progressão de Aprendizado
 
-### Projetos Futuros
+### Conceitos Fundamentais
+1. Sintaxe básica e estruturas de dados
+2. Paradigma funcional e higher-order functions  
+3. Coleções e transformações de dados
 
-#### [`nubank-challenges/`](nubank-challenges/) - Desafios Técnicos
-Espaço reservado para desafios algorítmicos e problemas práticos.
-- **Status**: 🚧 Em preparação
-- **Foco**: Aplicação prática dos conceitos estudados
+### Gerenciamento de Estado
+4. Imutabilidade e persistência estrutural
+5. Referências mutáveis (Atoms, Refs)
+6. Concorrência e STM
 
-## 🗺️ Mapa de Conhecimento
+### Abstrações Avançadas
+7. Polimorfismo funcional (Records, Protocols)
+8. Validação de dados e contratos
+9. Testing e property-based testing
 
-### Progressão de Aprendizado
+### Aplicações Práticas
+10. Segurança em aplicações
+11. Bancos de dados funcionais (Datomic)
+12. Integração com ecossistema Java
 
-1. **Básico** → **Funcional** → **Coleções**
-   - Sintaxe básica → Paradigma funcional → Manipulação de dados
+## Como Usar
 
-2. **Testes** → **Geradores** → **Propriedades**
-   - TDD tradicional → Property-based testing → Validação sistêmica
+Cada diretório contém README específico com:
+- Objetivo do estudo
+- Conceitos principais abordados
+- Explicação detalhada das aulas
+- Exemplos práticos de uso
 
-3. **Imutabilidade** → **Estado** → **Concorrência**
-   - Dados imutáveis → Referências mutáveis → Threading coordenado
-
-4. **Tipos** → **Validação** → **Segurança**
-   - Polimorfismo funcional → Contratos de dados → Aplicações seguras
-
-### Competências Desenvolvidas
-
-#### 🎯 **Core Clojure**
-- Sintaxe e idiomas da linguagem
-- Estruturas de dados persistentes
-- Programação funcional pura
-
-#### 🔧 **Ferramentas e Práticas**  
-- Testing (TDD, property-based)
-- Validação de dados (Schemas)
-- Gerenciamento de estado (Atoms, Refs)
-
-#### 🏗️ **Arquitetura e Design**
-- Polimorfismo sem orientação a objetos
-- Separação de dados e comportamento
-- Composição sobre herança
-
-#### 🔐 **Segurança e Qualidade**
-- Mitigação de vulnerabilidades OWASP
-- Validação robusta de entrada
-- Patterns de código seguro
-
-## 🚀 Próximos Passos
-
-- [ ] Implementar desafios do `nubank-challenges/`
-- [ ] Explorar web development (Ring, Compojure)
-- [ ] Estudar ClojureScript para frontend
-- [ ] Aplicar conceitos em projetos reais
-
----
-
-## 📖 Como Navegar
-
-Cada diretório possui seu próprio `README.md` detalhado com:
-- **Objetivo específico** do estudo
-- **Conceitos principais** abordados
-- **Exemplos práticos** e casos de uso
-- **Progressão pedagógica** do conteúdo
-
-**Sugestão de leitura**: Siga a ordem cronológica dos estudos para uma progressão natural do conhecimento, ou navegue diretamente para tópicos específicos de interesse.
-
----
-
-*Este repositório reflete uma jornada contínua de aprendizado em Clojure, documentando tanto sucessos quanto desafios encontrados no caminho da maestria da programação funcional.*
+Recomenda-se seguir a ordem cronológica para progressão natural do conhecimento ou navegar diretamente para tópicos específicos conforme necessidade.

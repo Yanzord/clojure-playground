@@ -1,77 +1,75 @@
-# Functional Programming - Conceitos Fundamentais
+# Programação Funcional
 
-## Objetivo de Estudo
-Este projeto é baseado no curso da Alura sobre programação funcional em Clojure, cobrindo os princípios fundamentais do paradigma funcional através de exemplos práticos.
+Curso introdutório sobre programação funcional em Clojure cobrindo conceitos fundamentais do paradigma através de exemplos práticos de e-commerce com sistema de descontos e processamento de dados.
 
-## O que este projeto representa
-Uma progressão didática através dos conceitos centrais da programação funcional, desde funções simples até composição complexa, usando cenários práticos de e-commerce.
+## Objetivo
 
-### Estrutura das Aulas
+Ensinar os princípios centrais da programação funcional em Clojure através de progressão didática: desde funções básicas até composição complexa, usando cenários práticos de negócio.
 
-**aula2.clj** - Funções e Condicionais
-- Definição de funções com documentação
-- Estruturas condicionais (`if`, `let`)
-- Cálculo de descontos com regras de negócio
-- Binding de variáveis locais
+## Estrutura das Aulas
 
-**aula3.clj** - Predicados e Higher-Order Functions
-- Funções predicado (terminadas em `?`)
-- Separação de responsabilidades (lógica vs regra)
-- Funções como parâmetros (higher-order functions)
-- Funções anônimas: `fn` e sintaxe `#()`
+### aula2.clj
+Fundamentos de funções e controle de fluxo.
+- Definição de funções com `defn` e documentação
+- Estruturas condicionais com `if` e `let`
+- Binding de variáveis locais e escopo
+- Implementação de lógica de desconto simples
+
+### aula3.clj  
+Predicados e funções de alta ordem.
+- Funções predicado com convenção de nomenclatura (terminadas em `?`)
+- Higher-order functions: funções como parâmetros
+- Separação de responsabilidades entre lógica e regras de negócio
+- Funções anônimas: sintaxe `fn` e `#()`
 - Definição de funções com `def`
 
-**aula4.clj** - Coleções e Transformações
-- Vetores: acesso, adição e atualização (`get`, `conj`, `update`)
-- Funções de alta ordem: `map`, `filter`, `reduce`
+### aula4.clj
+Operações com vetores e transformações de coleções.
+- Acesso a elementos: `get`, indexação, valores padrão
+- Modificação imutável: `conj`, `update`
+- Funções transformadoras: `map`, `filter`, `reduce`
 - Pipeline de transformações de dados
-- Valores padrão e tratamento de índices inexistentes
+- Processamento de listas de preços
 
-**aula5.clj** - Maps e Estruturas Associativas
-- Maps com strings vs keywords
-- Manipulação: `assoc`, `dissoc`, `update`
-- Acesso a dados: sintaxe de função vs keyword
+### aula5.clj
+Estruturas associativas e navegação de dados.
+- Maps: criação, acesso e manipulação (`assoc`, `dissoc`, `update`)
+- Keywords vs strings como chaves
+- Acesso via função vs keyword
 - Estruturas aninhadas e `update-in`
-- Threading first (`->`) para navegação em estruturas
+- Threading first (`->`) para navegação
 
-**aula6.clj** - Composição e Threading Avançado
-- Decomposição de maps com destrutruração
+### aula6.clj
+Composição avançada e threading.
+- Destrutruração de maps para extração de valores
 - Threading last (`->>`) para pipelines de transformação
 - Função `comp` para composição de funções
-- Processamento de coleções complexas
-- Cálculos agregados em estruturas aninhadas
+- Processamento de estruturas complexas
+- Cálculos agregados e análise de dados
 
-## Conceitos Fundamentais Praticados
+## Conceitos Abordados
 
 ### Paradigma Funcional
-- **Imutabilidade**: Dados não mudam, criam-se novas versões
-- **Funções puras**: Sem efeitos colaterais
-- **Higher-order functions**: Funções que recebem/retornam funções
-- **Composição**: Combinação de funções simples em operações complexas
+- Imutabilidade de estruturas de dados
+- Funções puras sem efeitos colaterais  
+- Higher-order functions como abstração
+- Composição de funções simples em operações complexas
 
 ### Estruturas de Dados
-- **Vetores**: Coleções ordenadas e indexadas
-- **Maps**: Associações chave-valor (dictionaries)
-- **Keywords**: Identificadores eficientes para chaves
-- **Destrutruração**: Extração de valores de estruturas
+- Vetores como coleções ordenadas e indexadas
+- Maps como associações chave-valor eficientes
+- Keywords como identificadores otimizados
+- Acesso uniforme e navegação de estruturas
 
-### Threading Macros
-- **`->`**: Thread-first para navegação em estruturas
-- **`->>`**: Thread-last para transformação de coleções
-- Pipeline de operações legível e funcional
-
-### Transformações de Coleções
-- **`map`**: Transformação elemento a elemento
-- **`filter`**: Seleção baseada em predicados
-- **`reduce`**: Agregação de coleções em valores únicos
-- **Composição**: Combinação de operações para análises complexas
+### Threading e Composição
+- Threading first (`->`) para navegação de estruturas
+- Threading last (`->>`) para transformação de coleções
+- Pipelines legíveis e funcionais
+- Composição declarativa de operações
 
 ## Cenários Práticos
-- Sistema de descontos dinâmicos
-- Gerenciamento de estoque com maps
-- Processamento de pedidos e-commerce
-- Cálculos de totais e agregações
-- Análise de dados de clientes
 
-## Progressão Pedagógica
-O curso evolui de conceitos simples (if/else) para composições sofisticadas, sempre mantendo exemplos práticos e próximos ao mundo real do desenvolvimento de software.
+- Sistema de cálculo de descontos com regras de negócio
+- Processamento de listas de preços e produtos
+- Transformação de dados de pedidos e-commerce
+- Análise e agregação de informações de clientes

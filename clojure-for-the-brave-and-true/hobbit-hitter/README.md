@@ -1,22 +1,38 @@
-# hobbit-hitter
+# Hobbit Hitter
 
-A Clojure library designed to ... well, that part is up to you.
+Projeto de modelagem de dados baseado no livro "Clojure for the Brave and True", demonstrando representação de estruturas complexas usando maps e vectors para modelar anatomia de hobbit.
 
-## Usage
+## Objetivo
 
-FIXME
+Ilustração de princípios de modelagem orientada a dados em Clojure, mostrando como representar objetos complexos do mundo real usando estruturas de dados simples e imutáveis.
 
-## License
+## Estrutura do Projeto
 
-Copyright © 2025 FIXME
+### core.clj
+Modelagem de dados anatômicos de hobbit.
+- Definição de partes do corpo com maps estruturados
+- Atributos de nome e tamanho para cada parte
+- Representação assimétrica (apenas lado esquerdo modelado)
+- Base para algoritmos de seleção probabilística
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+## Conceitos Demonstrados
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+### Modelagem Orientada a Dados
+- Representação de entidades complexas via structures simples
+- Maps como registros com chaves nomeadas  
+- Vectors como coleções ordenadas de registros
+- Separação entre dados e comportamento
+
+### Design de Estruturas
+- Escolha de representação adequada para domínio
+- Atributos significativos (nome, tamanho) 
+- Preparação para processamento algorítmico
+- Extensibilidade da representação de dados
+
+## Casos de Uso
+
+Este modelo de dados serve como base para:
+- Algoritmos de seleção aleatória ponderada por tamanho
+- Simulações de combate com diferentes probabilidades
+- Extensão para simetria corporal completa  
+- Demonstração de transformações de coleções

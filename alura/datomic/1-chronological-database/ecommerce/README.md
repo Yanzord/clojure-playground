@@ -1,44 +1,66 @@
-# ecommerce
+# Banco de Dados Cronológico
 
-FIXME: description
+Curso introdutório sobre Datomic demonstrando conceitos fundamentais de banco de dados imutável através de sistema de e-commerce com produtos, transações temporais e snapshots de dados.
 
-## Installation
+## Objetivo
 
-Download from http://example.com/FIXME.
+Introduzir características cronológicas do Datomic através de exemplos práticos: configuração, schemas, transações, snapshots e navegação temporal de dados.
 
-## Usage
+## Estrutura das Aulas
 
-FIXME: explanation
+### aula1.clj
+Configuração inicial e operações básicas.
+- Conexão e configuração do banco Datomic
+- Criação de schema e estruturas iniciais
+- Inserção de produtos e entidades básicas
+- Queries de consulta e busca por ID
 
-    $ java -jar ecommerce-0.1.0-standalone.jar [args]
+### aula2.clj
+Transações e modificações de dados.
+- Diferentes formas de criar entidades
+- Transações com `:db/add` e `:db/retract`
+- Manipulação de propriedades de entidades existentes
+- Uso de temporary IDs e referências
 
-## Options
+### aula3.clj
+Snapshots e evolução temporal.
+- Criação de snapshots do banco em diferentes momentos
+- Comparação de estados temporais
+- Queries em pontos específicos do tempo
+- Navegação no histórico de dados
 
-FIXME: listing of options this app accepts.
+### aula5.clj
+Queries avançadas e relacionamentos.
+- Consultas complexas com múltiplos critérios
+- Navegação entre entidades relacionadas
+- Padrões de query eficientes
+- Otimização de consultas
 
-## Examples
+### aula6.clj
+Funcionalidades cronológicas avançadas.
+- Histórico completo de entidades
+- Auditoria e rastreamento de mudanças
+- Queries temporais complexas
+- Versionamento de dados
 
-...
+## Módulos de Apoio
 
-### Bugs
+### model.clj
+Funções para criação de modelos de dados.
+- Factory functions para produtos
+- Estruturas de dados padronizadas
+- Validação de modelos
 
-...
+### db.clj
+Utilitários de banco e configuração.
+- Funções de conexão e configuração
+- Criação e gerenciamento de schemas
+- Queries básicas reutilizáveis
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+## Conceitos Abordados
 
-## License
-
-Copyright © 2025 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Imutabilidade e características cronológicas
+- Snapshots e navegação temporal
+- Transações e modificação de estado
+- Schemas e estruturação de dados
+- Queries básicas e navegação de entidades

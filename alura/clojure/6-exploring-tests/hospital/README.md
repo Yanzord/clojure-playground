@@ -1,68 +1,57 @@
-# Exploring Tests - Hospital
+# Explorando Testes
 
-## Objetivo de Estudo
-Este projeto é baseado no curso da Alura sobre testes em Clojure, explorando Test Driven Development (TDD) e Test Driven Design através de um sistema simulado de hospital.
+Curso sobre Test Driven Development (TDD) em Clojure aplicado a sistema hospitalar, cobrindo estratégias de testes, validação de esquemas, tratamento de erros e design orientado por testes.
 
-## O que este projeto representa
-Um sistema de gerenciamento de filas de hospital que demonstra como aplicar práticas modernas de testes em Clojure, incluindo TDD, testes de borda, validação de esquemas e tratamento de erros.
+## Objetivo
 
-### Estrutura do Projeto
+Ensinar TDD através de desenvolvimento de sistema hospitalar, demonstrando estratégias de testes, desde básicos até avançados, com foco em validação de comportamento e tratamento robusto de erros.
 
-**model.clj** - Modelo de Dados
-- Definição de schemas com Prismatic Schema
-- Tipos customizados: `PacienteID`, `Departamento`, `Hospital`
+## Estrutura do Projeto
+
+### model.clj
+Modelo de dados com schemas validados.
+- Schemas com Prismatic Schema para tipos customizados
+- Estruturas `PacienteID`, `Departamento`, `Hospital`
 - Uso de `PersistentQueue` para filas FIFO
-- Função factory para criar hospitais
+- Funções factory para criação de objetos válidos
 
-**logic.clj** - Lógica de Negócio
-- `cabe-na-fila?`: Verifica se há espaço na fila (máximo 5 pacientes)
-- `chega-em`: Adiciona pacientes às filas com validação
-- `transfere`: Move pacientes entre departamentos
-- `atende` e `proxima`: Gerenciam o atendimento de pacientes
+### logic.clj  
+Lógica de negócio do sistema hospitalar.
+- `cabe-na-fila?`: Validação de capacidade (máximo 5 pacientes)
+- `chega-em`: Adição de pacientes com validação
+- `transfere`: Movimentação entre departamentos
+- `atende` e `proxima`: Gerenciamento de atendimento
 
-**logic_test.clj** - Suíte de Testes Abrangente
-- Testes de borda (boundary tests)
-- Testes com valores "one-off" (+1, -1 dos limites)
-- Testes não-sequenciais para casos mais realistas
+### logic_test.clj
+Suíte abrangente de testes seguindo TDD.
+- Testes de borda e casos extremos
 - Validação de exceções estruturadas
-- Pré e pós-condições
+- Dados não-sequenciais para cenários realistas
+- Pré e pós-condições como contratos
 
-## Conceitos de Testes Praticados
+## Conceitos Abordados
 
-### Test Driven Development (TDD)
-- Ciclo Red-Green-Refactor
-- Testes primeiro, implementação depois
-- Design emergente através dos testes
+### Test Driven Development
+- Ciclo Red-Green-Refactor aplicado consistentemente
+- Testes guiando design e implementação
+- Refatoração confiante com cobertura de testes
 
-### Tipos de Testes
-- **Boundary Tests**: Testam os limites (0, 5, 6 pacientes)
-- **One-off Tests**: Testam +/-1 dos valores limite
-- **Non-sequential Tests**: Dados não-sequenciais mais realistas
-- **Exception Testing**: Validação de erros estruturados
-
-### Técnicas Avançadas
-- **Threading Macros**: `some->` para pipeline com nil-safety  
-- **Exception Info**: `ex-info` com dados estruturados vs exceptions genéricas
-- **Schema Validation**: Validação de tipos em runtime
-- **Pre/Post Conditions**: Contratos de função declarativos
+### Estratégias de Teste
+- **Boundary tests**: Validação de limites (0, 5, 6 pacientes)
+- **One-off tests**: Casos +/-1 dos valores críticos  
+- **Exception testing**: Validação de erros estruturados com `ex-info`
+- **Non-sequential data**: Dados realistas vs sequenciais artificiais
 
 ### Tratamento de Erros
-- Evolução de diferentes estratégias de error handling:
-  - Retorno `nil`
-  - Exceptions genéricas vs estruturadas  
-  - Maps de resultado com `:sucesso`/`:erro`
-  - `ex-info` com metadados para debugging
+- Evolução de estratégias: nil → exceptions genéricas → `ex-info` estruturado
+- Threading macros (`some->`) para nil-safety
+- Metadados em exceções para debugging eficaz
+
+### Técnicas Avançadas
+- Schema validation integrada com testes
+- Contratos de função com pré/pós-condições
+- Separação entre testes de comportamento vs implementação
 
 ## Cenário Prático
-Sistema de hospital com:
-- Filas por departamento (espera, laboratórios, raio-x)
-- Limite de 5 pacientes por fila
-- Transferências entre departamentos
-- Validação de regras de negócio
-- Error handling robusto
 
-## Aprendizados sobre Qualidade
-- Como escrever testes que realmente validam comportamento
-- Diferença entre testar implementação vs comportamento
-- Importância de testes de borda e casos extremos
-- Estruturação de dados de erro para debugging eficaz
+Sistema hospitalar com departamentos, filas limitadas, transferências entre áreas e validação rigorosa de regras de negócio para demonstrar testing em contexto realista.

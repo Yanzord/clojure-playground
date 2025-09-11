@@ -1,63 +1,84 @@
-# Day-to-Day Collections - Loja
+# Coleções no Dia a Dia
 
-## Objetivo de Estudo
-Este projeto é baseado no curso da Alura "Clojure: Collections no dia a dia", focando na manipulação prática de coleções em Clojure através do desenvolvimento de um sistema de loja.
+Curso prático sobre manipulação de coleções em Clojure através de sistema de loja virtual, demonstrando técnicas de processamento de dados, recursão, agrupamento e análise estatística.
 
-## O que este projeto representa
-Um sistema de exemplo para gerenciar pedidos de uma loja virtual, demonstrando como trabalhar efetivamente com as estruturas de dados do Clojure no contexto de uma aplicação real.
+## Objetivo
 
-### Estrutura do Projeto
+Demonstrar o uso efetivo das estruturas de dados do Clojure em cenários reais de aplicação, cobrindo desde implementação manual de funções básicas até pipelines complexos de transformação de dados.
 
-**db.clj**
-- Base de dados simulada com pedidos
-- Estruturas de dados aninhadas (maps dentro de maps)
-- Modelo de dados realista para um e-commerce
+## Estrutura das Aulas
 
-**aula1.clj** - Iteração e Recursão
-- Implementação manual da função `map`
-- Conceitos de recursão e tail recursion
-- Uso de `recur` para otimização
+### aula1.clj
+Iteração e recursão fundamental.
+- Implementação manual da função `map` do zero
+- Conceitos de recursão e stack overflow
+- Uso de `recur` para tail recursion otimizada
+- Comparação entre implementação manual e função nativa
 
-**aula2.clj** - Implementação de Funções de Contagem
-- Função `conta` implementada do zero
-- Sobrecarga de funções (múltiplas aridades)
-- Uso de `loop` e `recur`
+### aula2.clj
+Implementação de funções de contagem.
+- Função `conta` (equivalente a `count`) implementada manualmente
+- Sobrecarga de funções com múltiplas aridades
+- Uso de `loop` e `recur` para iterações locais
+- Otimizações de performance para coleções grandes
 
-**aula3.clj** - Agrupamento e Análise de Dados
-- Uso de `group-by` para agrupar pedidos por usuário
+### aula3.clj
+Agrupamento e análise estatística de dados.
+- Uso de `group-by` para agrupamento de pedidos por usuário
 - Threading macros (`->>`) para composição de operações
-- Transformação de dados e análises estatísticas
+- Transformação de dados estruturados
+- Geração de relatórios e análises
 
-**logic.clj** - Lógica de Negócio
-- Cálculos de totais de pedidos
-- Funções para análise de gastos por usuário
-- Separação de responsabilidades
+### aula4.clj
+Processamento avançado de coleções.
+- Combinação de múltiplas operações de transformação
+- Análise de padrões de compra e comportamento
+- Cálculos agregados e estatísticas derivadas
 
-## Conceitos Praticados
+### aula5.clj
+Pipelines complexos de dados.
+- Composição de operações para análises sofisticadas
+- Tratamento de dados aninhados e estruturas complexas
+- Otimização de performance em processamento de lotes
 
-### Coleções e Estruturas de Dados
-- Vetores, maps e keywords
-- Acesso e manipulação de estruturas aninhadas
+## Módulos de Apoio
+
+### db.clj
+Base de dados simulada para testes.
+- Estrutura de pedidos com maps aninhados
+- Modelo de dados realista para e-commerce
+- Dados de teste para validação de funções
+
+### logic.clj  
+Lógica de negócio e cálculos.
+- Funções para cálculo de totais de pedidos
+- Análise de gastos por usuário
+- Separação clara de responsabilidades
+
+## Conceitos Abordados
+
+### Recursão e Iteração
+- Tail recursion com `recur` para otimização
+- `loop` para iterações locais controladas
+- Implementação manual de funções core
+- Prevenção de stack overflow
+
+### Transformação de Coleções
+- Funções de alta ordem: `map`, `filter`, `reduce`
+- `group-by` para agrupamento e categorização
+- Composição de operações via threading macros
+- Pipelines de transformação de dados
+
+### Estruturas de Dados
+- Manipulação de maps aninhados
+- Acesso e navegação de estruturas complexas
 - Imutabilidade e persistência estrutural
+- Keywords como chaves eficientes
 
-### Funções de Alta Ordem
-- `map`, `filter`, `reduce`
-- `group-by` para agrupamento
-- Composição de funções
+## Cenários Práticos
 
-### Threading e Composição
-- Threading macros (`->`, `->>`)
-- Pipeline de transformações de dados
-- Código mais legível e funcional
-
-### Recursão e Performance
-- Tail recursion com `recur`
-- `loop` para iterações locais
-- Otimização de stack overflow
-
-## Cenário Prático
-O projeto simula um sistema de loja onde é possível:
-- Calcular totais de pedidos
-- Agrupar pedidos por usuário
-- Gerar relatórios de gastos
-- Analisar padrões de compra
+- Processamento de pedidos de loja virtual
+- Análise de comportamento de usuários  
+- Geração de relatórios de vendas
+- Cálculos de métricas de negócio
+- Agrupamento e categorização de dados

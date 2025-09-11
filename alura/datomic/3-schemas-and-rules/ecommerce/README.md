@@ -1,44 +1,47 @@
-# ecommerce
+# Schemas e Regras
 
-FIXME: description
+Curso sobre definição de schemas, regras Datalog customizadas, validação de dados e evolução de estruturas em Datomic através de sistema de e-commerce avançado.
 
-## Installation
+## Objetivo
 
-Download from http://example.com/FIXME.
+Dominar criação e evolução de schemas, implementação de regras de negócio via Datalog e técnicas de validação e migração de dados estruturados.
 
-## Usage
+## Estrutura das Aulas
 
-FIXME: explanation
+### aula1.clj
+Definição de schemas básicos.
+- Atributos, tipos e cardinalidades
+- Constraints e validações básicas
+- Estruturação de entidades
 
-    $ java -jar ecommerce-0.1.0-standalone.jar [args]
+### aula2.clj
+Regras Datalog customizadas.
+- Sintaxe e definição de regras
+- Regras de negócio implementadas em Datalog
+- Composição e reutilização de regras
 
-## Options
+### aula3.clj
+Schemas avançados e relacionamentos.
+- Referências entre entidades
+- Componentes e agregações
+- Modelagem de domínios complexos
 
-FIXME: listing of options this app accepts.
+### aula4.clj
+Validação e constraints avançados.
+- Validação customizada via functions
+- Constraints de integridade referencial
+- Regras de consistência de dados
 
-## Examples
+### aula5.clj
+Evolução e migração de schemas.
+- Estratégias de migração de dados
+- Versionamento de schemas
+- Backward compatibility e alterações estruturais
 
-...
+## Conceitos Abordados
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2025 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+- Definição e estruturação de schemas
+- Regras Datalog para lógica de negócio
+- Validação de dados e constraints
+- Evolução e migração de estruturas
+- Modelagem de domínios complexos
